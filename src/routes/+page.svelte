@@ -1,1 +1,5 @@
-<h1>Portfolio</h1>
+<script>
+    import TheBanner from "../lib/components/TheBanner.svelte";
+</script>
+
+<TheBanner />

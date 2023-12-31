@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 
 body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2 {
 	font-family: 'Montserrat', 'Work Sans', sans-serif;
 }
 

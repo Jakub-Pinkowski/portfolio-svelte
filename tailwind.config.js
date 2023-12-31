@@ -8,7 +8,7 @@ export default {
 				dark: '#6f2232',
 				light: '#e0aeb5',
 				gray: '#4e4e50',
-                darkGray: '#282829',
+				darkGray: '#282829'
 			},
 			fontFamily: {
 				custom: ['Montserrat', 'Work Sans', 'Open Sans', 'sans-serif']

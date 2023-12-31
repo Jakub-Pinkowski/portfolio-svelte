@@ -1,7 +1,10 @@
 <script>
 	import AboutMe from '$lib/components/AboutMe.svelte';
-	import TheBanner from '../lib/components/TheBanner.svelte';
+	import Portfolio from '$lib/components/Portfolio.svelte';
+	import Banner from '../lib/components/Banner.svelte';
 </script>
 
-<TheBanner />
+<Banner />
 <AboutMe />
+<Portfolio />
+

@@ -17,6 +17,15 @@ export default {
 	},
 	plugins: [require('daisyui')],
 	daisyui: {
-        themes: [],
+		themes: [
+			{
+				light: {
+					...require('daisyui/src/theming/themes')['light'],
+					primary: '#950740',
+					gray: '#4e4e50',
+					dark: '#6f2232'
+				}
+			}
+		]
 	}
 };

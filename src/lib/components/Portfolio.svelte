@@ -16,7 +16,7 @@
 			{#each websites as website (website.id)}
 				<div class="card bg-base-100 shadow-xl">
 					<figure>
-						<img class="w-full h-72 object-cover" src={website.img} alt="Shoes" />
+						<img class="h-72 w-full object-cover" src={website.img} alt="Shoes" />
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title my-2 text-2xl">{website.name}</h2>
@@ -44,6 +44,7 @@
 					<div class="card-body">
 						<h2 class="card-title my-2 text-2xl">{project.name}</h2>
 						<p class="my-2 text-lg">{project.description}</p>
+						<p class="my-2 text-lg">{project.technologiesDescription}</p>
 						<div class="card-actions my-4 w-full justify-between">
 							<a class="my-button" href={project.github}>
 								<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />

@@ -16,3 +16,9 @@ export type Project = {
 	technologies: string[];
 	github: string;
 };
+
+export type Icon = {
+	id: number;
+	name: string;
+	src: string;
+};

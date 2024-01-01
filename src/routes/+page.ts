@@ -14,7 +14,28 @@ import investment_calculator from '$lib/assets/images/investment-calculator.jpg'
 import auto_repair from '$lib/assets/images/auto-repair.jpg';
 import insurance_agency from '$lib/assets/images/insurance-agency.jpg';
 
-import type { Website, Project } from '$lib/types';
+import vueIcon from '$lib/assets/icons/vue.png';
+import htmlIcon from '$lib/assets/icons/html.png';
+import cssIcon from '$lib/assets/icons/css.png';
+import jsIcon from '$lib/assets/icons/js.png';
+import tsIcon from '$lib/assets/icons/ts.png';
+import pythonIcon from '$lib/assets/icons/python.png';
+import firebaseIcon from '$lib/assets/icons/firebase.png';
+import sqliteIcon from '$lib/assets/icons/sqlite.png';
+import gitIcon from '$lib/assets/icons/git.png';
+import githubIcon from '$lib/assets/icons/github.png';
+import globeIcon from '$lib/assets/icons/globe.png';
+import tailwindIcon from '$lib/assets/icons/tailwind.png';
+import sassIcon from '$lib/assets/icons/sass.png';
+import reactIcon from '$lib/assets/icons/react.png';
+import nextIcon from '$lib/assets/icons/next.png';
+import vercelIcon from '$lib/assets/icons/vercel.png';
+import prismaIcon from '$lib/assets/icons/prisma.png';
+import postgresqlIcon from '$lib/assets/icons/postgresql.png';
+import svelteIcon from '$lib/assets/icons/svelte.png';
+import sveltekitIcon from '$lib/assets/icons/sveltekit.png';
+
+import type { Website, Project, Icon } from '$lib/types';
 
 export const load = (async () => {
 	return {
@@ -154,6 +175,88 @@ export const load = (async () => {
 				technologies: ['react', 'js', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/investment-calculator'
 			}
-		] as Project[]
+		] as Project[],
+		icons: [
+			{
+				name: 'vue',
+				src: vueIcon
+			},
+			{
+				name: 'html',
+				src: htmlIcon
+			},
+			{
+				name: 'css',
+				src: cssIcon
+			},
+			{
+				name: 'js',
+				src: jsIcon
+			},
+			{
+				name: 'ts',
+				src: tsIcon
+			},
+			{
+				name: 'python',
+				src: pythonIcon
+			},
+			{
+				name: 'firebase',
+				src: firebaseIcon
+			},
+			{
+				name: 'sqlite',
+				src: sqliteIcon
+			},
+			{
+				name: 'git',
+				src: gitIcon
+			},
+			{
+				name: 'github',
+				src: githubIcon
+			},
+			{
+				name: 'globe',
+				src: globeIcon
+			},
+			{
+				name: 'tailwind',
+				src: tailwindIcon
+			},
+			{
+				name: 'sass',
+				src: sassIcon
+			},
+			{
+				name: 'react',
+				src: reactIcon
+			},
+			{
+				name: 'next',
+				src: nextIcon
+			},
+			{
+				name: 'vercel',
+				src: vercelIcon
+			},
+			{
+				name: 'prisma',
+				src: prismaIcon
+			},
+			{
+				name: 'postgresql',
+				src: postgresqlIcon
+			},
+			{
+				name: 'svelte',
+				src: svelteIcon
+			},
+			{
+				name: 'sveltekit',
+				src: sveltekitIcon
+			}
+		] as Icon[]
 	};
 }) satisfies PageLoad;

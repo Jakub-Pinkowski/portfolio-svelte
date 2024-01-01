@@ -1,5 +1,5 @@
 <script lang="ts">
-	import me from '$lib/assets/me_cropped.jpg';
+	import me from '$lib/assets/images/me_cropped.jpg';
 </script>
 
 <!-- TODO: Add more text -->

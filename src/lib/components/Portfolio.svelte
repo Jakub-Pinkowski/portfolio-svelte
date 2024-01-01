@@ -6,37 +6,56 @@
 	<div class="my-8 flex w-full">
 		<div class="w-1/2">
 			<h4 class="my-4 text-2xl text-darkGray">Business websites</h4>
-			<div class="card w-96 bg-base-100 shadow-xl">
-				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
-				</figure>
-				<div class="card-body">
-					<h2 class="card-title my-2">Website 1</h2>
-					<p class="my-2">Website for auto repair shop</p>
-					<div class="card-actions my-4 justify-end">
-						<button class="test">Visit Website</button>
+			<div class="flex">
+				<div class="card m-2 w-96 bg-base-100 shadow-xl">
+					<figure>
+						<img
+							src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+							alt="Shoes"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title my-2">Website 1</h2>
+						<p class="my-2">Website for auto repair shop</p>
+						<div class="card-actions my-4 justify-end">
+							<button class="test">Visit Website</button>
+						</div>
+					</div>
+				</div>
+				<div class=" card m-2 w-96 bg-base-100 shadow-xl">
+					<figure>
+						<img
+							src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+							alt="Shoes"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title my-2">Website 1</h2>
+						<p class="my-2">Website for auto repair shop</p>
+						<div class="card-actions my-4 justify-end">
+							<button class="test">Visit Website</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="w-1/2">
 			<h4 class=" my-4 text-2xl text-darkGray">Fullstack projects</h4>
-			<div class="card w-96 bg-base-100 shadow-xl">
-				<figure>
-					<img
-						src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-						alt="Shoes"
-					/>
-				</figure>
-				<div class="card-body">
-					<h2 class="card-title my-2">Website 1</h2>
-					<p class="my-2">Website for auto repair shop</p>
-					<div class="card-actions my-4 flex w-full place-content-between">
-						<button class="test w-2/5">Visit Website</button>
-						<button class="test w-2/5">View Code</button>
+			<div class="flex">
+				<div class="card m-2 w-96 bg-base-100 shadow-xl">
+					<figure>
+						<img
+							src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+							alt="Shoes"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title my-2">Website 1</h2>
+						<p class="my-2">Website for auto repair shop</p>
+						<div class="card-actions my-4 flex w-full place-content-between">
+							<button class="test w-2/5">Visit Website</button>
+							<button class="test w-2/5">View Code</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -49,7 +68,7 @@
 		cursor: pointer;
 		position: relative;
 		padding: 10px 20px;
-		background: #e0aeb5;
+		background: white;
 		font-size: 24px;
 		border-top-right-radius: 10px;
 		border-bottom-left-radius: 10px;

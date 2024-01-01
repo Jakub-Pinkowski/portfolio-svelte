@@ -21,7 +21,7 @@ import jsIcon from '$lib/assets/icons/js.png';
 import tsIcon from '$lib/assets/icons/ts.png';
 import pythonIcon from '$lib/assets/icons/python.png';
 import firebaseIcon from '$lib/assets/icons/firebase.png';
-import sqliteIcon from '$lib/assets/icons/sqlite.png';
+import sqliteIcon from '$lib/assets/icons/sql.png';
 import gitIcon from '$lib/assets/icons/git.png';
 import githubIcon from '$lib/assets/icons/github.png';
 import globeIcon from '$lib/assets/icons/globe.png';

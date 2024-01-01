@@ -11,11 +11,31 @@ import todo from '$lib/assets/images/todo.jpg';
 import coach from '$lib/assets/images/coach.jpg';
 import investment_calculator from '$lib/assets/images/investment-calculator.jpg';
 
+import auto_repair from '$lib/assets/images/auto-repair.jpg';
+import insurance_agency from '$lib/assets/images/insurance-agency.jpg';
+
 import type { Website, Project } from '$lib/types';
 
 export const load = (async () => {
 	return {
-		websites: [] as Website[],
+		websites: [
+			{
+				id: 1,
+				name: 'Auto Repair Shop',
+				img: auto_repair,
+				description:
+					'Auto repair shop website designed to showcase the services offered by the company.',
+				src: 'https://szkic.xce.pl'
+			},
+			{
+				id: 2,
+				name: 'Insurance Agency',
+				img: insurance_agency,
+				description:
+					'Insurance agency website designed to showcase the services offered by the company.',
+				src: 'https://biznes-przyklad.xce.pl'
+			}
+		] as Website[],
 		projects: [
 			{
 				id: 1,

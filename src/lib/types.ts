@@ -1,11 +1,10 @@
 export type Website = {
-    id: number;
-    name: string;
-    img: string;
-    description: string;
-    src: string;
+	id: number;
+	name: string;
+	img: string;
+	description: string;
+	src: string;
 };
-
 
 export type Project = {
 	id: number;
@@ -16,4 +15,4 @@ export type Project = {
 	technologiesDescription: string;
 	technologies: string[];
 	github: string;
-}
+};

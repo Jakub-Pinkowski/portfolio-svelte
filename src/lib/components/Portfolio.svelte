@@ -5,11 +5,25 @@
 	export let projects: Project[] = [];
 </script>
 
-<div class="my-24 mx-8 grid grid-cols-4 gap-4">
+<div class="mx-8 my-24 grid grid-cols-4 gap-4">
 	<h3 class="col-span-4 text-3xl uppercase text-main">Portfolio</h3>
 	<div class="col-span-2">
 		<h4 class="my-4 text-2xl text-darkGray">Business websites</h4>
 		<div class="grid grid-cols-2 gap-4">
+			{#each websites as website (website.id)}
+				<div class="card bg-base-100 shadow-xl">
+					<figure>
+						<img class="h-48 w-full object-cover" src={website.img} alt="Shoes" />
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title my-2">{website.name}</h2>
+						<p class="my-2">{website.description}</p>
+						<div class="card-actions my-4 flex w-full justify-end">
+							<button class="test">Visit Website</button>
+						</div>
+					</div>
+				</div>
+			{/each}
 		</div>
 	</div>
 	<div class="col-span-2">
@@ -39,7 +53,7 @@
 		cursor: pointer;
 		position: relative;
 		padding: 10px 20px;
-		background: white;
+		background: #fdd8e6;
 		font-size: 24px;
 		border-top-right-radius: 10px;
 		border-bottom-left-radius: 10px;

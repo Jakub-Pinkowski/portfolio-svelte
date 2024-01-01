@@ -22,7 +22,10 @@
 						<h2 class="card-title my-2">{website.name}</h2>
 						<p class="my-2">{website.description}</p>
 						<div class="card-actions my-4 flex w-full justify-end">
-							<a class="my-button" href={website.src}>Visit Website</a>
+							<a class="my-button" href={website.src}>
+								<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
+								Visit Website
+							</a>
 						</div>
 					</div>
 				</div>
@@ -41,11 +44,14 @@
 						<h2 class="card-title my-2">{project.name}</h2>
 						<p class="my-2">{project.description}</p>
 						<div class="card-actions my-4 w-full justify-end">
-							<a class="my-button flex" href={project.github}>
-								<img class="h-8 w-8" src={github_icon} alt="github" />
+							<a class="my-button" href={project.github}>
+								<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
 								View Code
 							</a>
-							<a class="my-button" href={project.src}>Visit Website</a>
+							<a class="my-button" href={project.src}>
+								<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
+								Visit Website
+							</a>
 						</div>
 					</div>
 				</div>
@@ -56,7 +62,11 @@
 
 <style>
 	.my-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		cursor: pointer;
+		width: 15rem;
 		position: relative;
 		padding: 10px 20px;
 		background: #fdd8e6;

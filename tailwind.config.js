@@ -9,6 +9,7 @@ export default {
 				light: '#e0aeb5',
                 superLight:'#fdd8e6',
 				gray: '#4e4e50',
+                lightGray: '#f5f5f5',
 				darkGray: '#282829'
 			},
 			fontFamily: {

@@ -19,8 +19,8 @@
 						<img class="h-48 w-full object-cover" src={website.img} alt="Shoes" />
 					</figure>
 					<div class="card-body">
-						<h2 class="card-title my-2">{website.name}</h2>
-						<p class="my-2">{website.description}</p>
+						<h2 class="card-title my-2 text-2xl">{website.name}</h2>
+						<p class="my-2 text-lg">{website.description}</p>
 						<div class="card-actions my-4 flex w-full justify-end">
 							<a class="my-button" href={website.src}>
 								<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
@@ -41,8 +41,8 @@
 						<img class="h-48 w-full object-cover" src={project.img} alt="Shoes" />
 					</figure>
 					<div class="card-body">
-						<h2 class="card-title my-2">{project.name}</h2>
-						<p class="my-2">{project.description}</p>
+						<h2 class="card-title my-2 text-2xl">{project.name}</h2>
+						<p class="my-2 text-lg">{project.description}</p>
 						<div class="card-actions my-4 w-full justify-end">
 							<a class="my-button" href={project.github}>
 								<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
@@ -66,11 +66,11 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
-		width: 15rem;
+		width: 13rem;
 		position: relative;
 		padding: 10px 20px;
-		background: #fdd8e6;
-		font-size: 24px;
+		background: #e0aeb5;
+		font-size: 20px;
 		border-top-right-radius: 10px;
 		border-bottom-left-radius: 10px;
 		transition: all 1s;

@@ -7,6 +7,11 @@
 	export let websites: Website[] = [];
 	export let projects: Project[] = [];
 	export let icons: Icon[] = [];
+
+	const getIconSrc = (technology: string) => {
+		const icon = icons.find((icon) => icon.name === technology);
+		return icon ? icon.src : '';
+	};
 </script>
 
 <div class="mx-8 my-24 grid grid-cols-3 gap-4">
@@ -46,6 +51,11 @@
 						<h2 class="card-title my-2 text-2xl">{project.name}</h2>
 						<p class="my-2 text-lg">{project.description}</p>
 						<p class="my-2 text-lg">{project.technologiesDescription}</p>
+						<p class="flex">
+							{#each project.technologies as technology (technology)}
+								<img class="mx-2 h-8 w-8" src={getIconSrc(technology)} alt={technology} />
+							{/each}
+						</p>
 						<div class="card-actions my-4 w-full justify-between">
 							<a class="my-button" href={project.github}>
 								<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />

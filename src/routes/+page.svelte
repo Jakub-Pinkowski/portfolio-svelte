@@ -1,5 +1,6 @@
 <script lang="ts">
 	import AboutMe from '$lib/components/AboutMe.svelte';
+	import Contact from '$lib/components/Contact.svelte';
 	import Portfolio from '$lib/components/Portfolio.svelte';
 	import Banner from '../lib/components/Banner.svelte';
 
@@ -11,3 +12,4 @@
 <Banner />
 <AboutMe />
 <Portfolio projects={data.projects} websites={data.websites} icons={data.icons} />
+<Contact />

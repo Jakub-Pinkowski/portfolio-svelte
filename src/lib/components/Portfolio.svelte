@@ -5,48 +5,31 @@
 	export let projects: Project[] = [];
 </script>
 
-<div class="my-24 ml-8">
-	<h3 class="text-3xl uppercase text-main">Portfolio</h3>
-	<div class="my-8 flex w-full">
-		<div class="w-1/2">
-			<h4 class="my-4 text-2xl text-darkGray">Business websites</h4>
-			<div class="flex">
-				<div class="card m-2 w-80 bg-base-100 shadow-xl">
+<div class="my-24 mx-8 grid grid-cols-4 gap-4">
+	<h3 class="col-span-4 text-3xl uppercase text-main">Portfolio</h3>
+	<div class="col-span-2">
+		<h4 class="my-4 text-2xl text-darkGray">Business websites</h4>
+		<div class="grid grid-cols-2 gap-4">
+		</div>
+	</div>
+	<div class="col-span-2">
+		<h4 class=" my-4 text-2xl text-darkGray">Fullstack projects</h4>
+		<div class="grid grid-cols-2 gap-4">
+			{#each projects as project (project.id)}
+				<div class="card bg-base-100 shadow-xl">
 					<figure>
-						<img
-							src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-							alt="Shoes"
-						/>
+						<img class="h-48 w-full object-cover" src={project.img} alt="Shoes" />
 					</figure>
 					<div class="card-body">
-						<h2 class="card-title my-2">Website 1</h2>
-						<p class="my-2">Website for auto repair shop</p>
-						<div class="card-actions my-4 justify-end">
-							<button class="test">Visit Website</button>
+						<h2 class="card-title my-2">{project.name}</h2>
+						<p class="my-2">{project.description}</p>
+						<div class="card-actions my-4 flex w-full place-content-between">
+							<button class="test w-2/5">Visit Website</button>
+							<button class="test w-2/5">View Code</button>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="w-1/2">
-			<h4 class=" my-4 text-2xl text-darkGray">Fullstack projects</h4>
-			<div class="flex">
-				{#each projects as project (project.id)}
-					<div class="card w-80 bg-base-100 shadow-xl">
-						<figure>
-							<img class="h-48 w-full object-cover" src={project.img} alt="Shoes" />
-						</figure>
-						<div class="card-body">
-							<h2 class="card-title my-2">{project.name}</h2>
-							<p class="my-2">{project.description}</p>
-							<div class="card-actions my-4 flex w-full place-content-between">
-								<button class="test w-2/5">Visit Website</button>
-								<button class="test w-2/5">View Code</button>
-							</div>
-						</div>
-					</div>
-				{/each}
-			</div>
+			{/each}
 		</div>
 	</div>
 </div>

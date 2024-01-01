@@ -13,7 +13,7 @@
 			dynamic web applications.
 		</p>
 		<p class="my-8 text-xl text-darkGray">
-			I create and maintain websites for small business. You can find my full portfolio below.
+			I create and maintain websites for small business. You can find my full portfolio of both websites and fullstack projects below.
 		</p>
 	</div>
 	<div class="mx-16 w-1/2">

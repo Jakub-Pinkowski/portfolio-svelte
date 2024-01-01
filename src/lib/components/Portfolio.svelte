@@ -8,15 +8,15 @@
 	export let projects: Project[] = [];
 </script>
 
-<div class="mx-8 my-24 grid grid-cols-4 gap-4">
-	<h3 class="col-span-4 text-3xl uppercase text-main">Portfolio</h3>
-	<div class="col-span-2">
+<div class="mx-8 my-24 grid grid-cols-3 gap-4">
+	<h3 class="col-span-3 text-3xl uppercase text-main">Portfolio</h3>
+	<div class="col-span-3">
 		<h4 class="my-4 text-2xl text-darkGray">Business websites</h4>
-		<div class="grid grid-cols-2 gap-4">
+		<div class="grid grid-cols-3 gap-12">
 			{#each websites as website (website.id)}
 				<div class="card bg-base-100 shadow-xl">
 					<figure>
-						<img class="h-48 w-full object-cover" src={website.img} alt="Shoes" />
+						<img class="w-full h-72 object-cover" src={website.img} alt="Shoes" />
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title my-2 text-2xl">{website.name}</h2>
@@ -32,18 +32,19 @@
 			{/each}
 		</div>
 	</div>
-	<div class="col-span-2">
+	<div class="col-span-3 mt-8">
+		<!-- Add margin-top here -->
 		<h4 class=" my-4 text-2xl text-darkGray">Fullstack projects</h4>
-		<div class="grid grid-cols-2 gap-4">
+		<div class="grid grid-cols-3 gap-12">
 			{#each projects as project (project.id)}
 				<div class="card bg-base-100 shadow-xl">
 					<figure>
-						<img class="h-48 w-full object-cover" src={project.img} alt="Shoes" />
+						<img class="h-72 w-full object-cover" src={project.img} alt="Shoes" />
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title my-2 text-2xl">{project.name}</h2>
 						<p class="my-2 text-lg">{project.description}</p>
-						<div class="card-actions my-4 w-full justify-end">
+						<div class="card-actions my-4 w-full justify-between">
 							<a class="my-button" href={project.github}>
 								<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
 								View Code

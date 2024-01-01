@@ -1,11 +1,12 @@
 <script lang="ts">
-	import type { Project, Website } from '$lib/types';
+	import type { Project, Website, Icon } from '$lib/types';
 
 	import github_icon from '$lib/assets/icons/github.png';
 	import globe_icon from '$lib/assets/icons/globe.png';
 
 	export let websites: Website[] = [];
 	export let projects: Project[] = [];
+	export let icons: Icon[] = [];
 </script>
 
 <div class="mx-8 my-24 grid grid-cols-3 gap-4">

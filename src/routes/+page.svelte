@@ -10,4 +10,4 @@
 
 <Banner />
 <AboutMe />
-<Portfolio projects={data.projects} websites={data.websites} />
+<Portfolio projects={data.projects} websites={data.websites} icons={data.icons} />

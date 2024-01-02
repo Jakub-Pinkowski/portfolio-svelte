@@ -15,9 +15,9 @@
 </script>
 
 <div class="mx-8 my-24 grid grid-cols-3 gap-4">
-	<h3 class="col-span-3 text-3xl uppercase text-main">Portfolio</h3>
+	<h3 class="col-span-3 text-4xl uppercase text-main">Portfolio</h3>
 	<div class="col-span-3">
-		<h4 class="my-4 text-2xl text-darkGray">Business websites</h4>
+		<h4 class="my-4 text-3xl text-darkGray">Business websites</h4>
 		<div class="grid grid-cols-3 gap-12">
 			{#each websites as website (website.id)}
 				<div class="card bg-base-100 shadow-xl">
@@ -40,7 +40,7 @@
 	</div>
 	<div class="col-span-3 mt-8">
 		<!-- Add margin-top here -->
-		<h4 class=" my-4 text-2xl text-darkGray">Fullstack projects</h4>
+		<h4 class=" my-4 text-3xl text-darkGray">Fullstack projects</h4>
 		<div class="grid grid-cols-3 gap-12">
 			{#each projects as project (project.id)}
 				<div class="card bg-base-100 shadow-xl">

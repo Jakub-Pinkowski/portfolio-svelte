@@ -3,8 +3,8 @@
 </script>
 
 <!-- TODO: Add more text -->
-<div id="about-me" class="mx-8 my-24 flex">
-	<div class="w-1/2 text-justify">
+<div id="about-me" class="mx-8 my-24 flex flex-col md:flex-row">
+	<div class="w-full text-justify md:w-1/2">
 		<h3 class="text-4xl uppercase text-main">About Me</h3>
 		<h5 class="my-8 text-xl text-darkGray">Hello World!</h5>
 		<p class="my-8 text-xl text-darkGray">
@@ -17,7 +17,7 @@
 			websites and fullstack projects below.
 		</p>
 	</div>
-	<div class="mx-16 w-1/2">
+	<div class="w-full md:mx-16 md:w-1/2">
 		<figure>
 			<img class=" rounded-3xl" src={me} alt="me" />
 		</figure>

@@ -81,7 +81,7 @@
 		<div class="my-8 w-full md:w-3/5">
 			<img src={contact} class="rounded-3xl" alt="" />
 		</div>
-		<div class="w-full md:m-8 md:w-2/5 md:px-8 text-justify">
+		<div class="w-full text-justify md:m-8 md:w-2/5 md:px-8">
 			<h4 class="text-2xl">Send me a message!</h4>
 			<p class="my-8 text-xl">
 				Feel free to reach out to me via the form or social media.

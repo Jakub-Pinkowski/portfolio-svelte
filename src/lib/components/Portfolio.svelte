@@ -18,11 +18,11 @@
 	<h3 class="col-span-3 text-4xl uppercase text-main">Portfolio</h3>
 	<div class="col-span-3">
 		<h4 class="my-4 text-3xl text-darkGray">Business websites</h4>
-		<div class="grid grid-cols-3 gap-12">
+		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
 			{#each websites as website (website.id)}
 				<div class="card bg-base-100 shadow-xl">
 					<figure>
-						<img class="h-72 w-full object-cover" src={website.img} alt="Shoes" />
+						<img class="h-52 w-full object-cover md:h-72" src={website.img} alt="Shoes" />
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title my-2 text-2xl">{website.name}</h2>
@@ -39,13 +39,12 @@
 		</div>
 	</div>
 	<div class="col-span-3 mt-8">
-		<!-- Add margin-top here -->
 		<h4 class=" my-4 text-3xl text-darkGray">Fullstack projects</h4>
-		<div class="grid grid-cols-3 gap-12">
+		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
 			{#each projects as project (project.id)}
 				<div class="card bg-base-100 shadow-xl">
 					<figure>
-						<img class="h-72 w-full object-cover" src={project.img} alt="Shoes" />
+						<img class="h-52 w-full object-cover md:h-72" src={project.img} alt="Shoes" />
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title my-2 text-2xl">{project.name}</h2>

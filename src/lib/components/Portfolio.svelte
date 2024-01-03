@@ -14,7 +14,7 @@
 	};
 </script>
 
-<div class="mx-8 my-24 grid grid-cols-3 gap-4">
+<div id="portfolio" class="mx-8 my-24 grid grid-cols-3 gap-4">
 	<h3 class="col-span-3 text-4xl uppercase text-main">Portfolio</h3>
 	<div class="col-span-3">
 		<h4 class="my-4 text-3xl text-darkGray">Business websites</h4>

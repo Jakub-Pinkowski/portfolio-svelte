@@ -75,7 +75,7 @@
 	};
 </script>
 
-<div class="mx-8 my-24">
+<div id="contact" class="mx-8 my-24">
 	<h3 class="text-4xl uppercase text-main">Contact</h3>
 	<div class="flex">
 		<div class="my-8 w-3/5">

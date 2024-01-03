@@ -3,7 +3,7 @@
 </script>
 
 <!-- TODO: Add more text -->
-<div class="my-24 mx-8 flex">
+<div id="about-me" class="mx-8 my-24 flex">
 	<div class="w-1/2 text-justify">
 		<h3 class="text-4xl uppercase text-main">About Me</h3>
 		<h5 class="my-8 text-xl text-darkGray">Hello World!</h5>
@@ -13,7 +13,8 @@
 			dynamic web applications.
 		</p>
 		<p class="my-8 text-xl text-darkGray">
-			I create and maintain websites for small business. You can find my full portfolio of both websites and fullstack projects below.
+			I create and maintain websites for small business. You can find my full portfolio of both
+			websites and fullstack projects below.
 		</p>
 	</div>
 	<div class="mx-16 w-1/2">

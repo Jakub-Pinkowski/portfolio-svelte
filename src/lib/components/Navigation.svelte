@@ -17,7 +17,7 @@
 	};
 </script>
 
-<div class="fixed right-10 top-10 z-20">
+<div class="fixed right-10 top-10 z-30">
 	<Hamburger bind:open --color="#950740" />
 </div>
 
@@ -58,7 +58,7 @@
             </a>
 		</div>
 
-		<hr class=" mx-auto w-1/2" in:scale={{ duration: 500, easing: quadOut, opacity: 1 }} />
+		<hr class=" mx-auto w-full md:w-1/2" in:scale={{ duration: 500, easing: quadOut, opacity: 1 }} />
 	</div>
 {/if}
 

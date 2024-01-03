@@ -3,7 +3,7 @@
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
 
-	let open: boolean = false;
+	let open: boolean;
 
 	const links = [
 		{ label: 'Home', path: '/' },

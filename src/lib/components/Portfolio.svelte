@@ -28,7 +28,7 @@
 						<h2 class="card-title my-2 text-2xl">{website.name}</h2>
 						<p class="my-2 text-lg">{website.description}</p>
 						<div class="card-actions my-4 flex w-full justify-end">
-							<a class="my-button" href={website.src}>
+							<a class="my-button" href={website.src} target="_blank">
 								<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
 								Visit Website
 							</a>
@@ -57,11 +57,11 @@
 							{/each}
 						</p>
 						<div class="card-actions my-4 w-full justify-between">
-							<a class="my-button" href={project.github}>
+							<a class="my-button" href={project.github} target="_blank">
 								<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
 								View Code
 							</a>
-							<a class="my-button" href={project.src}>
+							<a class="my-button" href={project.src} target="_blank">
 								<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
 								Visit Website
 							</a>

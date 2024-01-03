@@ -88,7 +88,7 @@
 				<br />
 				Looking forward to hearing from you!
 			</p>
-			<div>
+			<div class="my-6">
 				<a href="https://www.linkedin.com/in/jakub-pinkowski-b44405134/">
 					<img src={linkedin} class="mr-4 inline-block w-12" alt="linkedin" />
 				</a>

@@ -59,7 +59,7 @@
 								/>
 							{/each}
 						</p>
-						<div class="card-actions my-4 w-full justify-between">
+						<div class="card-actions my-4 w-full justify-end md:justify-between">
 							<a class="my-button" href={project.github} target="_blank">
 								<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
 								View Code

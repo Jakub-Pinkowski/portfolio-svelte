@@ -3,7 +3,7 @@
 </script>
 
 <!-- TODO: Add more text -->
-<div class="my-24 ml-8 flex">
+<div class="my-24 mx-8 flex">
 	<div class="w-1/2 text-justify">
 		<h3 class="text-4xl uppercase text-main">About Me</h3>
 		<h5 class="my-8 text-xl text-darkGray">Hello World!</h5>

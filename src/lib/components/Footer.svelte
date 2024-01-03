@@ -2,10 +2,8 @@
 </script>
 
 <footer class="footer items-center bg-neutral p-4 text-neutral-content">
-	<aside class="grid-flow-col items-center">
-		<p>Copyright © 2024 - All right reserved</p>
-	</aside>
-	<nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+	<aside class="flex items-center justify-between w-full">
+		<p class="mr-2">Copyright © 2024 - All right reserved</p>
 		<a href="https://github.com/Jakub-Pinkowski">
 			<svg width="24" height="24" viewBox="0 0 16 16">
 				<path
@@ -13,5 +11,5 @@
 				/>
 			</svg>
 		</a>
-	</nav>
+	</aside>
 </footer>

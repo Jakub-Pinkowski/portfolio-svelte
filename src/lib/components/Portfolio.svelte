@@ -4,7 +4,7 @@
 	import github_icon from '$lib/assets/icons/github.png';
 	import globe_icon from '$lib/assets/icons/globe.png';
 
-	export let websites: Website[] = [];
+	// export let websites: Website[] = [];
 	export let projects: Project[] = [];
 	export let icons: Icon[] = [];
 

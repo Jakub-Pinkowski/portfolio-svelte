@@ -2,6 +2,8 @@
 	import axios from 'axios';
 	import { fade } from 'svelte/transition';
 
+	import contact from '$lib/assets/images/contact.jpg';
+
 	let name: string;
 	let email: string;
 	let message: string;
@@ -72,14 +74,18 @@
 <div class="mx-8 my-24">
 	<h3 class="text-4xl uppercase text-main">Contact</h3>
 	<div class="flex">
-		<div class="w-1/2">
-			<p>Text goes here</p>
+		<div class="w-1/2 my-8">
+			<img src={contact} class="rounded-3xl" alt="" />
 		</div>
-		<div class="w-1/2">
+		<div class="w-1/2 px-16">
+			<h4 class="my-8 text-2xl">Send me a message!</h4>
+			<p class="my-8 text-xl">
+				Feel free to reach out to me via the form or LinkedIn. Looking forward to hearing from you!
+			</p>
 			<form on:submit={handleSubmit} class="mb-8 flex flex-col">
 				<input
 					bind:value={name}
-					class="input input-bordered my-4 w-full max-w-md"
+					class="input input-bordered my-4 w-full max-w-xl"
 					type="text"
 					name="name"
 					id="name"
@@ -89,7 +95,7 @@
 				/>
 				<input
 					bind:value={email}
-					class="input input-bordered my-4 w-full max-w-md"
+					class="input input-bordered my-4 w-full max-w-xl"
 					type="text"
 					name="email"
 					id="email"
@@ -99,7 +105,7 @@
 				/>
 				<textarea
 					bind:value={message}
-					class="textarea textarea-bordered my-4 w-full max-w-md"
+					class="textarea textarea-bordered my-4 w-full max-w-xl"
 					cols="30"
 					rows="5"
 					name="message"

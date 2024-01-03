@@ -52,7 +52,11 @@
 						<p class="my-2 text-lg">{project.technologiesDescription}</p>
 						<p class="flex">
 							{#each project.technologies as technology (technology)}
-								<img class="mx-2 h-8 w-8" src={getIconSrc(technology)} alt={technology} />
+								<img
+									class="mx-2 hidden h-8 w-8 md:block"
+									src={getIconSrc(technology)}
+									alt={technology}
+								/>
 							{/each}
 						</p>
 						<div class="card-actions my-4 w-full justify-between">

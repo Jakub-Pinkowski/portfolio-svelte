@@ -26,7 +26,7 @@
 		<div class="text-center text-3xl tracking-wide">
 			<a
 				href={links[0].path}
-				class="mx-auto py-4 block cursor-pointer hover:underline"
+				class="mx-auto block cursor-pointer py-4 hover:underline"
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 50 }}
 			>
@@ -34,31 +34,34 @@
 			</a>
 			<a
 				href={links[1].path}
-				class="mx-auto py-4 block cursor-pointer hover:underline"
+				class="mx-auto block cursor-pointer py-4 hover:underline"
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 100 }}
 			>
 				{links[1].label}
 			</a>
-            <a
-                href={links[2].path}
-                class="mx-auto py-4 block cursor-pointer hover:underline"
-                on:click={closeMenu}
-                in:fly={{ y: -15, delay: 150 }}
-            >
-                {links[2].label}
-            </a>
-            <a
-                href={links[3].path}
-                class="mx-auto py-4 block cursor-pointer hover:underline"
-                on:click={closeMenu}
-                in:fly={{ y: -15, delay: 200 }}
-            >
-                {links[3].label}
-            </a>
+			<a
+				href={links[2].path}
+				class="mx-auto block cursor-pointer py-4 hover:underline"
+				on:click={closeMenu}
+				in:fly={{ y: -15, delay: 150 }}
+			>
+				{links[2].label}
+			</a>
+			<a
+				href={links[3].path}
+				class="mx-auto block cursor-pointer py-4 hover:underline"
+				on:click={closeMenu}
+				in:fly={{ y: -15, delay: 200 }}
+			>
+				{links[3].label}
+			</a>
 		</div>
 
-		<hr class=" mx-auto w-full md:w-1/2" in:scale={{ duration: 500, easing: quadOut, opacity: 1 }} />
+		<hr
+			class=" mx-auto w-full md:w-1/2"
+			in:scale={{ duration: 500, easing: quadOut, opacity: 1 }}
+		/>
 	</div>
 {/if}
 

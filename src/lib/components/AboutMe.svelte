@@ -13,9 +13,13 @@
 			dynamic web applications.
 		</p>
 		<p class="my-8 text-xl text-darkGray">
+			Welcome to my personal portfolio, where you can explore my projects and dedication to creating
+			high-quality software solutions.
+		</p>
+		<!-- <p class="my-8 text-xl text-darkGray">
 			I create and maintain websites for small business. You can find my full portfolio of both
 			websites and fullstack projects below.
-		</p>
+		</p> -->
 	</div>
 	<div class="w-full md:mx-16 md:w-1/2">
 		<figure>

@@ -17,16 +17,16 @@
 	};
 </script>
 
-<div class="fixed right-10 top-10 z-30">
+<nav class="fixed right-10 top-10 z-20">
 	<Hamburger bind:open --color="#950740" />
-</div>
+</nav>
 
 {#if open}
 	<div class="fixed inset-x-0 top-0 z-10 bg-darkGray text-light">
 		<div class="text-center text-3xl tracking-wide">
 			<a
 				href={links[0].path}
-				class="mx-auto block cursor-pointer py-4 hover:underline"
+				class="block cursor-pointer py-4 hover:underline md:mx-96"
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 50 }}
 			>
@@ -34,7 +34,7 @@
 			</a>
 			<a
 				href={links[1].path}
-				class="mx-auto block cursor-pointer py-4 hover:underline"
+				class="block cursor-pointer py-4 hover:underline md:mx-96"
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 100 }}
 			>
@@ -42,7 +42,7 @@
 			</a>
 			<a
 				href={links[2].path}
-				class="mx-auto block cursor-pointer py-4 hover:underline"
+				class="block cursor-pointer py-4 hover:underline md:mx-96"
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 150 }}
 			>
@@ -50,7 +50,7 @@
 			</a>
 			<a
 				href={links[3].path}
-				class="mx-auto block cursor-pointer py-4 hover:underline"
+				class="block cursor-pointer py-4 hover:underline md:mx-96"
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 200 }}
 			>

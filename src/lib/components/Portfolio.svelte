@@ -38,7 +38,7 @@
 			{/each}
 		</div>
 	</div> -->
-	<div class="col-span-3 mt-8">
+	<div class="col-span-3">
 		<h4 class=" my-4 text-3xl text-darkGray">Fullstack projects</h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
 			{#each projects as project (project.id)}

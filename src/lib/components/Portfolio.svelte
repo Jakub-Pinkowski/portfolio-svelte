@@ -21,7 +21,7 @@
 		{$t('portfolio.title')}
 	</h3>
 	<div class="col-span-3 my-8">
-		<h4 class="my-8 text-3xl text-darkGray">
+		<h4 class="mb-8 text-3xl text-darkGray">
 			{$t('portfolio.business_websites')}
 		</h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
@@ -35,7 +35,7 @@
 						</a>
 					</figure>
 					<div class="card-body">
-						<h2 class="card-title my-2 text-2xl">{$t(website.nameKey)}</h2>
+						<h5 class="card-title my-2 text-2xl">{$t(website.nameKey)}</h5>
 						<p class="my-2 text-lg">{$t(website.descriptionKey)}</p>
 						<div class="card-actions my-4 flex w-full justify-end">
 							<a class="my-button" href={website.src} target="_blank">
@@ -53,9 +53,9 @@
 					<img class="h-52 w-full object-cover md:h-72" src={coming_soon} alt="Shoes" />
 				</figure>
 				<div class="card-body">
-					<h2 class="card-title my-2 text-2xl">
+					<h5 class="card-title my-2 text-2xl">
 						{$t('portfolio.coming_soon')}
-					</h2>
+					</h5>
 				</div>
 			</div>
 		</div>
@@ -75,7 +75,7 @@
 						</a>
 					</figure>
 					<div class="card-body text-justify">
-						<h2 class="card-title my-2 text-2xl">{$t(project.nameKey)}</h2>
+						<h5 class="card-title my-2 text-2xl">{$t(project.nameKey)}</h5>
 						<p class="my-2 text-lg">{$t(project.descriptionKey)}</p>
 						<p class="my-2 text-lg">
 							{$t(project.technologiesDescriptionKey)}

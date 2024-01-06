@@ -8,5 +8,14 @@
 		"subtitle": "Hello World!",
 		"description": "I'm Jakub, a self-taught web developer with a genuine passion for programming. I have a strong background in both front-end and back-end development, enabling me to create comprehensive and dynamic web applications.",
 		"button": "Contact Me"
+	},
+	"contact": {
+		"title": "Skontaktuj się ze mną",
+		"dscription1": "Zapraszam do kontaktu za pomocą formularza lub mediów społecznościowych.",
+		"description2": "Do usłyszenia!",
+		"name": "Imię",
+		"email": "Email",
+		"message": "Wiadmomość",
+		"button": "Prześlij"
 	}
 }

@@ -62,8 +62,18 @@
 			>
 				{links[3].label}
 			</a>
-			<button on:click={() => setLanguage('en')}>English</button>
-			<button on:click={() => setLanguage('pl')}>Polski</button>
+			<button
+				class="block cursor-pointer py-4 hover:underline md:mx-96"
+				on:click={() => setLanguage('en')}
+			>
+				English
+			</button>
+			<button
+				class="block cursor-pointer py-4 hover:underline md:mx-96"
+				on:click={() => setLanguage('pl')}
+			>
+				Polski
+			</button>
 		</div>
 
 		<hr

@@ -77,19 +77,21 @@
 </script>
 
 <div id="contact" class="mx-8 my-24">
-	<h3 class="text-4xl uppercase text-main">Contact</h3>
+	<h3 class="text-4xl uppercase text-main">
+		{$t('contact.title')}
+	</h3>
 	<div class="flex flex-col md:flex-row">
 		<div class="my-8 w-full md:w-3/5">
 			<img src={contact} class="rounded-3xl" alt="" />
 		</div>
 		<div class="w-full text-justify md:m-8 md:w-2/5 md:px-8">
 			<h4 class="text-2xl">
-				{$t('contact.title')}
+				{$t('contact.subtitle')}
 			</h4>
 			<p class="my-8 text-xl">
 				{$t('contact.description1')}
 				<br />
-                <br />
+				<br />
 				{$t('contact.description2')}
 			</p>
 			<div class="md:my-6">

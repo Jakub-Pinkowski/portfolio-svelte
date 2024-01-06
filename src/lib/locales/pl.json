@@ -1,7 +1,8 @@
 {
 	"banner": {
 		"title": "Jakub Pinkowski",
-		"subtitle": "Programista stron internetowych"
+		"subtitle": "Programista stron internetowych",
+        "scroll": "Przewiń w dół"
 	},
 	"about": {
 		"title": "O mnie",
@@ -11,7 +12,8 @@
 		"button": "Contact Me"
 	},
 	"contact": {
-		"title": "Skontaktuj się ze mną",
+        "title": "Kontakt",
+		"subtitle": "Skontaktuj się ze mną",
 		"description1": "Zapraszam do kontaktu za pomocą poniższego formularza lub social media",
 		"description2": "Do usłyszenia!",
 		"name": "Imię",

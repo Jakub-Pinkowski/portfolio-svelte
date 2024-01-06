@@ -1,7 +1,8 @@
 {
 	"banner": {
 		"title": "Jakub Pinkowski",
-		"subtitle": "Self-taught Web Developer"
+		"subtitle": "Self-taught Web Developer",
+        "scroll": "Scroll Down"
 	},
 	"about": {
 		"title": "About Me",
@@ -11,7 +12,8 @@
 		"button": "Contact Me"
 	},
 	"contact": {
-		"title": "Contact Me",
+		"title": "Contact",
+        "subtitle": "Get in touch",
 		"description1": "Feel free to reach out to me via the form or social media.",
 		"description2": "Looking forward to hearing from you!",
 		"name": "Name",

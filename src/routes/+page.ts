@@ -40,22 +40,22 @@ import type { Website, Project, Icon } from '$lib/types';
 export const load = (async () => {
 	return {
 		websites: [
-			{
+            {
 				id: 1,
-				name: 'Auto Repair Shop',
-				img: auto_repair,
-				description:
-					'Auto repair shop website designed to showcase the services offered by the company.',
-				src: 'https://szkic.xce.pl'
-			},
-			{
-				id: 2,
 				name: 'Insurance Agency',
 				img: insurance_agency,
 				description:
 					'Insurance agency website designed to showcase the services offered by the company.',
-				src: 'https://biznes-przyklad.xce.pl'
-			}
+				src: 'https://biznes1.xce.pl/'
+			},
+			{
+				id: 2,
+				name: 'Auto Repair Shop',
+				img: auto_repair,
+				description:
+					'Auto repair shop website designed to showcase the services offered by the company.',
+				src: 'https://biznes2.xce.pl/'
+			},
 		] as Website[],
 		projects: [
 			{

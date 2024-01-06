@@ -18,7 +18,7 @@
         <p class="my-8 text-xl text-darkGray">
 			{$t('about.description3')}
 		</p>
-		<a href="#contact">
+		<a href="#contact" class="block my-8">
 			<Button>
 				{$t('about.button')}
 			</Button>

@@ -20,7 +20,7 @@
 	<h3 class="col-span-3 text-4xl uppercase text-main">
 		{$t('portfolio.title')}
 	</h3>
-	<div class="col-span-3">
+	<div class="col-span-3 my-8">
 		<h4 class="my-4 text-3xl text-darkGray">
 			{$t('portfolio.business_websites')}
 		</h4>
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-span-3">
+	<div class="col-span-3 mt-16">
 		<h4 class=" my-4 text-3xl text-darkGray">
 			{$t('portfolio.fullstack')}
 		</h4>

@@ -3,6 +3,7 @@
 	import { Hamburger } from 'svelte-hamburgers';
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
+	import language_icon from '$lib/assets/icons/language.png';
 
 	let open: boolean;
 
@@ -20,6 +21,7 @@
 	// Use locale.set instead of setLocale
 	const setLanguage = (lang: string) => {
 		locale.set(lang);
+		closeMenu();
 	};
 </script>
 
@@ -62,18 +64,16 @@
 			>
 				{links[3].label}
 			</a>
-			<button
-				class="block cursor-pointer py-4 hover:underline md:mx-96"
-				on:click={() => setLanguage('en')}
-			>
-				English
-			</button>
-			<button
-				class="block cursor-pointer py-4 hover:underline md:mx-96"
-				on:click={() => setLanguage('pl')}
-			>
-				Polski
-			</button>
+
+			<div>
+				<button class="my-4 cursor-pointer hover:underline" on:click={() => setLanguage('en')}>
+					English
+				</button>
+				<img src={language_icon} class="my-4 inline-block" alt="language" />
+				<button class="my-4 cursor-pointer hover:underline" on:click={() => setLanguage('pl')}>
+					Polski
+				</button>
+			</div>
 		</div>
 
 		<hr

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Project, Icon } from '$lib/types';
 	import { t } from 'svelte-i18n';
+	import { onMount } from 'svelte';
 
 	import github_icon from '$lib/assets/icons/github.png';
 	import globe_icon from '$lib/assets/icons/globe.png';
@@ -54,9 +55,11 @@
 						<img class="h-52 w-full object-cover md:h-72" src={project.img} alt="Shoes" />
 					</figure>
 					<div class="card-body text-justify">
-						<h2 class="card-title my-2 text-2xl">{project.name}</h2>
-						<p class="my-2 text-lg">{project.description}</p>
-						<p class="my-2 text-lg">{project.technologiesDescription}</p>
+						<h2 class="card-title my-2 text-2xl">{$t(project.nameKey)}</h2>
+						<p class="my-2 text-lg">{$t(project.descriptionKey)}</p>
+						<p class="my-2 text-lg">
+							{$t(project.technologiesDescriptionKey)}
+						</p>
 						<p class="flex">
 							{#each project.technologies as technology (technology)}
 								<img

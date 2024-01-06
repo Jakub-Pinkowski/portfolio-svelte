@@ -8,11 +8,11 @@ export type Website = {
 
 export type Project = {
 	id: number;
-	name: string;
+	nameKey: string;
 	src: string;
 	img: string;
-	description: string;
-	technologiesDescription: string;
+	descriptionKey: string;
+	technologiesDescriptionKey: string;
 	technologies: string[];
 	github: string;
 };

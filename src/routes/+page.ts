@@ -60,12 +60,11 @@ export const load = (async () => {
 		projects: [
 			{
 				id: 1,
-				name: 'Jules-Art',
+				nameKey: 'portfolio.projects.project1.name',
 				src: 'https://jules-art.com',
 				img: jules_art,
-				description:
-					"Artist's portfolio website designed to showcase her creative work and provide a means for visitors to get in touch with her.",
-				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
+				descriptionKey: 'portfolio.projects.project1.description',
+				technologiesDescriptionKey: 'portfolio.projects.project1.technologiesDescription',
 				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Jules-Art'
 			},

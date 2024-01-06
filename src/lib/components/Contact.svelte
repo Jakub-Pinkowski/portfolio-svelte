@@ -1,6 +1,7 @@
 <script lang="ts">
 	import axios from 'axios';
 	import { fade } from 'svelte/transition';
+	import { t } from 'svelte-i18n';
 
 	import Button from '$lib/components/UI/Button.svelte';
 	import contact from '$lib/assets/images/contact.jpg';
@@ -41,16 +42,16 @@
 			const response = await axios.post(url, data);
 
 			if (response.status === 200) {
-				toastMessage = 'Message sent successfully!';
+				toastMessage = $t('contact.success');
 				toastSuccess = true;
 				resetForm();
 			} else {
-				toastMessage = 'Something went wrong. Please try again later.';
+				toastMessage = $t('contact.error');
 				toastError = true;
 				console.error('Unexpected response status:', response.status);
 			}
 		} catch (error) {
-			toastMessage = 'Something went wrong. Please try again later.';
+			toastMessage = $t('contact.error');
 			toastError = true;
 			console.error('Unexpected error:', error);
 		}
@@ -82,11 +83,13 @@
 			<img src={contact} class="rounded-3xl" alt="" />
 		</div>
 		<div class="w-full text-justify md:m-8 md:w-2/5 md:px-8">
-			<h4 class="text-2xl">Send me a message!</h4>
+			<h4 class="text-2xl">
+				{$t('contact.title')}
+			</h4>
 			<p class="my-8 text-xl">
-				Feel free to reach out to me via the form or social media.
+				{$t('contact.description1')}
 				<br />
-				Looking forward to hearing from you!
+				{$t('contact.description2')}
 			</p>
 			<div class="md:my-6">
 				<a href="https://www.linkedin.com/in/jakub-pinkowski-b44405134/">
@@ -103,7 +106,7 @@
 					type="text"
 					name="name"
 					id="name"
-					placeholder="Name"
+					placeholder={$t('contact.name')}
 					required
 					autocomplete="name"
 				/>
@@ -113,7 +116,7 @@
 					type="text"
 					name="email"
 					id="email"
-					placeholder="E-mail"
+					placeholder={$t('contact.email')}
 					required
 					autocomplete="email"
 				/>
@@ -124,10 +127,12 @@
 					rows="5"
 					name="message"
 					id="message"
-					placeholder="Message"
+					placeholder={$t('contact.message')}
 					required
 				></textarea>
-				<Button>Send</Button>
+				<Button>
+					{$t('contact.button')}
+				</Button>
 			</form>
 		</div>
 	</div>

@@ -11,11 +11,13 @@
     },
     "contact": {
         "title": "Contact Me",
-        "dscription1": "Feel free to reach out to me via the form or social media.",
+        "description1": "Feel free to reach out to me via the form or social media.",
         "description2": "Looking forward to hearing from you!",
         "name": "Name",
         "email": "Email",
         "message": "Message",
-        "button": "Contact Me"
+        "button": "Contact Me",
+        "success": "Message sent successfully!",
+        "error": "Something went wrong. Please try again later."
     }
 }

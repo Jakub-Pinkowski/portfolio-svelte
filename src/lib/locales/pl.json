@@ -11,11 +11,13 @@
 	},
 	"contact": {
 		"title": "Skontaktuj się ze mną",
-		"dscription1": "Zapraszam do kontaktu za pomocą formularza lub mediów społecznościowych.",
+		"description1": "Zapraszam do kontaktu za pomocą formularza lub mediów społecznościowych.",
 		"description2": "Do usłyszenia!",
 		"name": "Imię",
 		"email": "Email",
 		"message": "Wiadmomość",
-		"button": "Prześlij"
+		"button": "Prześlij",
+		"success": "Wiadomość została wysłana!",
+		"error": "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie później."
 	}
 }

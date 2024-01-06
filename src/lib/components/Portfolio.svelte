@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Project, Website, Icon } from '$lib/types';
 	import { t } from 'svelte-i18n';
-	import { onMount } from 'svelte';
+	import coming_soon from '$lib/assets/images/coming_soon.jpg';
 
 	import github_icon from '$lib/assets/icons/github.png';
 	import globe_icon from '$lib/assets/icons/globe.png';
@@ -44,12 +44,12 @@
 			{/each}
 			<div class="card bg-base-100 shadow-xl">
 				<figure>
-					<img class="h-52 w-full object-cover md:h-72" src='' alt="Shoes" />
+					<img class="h-52 w-full object-cover md:h-72" src={coming_soon} alt="Shoes" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title my-2 text-2xl">
-                        {$t('portfolio.coming_soon')}
-                    </h2>
+						{$t('portfolio.coming_soon')}
+					</h2>
 				</div>
 			</div>
 		</div>

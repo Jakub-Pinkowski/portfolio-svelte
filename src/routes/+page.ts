@@ -40,7 +40,7 @@ import type { Website, Project, Icon } from '$lib/types';
 export const load = (async () => {
 	return {
 		websites: [
-            {
+			{
 				id: 1,
 				name: 'Insurance Agency',
 				img: insurance_agency,
@@ -55,7 +55,7 @@ export const load = (async () => {
 				description:
 					'Auto repair shop website designed to showcase the services offered by the company.',
 				src: 'https://biznes2.xce.pl/'
-			},
+			}
 		] as Website[],
 		projects: [
 			{
@@ -70,24 +70,21 @@ export const load = (async () => {
 			},
 			{
 				id: 2,
-				name: 'Blogging Platform',
+				nameKey: 'portfolio.projects.project2.name',
 				src: 'https://blogging-platform-steel.vercel.app',
 				img: blogging_platform,
-				description:
-					"Blogging platform where you can view and like all users' posts, create your own account, and manage your own posts.",
-				technologiesDescription: 'Built with React, Next, JS, HTML, CSS, Firebase and Vercel.',
+				descriptionKey: 'portfolio.projects.project2.description',
+				technologiesDescriptionKey: 'portfolio.projects.project2.technologiesDescription',
 				technologies: ['react', 'next', 'js', 'html', 'css', 'firebase', 'vercel'],
 				github: 'https://github.com/Jakub-Pinkowski/Blogging-Platform'
 			},
 			{
 				id: 3,
-				name: 'Links Page',
+				nameKey: 'portfolio.projects.project3.name',
 				src: 'https://links-page-rosy.vercel.app',
 				img: links_page,
-				description:
-					'Links page that allows you to create an account, add your links to social media and share them with others. Inspired by Linktree.',
-				technologiesDescription:
-					'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, Firebase and Vercel.',
+				descriptionKey: 'portfolio.projects.project3.description',
+				technologiesDescriptionKey: 'portfolio.projects.project3.technologiesDescription',
 				technologies: [
 					'svelte',
 					'sveltekit',
@@ -102,79 +99,76 @@ export const load = (async () => {
 			},
 			{
 				id: 4,
-				name: 'Habit Tracker',
+				nameKey: 'portfolio.projects.project4.name',
 				src: 'http://pinkowskijakub.eu.pythonanywhere.com',
 				img: habit_tracker,
-				description:
-					'Habit Tracker website that allows you to track your habits. You can add, edit and delete your entries.',
-				technologiesDescription: 'Built with Python, SQlite, JS, HTML and CSS.',
+				descriptionKey: 'portfolio.projects.project4.description',
+				technologiesDescriptionKey: 'portfolio.projects.project4.technologiesDescription',
 				technologies: ['python', 'sqlite', 'js', 'html', 'css'],
 				github: 'https://github.com/Jakub-Pinkowski/cs50_final_project'
 			},
-
 			{
 				id: 5,
-				name: 'Meals App',
+				nameKey: 'portfolio.projects.project5.name',
 				src: 'https://react-counter-64e25.web.app',
 				img: meals,
-				description: 'Meals app that allows you to add meals to your cart and order them.',
-				technologiesDescription: 'Built with React, JS, HTML, CSS and Firebase.',
+				descriptionKey: 'portfolio.projects.project5.description',
+				technologiesDescriptionKey: 'portfolio.projects.project5.technologiesDescription',
 				technologies: ['react', 'js', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/react-meals'
 			},
 			{
 				id: 6,
-				name: 'Weather App',
+				nameKey: 'portfolio.projects.project6.name',
 				src: 'https://weather-app-11d00.web.app',
 				img: weather,
-				description:
-					'Weather app that allows you to check the weather in your city and add it to your favourites.',
-				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS (Tailwind) and Firebase.',
+				descriptionKey: 'portfolio.projects.project6.description',
+				technologiesDescriptionKey: 'portfolio.projects.project6.technologiesDescription',
 				technologies: ['vue', 'ts', 'html', 'css', 'tailwind', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Weather-App'
 			},
 			{
 				id: 7,
-				name: 'Travel Blog',
+				nameKey: 'portfolio.projects.project7.name',
 				src: 'https://travel-blog-9cc00.web.app',
 				img: travel_blog,
-				description: 'Travel blog website. The admin can add posts and images.',
-				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
+				descriptionKey: 'portfolio.projects.project7.description',
+				technologiesDescriptionKey: 'portfolio.projects.project7.technologiesDescription',
 				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Travel-Blog'
 			},
 			{
 				id: 8,
-				name: 'TODO App',
+				nameKey: 'portfolio.projects.project8.name',
 				src: 'https://todo-app-5ce36.web.app',
 				img: todo,
-				description: 'Simple TODO app that allows you to add, edit and delete your tasks.',
-				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
+				descriptionKey: 'portfolio.projects.project8.description',
+				technologiesDescriptionKey: 'portfolio.projects.project8.technologiesDescription',
 				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Todo-App'
 			},
 			{
 				id: 9,
-				name: 'Coaching Platform',
+				nameKey: 'portfolio.projects.project9.name',
 				src: 'https://vue-udemy-section16.web.app',
 				img: coach,
-				description:
-					'Find a coach website that allows you to and register as a coach or find a coach and contact them.',
-				technologiesDescription: 'Built with Vue.js, JS, HTML, CSS and Firebase.',
+				descriptionKey: 'portfolio.projects.project9.description',
+				technologiesDescriptionKey: 'portfolio.projects.project9.technologiesDescription',
 				technologies: ['vue', 'js', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
 			},
 			{
 				id: 10,
-				name: 'Investment Calculator',
+				nameKey: 'portfolio.projects.project10.name',
 				src: 'https://investment-calculator-28479.web.app',
 				img: investment_calculator,
-				description: 'Investment calculator that allows you to calculate your investment income.',
-				technologiesDescription: 'Built with React, JS, HTML, CSS and Firebase.',
+				descriptionKey: 'portfolio.projects.project10.description',
+				technologiesDescriptionKey: 'portfolio.projects.project10.technologiesDescription',
 				technologies: ['react', 'js', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/investment-calculator'
 			}
 		] as Project[],
+
 		icons: [
 			{
 				name: 'vue',

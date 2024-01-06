@@ -8,7 +8,8 @@
 		"title": "About Me",
 		"subtitle": "Hello World!",
 		"description1": "I'm Jakub, a self-taught web developer with a genuine passion for programming. I have a strong background in both front-end and back-end development, enabling me to create comprehensive and dynamic web applications.",
-		"description2": "Welcome to my personal portfolio, where you can explore my projects and dedication to creating high-quality software solutions.",
+		"description2": "I create and maintain websites for small business. You can find my full portfolio of both websites and fullstack projects below.",
+        "description3": "If you are interested in website for your business, please contact me via this contact form",
 		"button": "Contact Me"
 	},
 	"portfolio": {
@@ -77,11 +78,11 @@
 				"technologiesDescription": "Built with React, JS, HTML, CSS and Firebase."
 			}
 		},
-        "buttons": {
-            "view": "View Code",
-            "visit": "Visit Website"
-        },
-        "coming_soon": "More coming soon..."
+		"buttons": {
+			"view": "View Code",
+			"visit": "Visit Website"
+		},
+		"coming_soon": "More coming soon..."
 	},
 	"contact": {
 		"title": "Contact",

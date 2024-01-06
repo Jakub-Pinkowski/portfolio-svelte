@@ -15,16 +15,14 @@
 		<p class="my-8 text-xl text-darkGray">
 			{$t('about.description2')}
 		</p>
-		<!-- <p class="my-8 text-xl text-darkGray">
-			I create and maintain websites for small business. You can find my full portfolio of both
-			websites and fullstack projects below.
-		</p> -->
-		<!-- <p class="my-8 text-xl text-darkGray">
-			If you are interested in website for your business, please contact me via this contact form
-		</p> -->
-		<!-- <a href="#contact">
-			<Button>Contact me</Button> Test
-		</a> -->
+        <p class="my-8 text-xl text-darkGray">
+			{$t('about.description3')}
+		</p>
+		<a href="#contact">
+			<Button>
+				{$t('about.button')}
+			</Button>
+		</a>
 	</div>
 	<div class="w-full md:mx-16 md:w-1/2">
 		<figure>

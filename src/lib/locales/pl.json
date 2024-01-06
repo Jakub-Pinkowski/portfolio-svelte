@@ -8,8 +8,9 @@
 		"title": "O mnie",
 		"subtitle": "Hello World!",
 		"description1": "Nazywam się Jakub Pinkowski i jestem programistą stron internetowych. Moją pasją jest tworzenie aplikacji internetowych, które są nie tylko funkcjonalne, ale również piękne. W swojej pracy staram się wykorzystywać najnowsze technologie, aby zapewnić jak najlepszą jakość produktu. Mam solidne doświadczenie zarówno we Frontend, jak i Backend, co pozwala mi tworzyć wszechstronne i dynamiczne aplikacje internetowe.",
-		"description2": "Witaj w moim portfolio, gdzie możesz zapoznać się z moimi projektami i zaangażowaniem w tworzenie wysokiej jakości aplikacji.",
-		"button": "Skontaktuj się ze mną"
+		"description2": "Tworzę i prowadzę strony internetowe dla małych przedsiębiorstw. Poniżej znajduje się moje pełne portfolio zarówno stron internetowych, jak i projektów fullstack ",
+		"description3": "Jeśli jesteś zainteresowany stroną internetową dla swojej firmy, skontaktuj się ze mną za pomocą formularza",
+		"button": "Kontakt"
 	},
 	"portfolio": {
 		"title": "Portfolio",
@@ -77,11 +78,11 @@
 				"technologiesDescription": "Zbudowane przy pomocy React, JS, HTML, CSS i Firebase."
 			}
 		},
-        "buttons": {
-            "view": "Zobacz kod",
-            "visit": "Odwiedź"
-        },
-        "coming_soon": "Więcej wkrótce..."
+		"buttons": {
+			"view": "Zobacz kod",
+			"visit": "Odwiedź"
+		},
+		"coming_soon": "Więcej wkrótce..."
 	},
 	"contact": {
 		"title": "Kontakt",

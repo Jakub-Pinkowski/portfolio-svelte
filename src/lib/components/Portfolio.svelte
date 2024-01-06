@@ -53,7 +53,7 @@
 					<figure>
 						<img class="h-52 w-full object-cover md:h-72" src={project.img} alt="Shoes" />
 					</figure>
-					<div class="card-body">
+					<div class="card-body text-justify">
 						<h2 class="card-title my-2 text-2xl">{project.name}</h2>
 						<p class="my-2 text-lg">{project.description}</p>
 						<p class="my-2 text-lg">{project.technologiesDescription}</p>

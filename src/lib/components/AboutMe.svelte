@@ -25,7 +25,7 @@
 			If you are interested in website for your business, please contact me via this contact form
 		</p> -->
 		<!-- <a href="#contact">
-			<Button>Contact me</Button>
+			<Button>Contact me</Button> Test
 		</a> -->
 	</div>
 	<div class="w-full md:mx-16 md:w-1/2">

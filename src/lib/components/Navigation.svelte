@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { locale } from 'svelte-i18n';
 	import { Hamburger } from 'svelte-hamburgers';
 	import { fly, scale } from 'svelte/transition';
@@ -18,11 +19,17 @@
 		open = false;
 	};
 
-	// Use locale.set instead of setLocale
 	const setLanguage = (lang: string) => {
 		locale.set(lang);
 		closeMenu();
+		localStorage.setItem('selectedLanguage', lang);
 	};
+	onMount(() => {
+		const lang = localStorage.getItem('selectedLanguage');
+		if (lang) {
+			locale.set(lang);
+		}
+	});
 </script>
 
 <nav class="fixed right-10 top-10 z-20">

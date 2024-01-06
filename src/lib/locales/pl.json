@@ -11,6 +11,11 @@
 		"description2": "Witaj w moim portfolio, gdzie możesz zapoznać się z moimi projektami i zaangażowaniem w tworzenie wysokiej jakości aplikacji.",
 		"button": "Contact Me"
 	},
+    "portfolio": {
+		"title": "Portfolio",
+		"websites": "Strony internetowe dla firm",
+		"fullstack": "Projekty Fullstack"
+	},
 	"contact": {
         "title": "Kontakt",
 		"subtitle": "Skontaktuj się ze mną",

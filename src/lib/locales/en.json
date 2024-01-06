@@ -2,7 +2,7 @@
 	"banner": {
 		"title": "Jakub Pinkowski",
 		"subtitle": "Self-taught Web Developer",
-        "scroll": "Scroll Down"
+		"scroll": "Scroll Down"
 	},
 	"about": {
 		"title": "About Me",
@@ -11,9 +11,14 @@
 		"description2": "Welcome to my personal portfolio, where you can explore my projects and dedication to creating high-quality software solutions.",
 		"button": "Contact Me"
 	},
+	"portfolio": {
+		"title": "Portfolio",
+		"websites": "Business Websites",
+		"fullstack": "Fullstack projects"
+	},
 	"contact": {
 		"title": "Contact",
-        "subtitle": "Get in touch",
+		"subtitle": "Get in touch",
 		"description1": "Feel free to reach out to me via the form or social media.",
 		"description2": "Looking forward to hearing from you!",
 		"name": "Name",

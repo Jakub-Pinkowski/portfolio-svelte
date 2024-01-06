@@ -7,9 +7,9 @@
 	"about": {
 		"title": "About Me",
 		"subtitle": "Hello World!",
-		"description1": "I'm Jakub, a self-taught web developer with a genuine passion for programming. I have a strong background in both front-end and back-end development, enabling me to create comprehensive and dynamic web applications.",
+		"description1": "I'm Jakub, a self-taught web developer with a genuine passion for programming. My mission is to create web applications that are not only functional, but also beautiful. In my work, I aim to use the latest technologies to ensure the best possible quality of the product.  I have a strong background in both front-end and back-end development, enabling me to create comprehensive and dynamic web applications.",
 		"description2": "I create and maintain websites for small business. You can find my full portfolio of both websites and fullstack projects below.",
-        "description3": "If you are interested in website for your business, please contact me via this contact form",
+		"description3": "If you are interested in website for your business, please contact me via this contact form",
 		"button": "Contact Me"
 	},
 	"portfolio": {

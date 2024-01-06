@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { locale } from 'svelte-i18n';
 	import { Hamburger } from 'svelte-hamburgers';
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
@@ -14,6 +15,11 @@
 
 	const closeMenu = () => {
 		open = false;
+	};
+
+	// Use locale.set instead of setLocale
+	const setLanguage = (lang: string) => {
+		locale.set(lang);
 	};
 </script>
 
@@ -56,6 +62,8 @@
 			>
 				{links[3].label}
 			</a>
+			<button on:click={() => setLanguage('en')}>English</button>
+			<button on:click={() => setLanguage('pl')}>Polski</button>
 		</div>
 
 		<hr

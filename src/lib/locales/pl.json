@@ -3,10 +3,10 @@
 		"title": "Jakub Pinkowski",
 		"subtitle": "Programista stron internetowych"
 	},
-    "about": {
-        "title": "About Me",
-        "subtitle": "Self-taught Web Developer",
-        "description": "I am a self-taught web developer, who is passionate about creating web applications. I am currently looking for a job as a junior web developer. I am also open to any freelance work.",
-        "button": "Contact Me"
-    }
+	"about": {
+		"title": "O mnie",
+		"subtitle": "Hello World!",
+		"description": "I'm Jakub, a self-taught web developer with a genuine passion for programming. I have a strong background in both front-end and back-end development, enabling me to create comprehensive and dynamic web applications.",
+		"button": "Contact Me"
+	}
 }

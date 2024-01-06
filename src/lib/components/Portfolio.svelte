@@ -16,17 +16,17 @@
 	};
 </script>
 
-<div id="portfolio" class="mx-8 my-24 grid grid-cols-3 gap-4">
+<div id="portfolio" class="mx-8 my-16 grid grid-cols-3 gap-4">
 	<h3 class="col-span-3 text-4xl uppercase text-main">
 		{$t('portfolio.title')}
 	</h3>
 	<div class="col-span-3 my-8">
-		<h4 class="my-4 text-3xl text-darkGray">
+		<h4 class="my-8 text-3xl text-darkGray">
 			{$t('portfolio.business_websites')}
 		</h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
 			{#each websites as website (website.id)}
-				<div class="card bg-base-100 shadow-xl">
+            <div class="card bg-base-100 shadow-xl transform transition duration-500 ease-in-out hover:scale-105">
 					<figure>
 						<img class="h-52 w-full object-cover md:h-72" src={website.img} alt="Shoes" />
 					</figure>
@@ -55,12 +55,12 @@
 		</div>
 	</div>
 	<div class="col-span-3 mt-16">
-		<h4 class=" my-4 text-3xl text-darkGray">
+		<h4 class="my-8 text-3xl text-darkGray">
 			{$t('portfolio.fullstack')}
 		</h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
 			{#each projects as project (project.id)}
-				<div class="card bg-base-100 shadow-xl">
+            <div class="card bg-base-100 shadow-xl transform transition duration-500 ease-in-out hover:scale-105">
 					<figure>
 						<img class="h-52 w-full object-cover md:h-72" src={project.img} alt="Shoes" />
 					</figure>

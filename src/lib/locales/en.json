@@ -55,7 +55,7 @@
 			"project6": {
 				"name": "Weather App",
 				"description": "Weather app that allows you to check the weather in your city and add it to your favourites.",
-				"technologiesDescription": "Built with Vue.js, TS, HTML, CSS (Tailwind) and Firebase."
+				"technologiesDescription": "Built with Vue.js, TS, HTML, CSS, Tailwind and Firebase."
 			},
 			"project7": {
 				"name": "Travel Blog",

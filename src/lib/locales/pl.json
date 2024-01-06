@@ -30,52 +30,52 @@
 			"project1": {
 				"name": "Jules-Art",
 				"description": "Strona portfolio artystki zaprojektowana w celu zaprezentowania jej kreatywnej pracy i umożliwienia odwiedzającym skontaktowania się z nią.",
-				"technologiesDescription": "Zbudowane przy pomocy Vue.js, TS, HTML, CSS i Firebase."
+				"technologiesDescription": "Tech Stack: Vue.js, TS, HTML, CSS i Firebase."
 			},
 			"project2": {
 				"name": "Blogging Platform",
 				"description": "Platforma blogowa, gdzie możesz przeglądać i polubić posty wszystkich użytkowników, utworzyć własne konto i zarządzać swoimi postami.",
-				"technologiesDescription": "Zbudowane przy pomocy React, Next, JS, HTML, CSS, Firebase i Vercel."
+				"technologiesDescription": "Tech Stack: React, Next, JS, HTML, CSS, Firebase i Vercel."
 			},
 			"project3": {
 				"name": "Links Page",
 				"description": "Strona z linkami, która pozwala ci utworzyć konto, dodać swoje linki do mediów społecznościowych i udostępniać je innym. Zainspirowane przez Linktree.",
-				"technologiesDescription": "Zbudowane przy pomocy Svelte, SvelteKit, TS, HTML, CSS, Tailwind, Firebase i Vercel."
+				"technologiesDescription": "Tech Stack: Svelte, SvelteKit, TS, HTML, CSS, Tailwind, Firebase i Vercel."
 			},
 			"project4": {
 				"name": "Habit Tracker",
 				"description": "Strona do śledzenia nawyków, która pozwala ci śledzić swoje nawyki. Możesz dodawać, edytować i usuwać wpisy.",
-				"technologiesDescription": "Zbudowane przy pomocy Python, SQlite, JS, HTML i CSS."
+				"technologiesDescription": "Tech Stack: Python, SQlite, JS, HTML i CSS."
 			},
 			"project5": {
 				"name": "Meals App",
 				"description": "Aplikacja do zamawiania posiłków, która pozwala ci dodawać posiłki do koszyka i zamawiać je.",
-				"technologiesDescription": "Zbudowane przy pomocy React, JS, HTML, CSS i Firebase."
+				"technologiesDescription": "Tech Stack: React, JS, HTML, CSS i Firebase."
 			},
 			"project6": {
 				"name": "Weather App",
 				"description": "Aplikacja pogodowa, która pozwala ci sprawdzić pogodę w twoim mieście i dodać ją do ulubionych.",
-				"technologiesDescription": "Zbudowane przy pomocy Vue.js, TS, HTML, CSS (Tailwind) i Firebase."
+				"technologiesDescription": "Tech Stack: Vue.js, TS, HTML, CSS (Tailwind) i Firebase."
 			},
 			"project7": {
 				"name": "Travel Blog",
 				"description": "Strona blogowa podróżnicza. Administrator może dodawać posty i zdjęcia.",
-				"technologiesDescription": "Zbudowane przy pomocy Vue.js, TS, HTML, CSS i Firebase."
+				"technologiesDescription": "Tech Stack: Vue.js, TS, HTML, CSS i Firebase."
 			},
 			"project8": {
 				"name": "TODO App",
 				"description": "Prosta aplikacja do zarządzania zadaniami, która pozwala ci dodawać, edytować i usuwać zadania.",
-				"technologiesDescription": "Zbudowane przy pomocy Vue.js, TS, HTML, CSS i Firebase."
+				"technologiesDescription": "Tech Stack: Vue.js, TS, HTML, CSS i Firebase."
 			},
 			"project9": {
 				"name": "Coaching Platform",
 				"description": "Strona do znajdowania trenerów, która pozwala ci zarejestrować się jako trener lub znaleźć trenera i skontaktować się z nim/nią.",
-				"technologiesDescription": "Zbudowane przy pomocy Vue.js, JS, HTML, CSS i Firebase."
+				"technologiesDescription": "Tech Stack:: Vue.js, JS, HTML, CSS i Firebase."
 			},
 			"project10": {
 				"name": "Kalkulator Inwestycyjny",
 				"description": "Kalkulator inwestycyjny, który pozwala ci obliczyć dochód z inwestycji.",
-				"technologiesDescription": "Zbudowane przy pomocy React, JS, HTML, CSS i Firebase."
+				"technologiesDescription": "Tech Stack: React, JS, HTML, CSS i Firebase."
 			}
 		},
 		"buttons": {

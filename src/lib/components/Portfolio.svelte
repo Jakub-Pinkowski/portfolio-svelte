@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type { Project, Icon } from '$lib/types';
+	import type { Project, Website, Icon } from '$lib/types';
 	import { t } from 'svelte-i18n';
 	import { onMount } from 'svelte';
 
 	import github_icon from '$lib/assets/icons/github.png';
 	import globe_icon from '$lib/assets/icons/globe.png';
 
-	// export let websites: Website[] = [];
+	 export let websites: Website[] = [];
 	export let projects: Project[] = [];
 	export let icons: Icon[] = [];
 
@@ -20,7 +20,7 @@
 	<h3 class="col-span-3 text-4xl uppercase text-main">
 		{$t('portfolio.title')}
 	</h3>
-	<!-- <div class="col-span-3">
+	<div class="col-span-3">
 		<h4 class="my-4 text-3xl text-darkGray">
             {$t('portfolio.business_websites')}
         </h4>
@@ -31,8 +31,8 @@
 						<img class="h-52 w-full object-cover md:h-72" src={website.img} alt="Shoes" />
 					</figure>
 					<div class="card-body">
-						<h2 class="card-title my-2 text-2xl">{website.name}</h2>
-						<p class="my-2 text-lg">{website.description}</p>
+						<h2 class="card-title my-2 text-2xl">{$t(website.nameKey)}</h2>
+						<p class="my-2 text-lg">{$t(website.descriptionKey)}</p>
 						<div class="card-actions my-4 flex w-full justify-end">
 							<a class="my-button" href={website.src} target="_blank">
 								<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
@@ -43,7 +43,7 @@
 				</div>
 			{/each}
 		</div>
-	</div> -->
+	</div> 
 	<div class="col-span-3">
 		<h4 class=" my-4 text-3xl text-darkGray">
 			{$t('portfolio.fullstack')}

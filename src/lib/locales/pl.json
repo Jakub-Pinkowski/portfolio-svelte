@@ -15,7 +15,16 @@
 		"title": "Portfolio",
 		"business_websites": "Strony internetowe dla firm",
 		"fullstack": "Projekty Fullstack",
-		"websites": {},
+		"websites": {
+			"website1": {
+				"name": "Agencja Ubezpieczeniowa",
+				"description": "Strona dedykowana agencjom ubezpieczeniowym"
+			},
+			"website2": {
+				"name": "Mechanika Pojazdowa",
+				"description": "Strona dedykowana warsztatom samochodowym"
+			}
+		},
 		"projects": {
 			"project1": {
 				"name": "Jules-Art",

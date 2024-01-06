@@ -15,7 +15,16 @@
 		"title": "Portfolio",
 		"business_websites": "Business Websites",
 		"fullstack": "Fullstack projects",
-		"websites": {},
+		"websites": {
+			"website1": {
+				"name": "Insurance Agency",
+				"description": "Website dedicated to an insurance agency. It allows you to view the company's offer and contact them."
+			},
+			"website2": {
+				"name": "Auto Repair Shop",
+				"description": "Website dedicated to an auto repair shop. It allows you to view the company's offer and contact them."
+			}
+		},
 		"projects": {
 			"project1": {
 				"name": "Jules-Art",

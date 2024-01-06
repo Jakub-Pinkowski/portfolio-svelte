@@ -1,8 +1,8 @@
 export type Website = {
 	id: number;
-	name: string;
+	nameKey: string;
 	img: string;
-	description: string;
+	descriptionKey: string;
 	src: string;
 };
 

@@ -42,18 +42,17 @@ export const load = (async () => {
 		websites: [
 			{
 				id: 1,
-				name: 'Insurance Agency',
+				nameKey: 'portfolio.websites.website1.name',
 				img: insurance_agency,
-				description:
-					'Insurance agency website designed to showcase the services offered by the company.',
+				descriptionKey: 'portfolio.websites.website1.description',
 				src: 'https://biznes1.xce.pl/'
 			},
 			{
 				id: 2,
-				name: 'Auto Repair Shop',
+                nameKey: 'portfolio.websites.website2.name',
 				img: auto_repair,
-				description:
-					'Auto repair shop website designed to showcase the services offered by the company.',
+				descriptionKey:
+                    'portfolio.websites.website2.description',
 				src: 'https://biznes2.xce.pl/'
 			}
 		] as Website[],

@@ -1,0 +1,98 @@
+{
+	"banner": {
+		"title": "Jakub Pinkowski",
+		"subtitle": "Programista stron internetowych",
+		"scroll": "Przewiń w dół"
+	},
+	"about": {
+		"title": "O mnie",
+		"subtitle": "Hello World!",
+		"description1": "Nazywam się Jakub Pinkowski i jestem programistą stron internetowych. Moją pasją jest tworzenie aplikacji internetowych, które są nie tylko funkcjonalne, ale również piękne. W swojej pracy staram się wykorzystywać najnowsze technologie, aby zapewnić jak najlepszą jakość produktu. Mam solidne doświadczenie zarówno we Frontend, jak i Backend, co pozwala mi tworzyć wszechstronne i dynamiczne aplikacje internetowe.",
+		"description2": "Witaj w moim portfolio, gdzie możesz zapoznać się z moimi projektami i zaangażowaniem w tworzenie wysokiej jakości aplikacji.",
+		"button": "Skontaktuj się ze mną"
+	},
+	"portfolio": {
+		"title": "Portfolio",
+		"business_websites": "Strony internetowe dla firm",
+		"fullstack": "Projekty Fullstack",
+		"websites": {
+			"website1": {
+				"name": "Agencja Ubezpieczeniowa",
+				"description": "Strona dedykowana agencjom ubezpieczeniowym"
+			},
+			"website2": {
+				"name": "Mechanika Pojazdowa",
+				"description": "Strona dedykowana warsztatom samochodowym"
+			}
+		},
+		"projects": {
+			"project1": {
+				"name": "Jules-Art",
+				"description": "Strona portfolio artystki zaprojektowana w celu zaprezentowania jej kreatywnej pracy i umożliwienia odwiedzającym skontaktowania się z nią.",
+				"technologiesDescription": "Zbudowane przy pomocy Vue.js, TS, HTML, CSS i Firebase."
+			},
+			"project2": {
+				"name": "Blogging Platform",
+				"description": "Platforma blogowa, gdzie możesz przeglądać i polubić posty wszystkich użytkowników, utworzyć własne konto i zarządzać swoimi postami.",
+				"technologiesDescription": "Zbudowane przy pomocy React, Next, JS, HTML, CSS, Firebase i Vercel."
+			},
+			"project3": {
+				"name": "Links Page",
+				"description": "Strona z linkami, która pozwala ci utworzyć konto, dodać swoje linki do mediów społecznościowych i udostępniać je innym. Zainspirowane przez Linktree.",
+				"technologiesDescription": "Zbudowane przy pomocy Svelte, SvelteKit, TS, HTML, CSS, Tailwind, Firebase i Vercel."
+			},
+			"project4": {
+				"name": "Habit Tracker",
+				"description": "Strona do śledzenia nawyków, która pozwala ci śledzić swoje nawyki. Możesz dodawać, edytować i usuwać wpisy.",
+				"technologiesDescription": "Zbudowane przy pomocy Python, SQlite, JS, HTML i CSS."
+			},
+			"project5": {
+				"name": "Meals App",
+				"description": "Aplikacja do zamawiania posiłków, która pozwala ci dodawać posiłki do koszyka i zamawiać je.",
+				"technologiesDescription": "Zbudowane przy pomocy React, JS, HTML, CSS i Firebase."
+			},
+			"project6": {
+				"name": "Weather App",
+				"description": "Aplikacja pogodowa, która pozwala ci sprawdzić pogodę w twoim mieście i dodać ją do ulubionych.",
+				"technologiesDescription": "Zbudowane przy pomocy Vue.js, TS, HTML, CSS (Tailwind) i Firebase."
+			},
+			"project7": {
+				"name": "Travel Blog",
+				"description": "Strona blogowa podróżnicza. Administrator może dodawać posty i zdjęcia.",
+				"technologiesDescription": "Zbudowane przy pomocy Vue.js, TS, HTML, CSS i Firebase."
+			},
+			"project8": {
+				"name": "TODO App",
+				"description": "Prosta aplikacja do zarządzania zadaniami, która pozwala ci dodawać, edytować i usuwać zadania.",
+				"technologiesDescription": "Zbudowane przy pomocy Vue.js, TS, HTML, CSS i Firebase."
+			},
+			"project9": {
+				"name": "Coaching Platform",
+				"description": "Strona do znajdowania trenerów, która pozwala ci zarejestrować się jako trener lub znaleźć trenera i skontaktować się z nim/nią.",
+				"technologiesDescription": "Zbudowane przy pomocy Vue.js, JS, HTML, CSS i Firebase."
+			},
+			"project10": {
+				"name": "Kalkulator Inwestycyjny",
+				"description": "Kalkulator inwestycyjny, który pozwala ci obliczyć dochód z inwestycji.",
+				"technologiesDescription": "Zbudowane przy pomocy React, JS, HTML, CSS i Firebase."
+			}
+		},
+        "buttons": {
+            "view": "Zobacz kod",
+            "visit": "Odwiedź"
+        },
+        "coming_soon": "Więcej wkrótce..."
+	},
+	"contact": {
+		"title": "Kontakt",
+		"subtitle": "Skontaktuj się ze mną",
+		"description1": "Zapraszam do kontaktu za pomocą poniższego formularza lub social media",
+		"description2": "Do usłyszenia!",
+		"name": "Imię",
+		"email": "Email",
+		"message": "Wiadmomość",
+		"button": "Prześlij",
+		"success": "Wiadomość została wysłana!",
+		"error": "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie później."
+	}
+}

@@ -1,0 +1,98 @@
+{
+	"banner": {
+		"title": "Jakub Pinkowski",
+		"subtitle": "Self-taught Web Developer",
+		"scroll": "Scroll Down"
+	},
+	"about": {
+		"title": "About Me",
+		"subtitle": "Hello World!",
+		"description1": "I'm Jakub, a self-taught web developer with a genuine passion for programming. I have a strong background in both front-end and back-end development, enabling me to create comprehensive and dynamic web applications.",
+		"description2": "Welcome to my personal portfolio, where you can explore my projects and dedication to creating high-quality software solutions.",
+		"button": "Contact Me"
+	},
+	"portfolio": {
+		"title": "Portfolio",
+		"business_websites": "Business Websites",
+		"fullstack": "Fullstack projects",
+		"websites": {
+			"website1": {
+				"name": "Insurance Agency",
+				"description": "Website dedicated to an insurance agency. It allows you to view the company's offer and contact them."
+			},
+			"website2": {
+				"name": "Auto Repair Shop",
+				"description": "Website dedicated to an auto repair shop. It allows you to view the company's offer and contact them."
+			}
+		},
+		"projects": {
+			"project1": {
+				"name": "Jules-Art",
+				"description": "Artist's portfolio website designed to showcase her creative work and provide a means for visitors to get in touch with her.",
+				"technologiesDescription": "Built with Vue.js, TS, HTML, CSS and Firebase."
+			},
+			"project2": {
+				"name": "Blogging Platform",
+				"description": "Blogging platform where you can view and like all users' posts, create your own account, and manage your own posts.",
+				"technologiesDescription": "Built with React, Next, JS, HTML, CSS, Firebase and Vercel."
+			},
+			"project3": {
+				"name": "Links Page",
+				"description": "Links page that allows you to create an account, add your links to social media and share them with others. Inspired by Linktree.",
+				"technologiesDescription": "Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, Firebase and Vercel."
+			},
+			"project4": {
+				"name": "Habit Tracker",
+				"description": "Habit Tracker website that allows you to track your habits. You can add, edit and delete your entries.",
+				"technologiesDescription": "Built with Python, SQlite, JS, HTML and CSS."
+			},
+			"project5": {
+				"name": "Meals App",
+				"description": "Meals app that allows you to add meals to your cart and order them.",
+				"technologiesDescription": "Built with React, JS, HTML, CSS and Firebase."
+			},
+			"project6": {
+				"name": "Weather App",
+				"description": "Weather app that allows you to check the weather in your city and add it to your favourites.",
+				"technologiesDescription": "Built with Vue.js, TS, HTML, CSS (Tailwind) and Firebase."
+			},
+			"project7": {
+				"name": "Travel Blog",
+				"description": "Travel blog website. The admin can add posts and images.",
+				"technologiesDescription": "Built with Vue.js, TS, HTML, CSS and Firebase."
+			},
+			"project8": {
+				"name": "TODO App",
+				"description": "Simple TODO app that allows you to add, edit and delete your tasks.",
+				"technologiesDescription": "Built with Vue.js, TS, HTML, CSS and Firebase."
+			},
+			"project9": {
+				"name": "Coaching Platform",
+				"description": "Find a coach website that allows you to and register as a coach or find a coach and contact them.",
+				"technologiesDescription": "Built with Vue.js, JS, HTML, CSS and Firebase."
+			},
+			"project10": {
+				"name": "Investment Calculator",
+				"description": "Investment calculator that allows you to calculate your investment income.",
+				"technologiesDescription": "Built with React, JS, HTML, CSS and Firebase."
+			}
+		},
+        "buttons": {
+            "view": "View Code",
+            "visit": "Visit Website"
+        },
+        "coming_soon": "More coming soon..."
+	},
+	"contact": {
+		"title": "Contact",
+		"subtitle": "Get in touch",
+		"description1": "Feel free to reach out to me via the form or social media.",
+		"description2": "Looking forward to hearing from you!",
+		"name": "Name",
+		"email": "Email",
+		"message": "Message",
+		"button": "Contact Me",
+		"success": "Message sent successfully!",
+		"error": "Something went wrong. Please try again later."
+	}
+}

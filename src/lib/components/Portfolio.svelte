@@ -21,7 +21,7 @@
 	</h3>
 	<!-- <div class="col-span-3">
 		<h4 class="my-4 text-3xl text-darkGray">
-            {$t('portfolio.websites')}
+            {$t('portfolio.business_websites')}
         </h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
 			{#each websites as website (website.id)}

@@ -2,7 +2,7 @@
 	"banner": {
 		"title": "Jakub Pinkowski",
 		"subtitle": "Programista stron internetowych",
-        "scroll": "Przewiń w dół"
+		"scroll": "Przewiń w dół"
 	},
 	"about": {
 		"title": "O mnie",
@@ -11,13 +11,22 @@
 		"description2": "Witaj w moim portfolio, gdzie możesz zapoznać się z moimi projektami i zaangażowaniem w tworzenie wysokiej jakości aplikacji.",
 		"button": "Contact Me"
 	},
-    "portfolio": {
+	"portfolio": {
 		"title": "Portfolio",
-		"websites": "Strony internetowe dla firm",
-		"fullstack": "Projekty Fullstack"
+		"business_websites": "Strony internetowe dla firm",
+		"fullstack": "Projekty Fullstack",
+		"websites": {},
+		"projects": {
+			"project1": {
+				"name": "Jules-Art",
+				"description": "Witryna portfolio artystki zaprojektowana w celu zaprezentowania jej kreatywnej pracy i umożliwienia odwiedzającym skontaktowania się z nią.",
+				"technologiesDescription": "Zbudowane przy pomocy Vue.js, TS, HTML, CSS and Firebase."
+			},
+			"project2": {}
+		}
 	},
 	"contact": {
-        "title": "Kontakt",
+		"title": "Kontakt",
 		"subtitle": "Skontaktuj się ze mną",
 		"description1": "Zapraszam do kontaktu za pomocą poniższego formularza lub social media",
 		"description2": "Do usłyszenia!",

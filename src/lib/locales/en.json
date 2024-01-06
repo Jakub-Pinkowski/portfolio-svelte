@@ -13,8 +13,17 @@
 	},
 	"portfolio": {
 		"title": "Portfolio",
-		"websites": "Business Websites",
-		"fullstack": "Fullstack projects"
+		"business_websites": "Business Websites",
+		"fullstack": "Fullstack projects",
+		"websites": {},
+		"projects": {
+			"project1": {
+				"name": "Jules-Art",
+				"description": "Artist's portfolio website designed to showcase her creative work and provide a means for visitors to get in touch with her.",
+				"technologiesDescription": "Built with Vue.js, TS, HTML, CSS and Firebase."
+			},
+			"project2": {}
+		}
 	},
 	"contact": {
 		"title": "Contact",

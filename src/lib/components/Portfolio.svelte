@@ -26,9 +26,13 @@
 		</h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
 			{#each websites as website (website.id)}
-            <div class="card bg-base-100 shadow-xl transform transition duration-500 ease-in-out hover:scale-105">
+				<div
+					class="card transform bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+				>
 					<figure>
-						<img class="h-52 w-full object-cover md:h-72" src={website.img} alt="Shoes" />
+						<a href={website.src} target="_blank" class="w-full">
+							<img class="h-52 w-full object-cover md:h-72" src={website.img} alt="Shoes" />
+						</a>
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title my-2 text-2xl">{$t(website.nameKey)}</h2>
@@ -42,7 +46,9 @@
 					</div>
 				</div>
 			{/each}
-			<div class="card bg-base-100 shadow-xl">
+			<div
+				class="card transform bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+			>
 				<figure>
 					<img class="h-52 w-full object-cover md:h-72" src={coming_soon} alt="Shoes" />
 				</figure>
@@ -60,9 +66,13 @@
 		</h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
 			{#each projects as project (project.id)}
-            <div class="card bg-base-100 shadow-xl transform transition duration-500 ease-in-out hover:scale-105">
+				<div
+					class="card transform bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+				>
 					<figure>
-						<img class="h-52 w-full object-cover md:h-72" src={project.img} alt="Shoes" />
+						<a href={project.src} target="_blank" class="w-full">
+							<img class="h-52 w-full object-cover md:h-72" src={project.img} alt="Shoes" />
+						</a>
 					</figure>
 					<div class="card-body text-justify">
 						<h2 class="card-title my-2 text-2xl">{$t(project.nameKey)}</h2>

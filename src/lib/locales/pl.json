@@ -6,7 +6,8 @@
 	"about": {
 		"title": "O mnie",
 		"subtitle": "Hello World!",
-		"description": "I'm Jakub, a self-taught web developer with a genuine passion for programming. I have a strong background in both front-end and back-end development, enabling me to create comprehensive and dynamic web applications.",
+		"description1": "Nazywam się Jakub Pinkowski i jestem programistą stron internetowych. Moją pasją jest tworzenie aplikacji internetowych, które są nie tylko funkcjonalne, ale również piękne. W swojej pracy staram się wykorzystywać najnowsze technologie, aby zapewnić jak najlepszą jakość produktu. Mam solidne doświadczenie zarówno we Frontend, jak i Backend, co pozwala mi tworzyć wszechstronne i dynamiczne aplikacje internetowe.",
+		"description2": "Witaj w moim portfolio, gdzie możesz zapoznać się z moimi projektami i zaangażowaniem w tworzenie wysokiej jakości aplikacji.",
 		"button": "Contact Me"
 	},
 	"contact": {

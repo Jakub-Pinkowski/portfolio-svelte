@@ -89,6 +89,7 @@
 			<p class="my-8 text-xl">
 				{$t('contact.description1')}
 				<br />
+                <br />
 				{$t('contact.description2')}
 			</p>
 			<div class="md:my-6">

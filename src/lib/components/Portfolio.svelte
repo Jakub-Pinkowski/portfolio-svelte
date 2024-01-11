@@ -25,7 +25,7 @@
 			{$t('portfolio.business_websites')}
 		</h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
-			{#each websites as website (website.id)}
+			<!-- {#each websites as website (website.id)}
 				<div
 					class="card transform bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"
 				>
@@ -45,7 +45,7 @@
 						</div>
 					</div>
 				</div>
-			{/each}
+			{/each} -->
 			<div
 				class="card transform bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"
 			>

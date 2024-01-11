@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { locale } from 'svelte-i18n';
+	import { locale, t } from 'svelte-i18n';
 	import { Hamburger } from 'svelte-hamburgers';
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
@@ -9,10 +9,10 @@
 	let open: boolean;
 
 	const links = [
-		{ label: 'Home', path: '/' },
-		{ label: 'About Me', path: '#about-me' },
-		{ label: 'Portfolio', path: '#portfolio' },
-		{ label: 'Contact', path: '#contact' }
+		{ path: '/' },
+		{ path: '#about-me' },
+		{ path: '#portfolio' },
+		{ path: '#contact' }
 	];
 
 	const closeMenu = () => {
@@ -45,7 +45,7 @@
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 50 }}
 			>
-				{links[0].label}
+				{$t('navigation.home')}
 			</a>
 			<a
 				href={links[1].path}
@@ -53,7 +53,7 @@
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 100 }}
 			>
-				{links[1].label}
+				{$t('navigation.about_me')}
 			</a>
 			<a
 				href={links[2].path}
@@ -61,7 +61,7 @@
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 150 }}
 			>
-				{links[2].label}
+				{$t('navigation.portfolio')}
 			</a>
 			<a
 				href={links[3].path}
@@ -69,7 +69,7 @@
 				on:click={closeMenu}
 				in:fly={{ y: -15, delay: 200 }}
 			>
-				{links[3].label}
+				{$t('navigation.contact')}
 			</a>
 
 			<div>

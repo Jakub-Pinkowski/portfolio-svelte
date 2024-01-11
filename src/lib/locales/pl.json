@@ -1,4 +1,10 @@
 {
+    "navigation": {
+		"home": "Główna",
+		"about_me": "O mnie",
+		"portfolio": "Portfolio",
+        "contact": "Kontakt"
+	},
 	"banner": {
 		"title": "Jakub Pinkowski",
 		"subtitle": "Programista stron internetowych",
@@ -82,7 +88,7 @@
 			"view": "Zobacz kod",
 			"visit": "Odwiedź"
 		},
-		"coming_soon": "Więcej wkrótce..."
+		"coming_soon": "Wkrótce..."
 	},
 	"contact": {
 		"title": "Kontakt",

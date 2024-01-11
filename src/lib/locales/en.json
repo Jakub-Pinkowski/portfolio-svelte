@@ -1,4 +1,10 @@
 {
+    "navigation": {
+		"home": "Home",
+		"about_me": "About Me",
+		"portfolio": "Portfolio",
+        "contact": "Contact"
+	},
 	"banner": {
 		"title": "Jakub Pinkowski",
 		"subtitle": "Self-taught Web Developer",
@@ -82,7 +88,7 @@
 			"view": "View Code",
 			"visit": "Visit Website"
 		},
-		"coming_soon": "More coming soon..."
+		"coming_soon": "Coming soon..."
 	},
 	"contact": {
 		"title": "Contact",

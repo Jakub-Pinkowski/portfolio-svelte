@@ -1,9 +1,9 @@
 {
-    "navigation": {
+	"navigation": {
 		"home": "Główna",
 		"about_me": "O mnie",
 		"portfolio": "Portfolio",
-        "contact": "Kontakt"
+		"contact": "Kontakt"
 	},
 	"banner": {
 		"title": "Jakub Pinkowski",

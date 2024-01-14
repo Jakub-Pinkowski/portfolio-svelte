@@ -1,9 +1,9 @@
 {
-    "navigation": {
+	"navigation": {
 		"home": "Home",
 		"about_me": "About Me",
 		"portfolio": "Portfolio",
-        "contact": "Contact"
+		"contact": "Contact"
 	},
 	"banner": {
 		"title": "Jakub Pinkowski",
@@ -15,7 +15,7 @@
 		"subtitle": "Hello World!",
 		"description1": "I'm Jakub, a self-taught web developer with a genuine passion for programming. My mission is to create web applications that are not only functional, but also beautiful. In my work, I aim to use the latest technologies to ensure the best possible quality of the product.  I have a strong background in both front-end and back-end development, enabling me to create comprehensive and dynamic web applications.",
 		"description2": "You can find my full portfolio of both websites and fullstack projects below.",
-        "description3": "You can also contact me via the form below. ",
+		"description3": "You can also contact me via the form below. ",
 		"button": "Contact Me"
 	},
 	"portfolio": {

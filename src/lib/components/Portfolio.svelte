@@ -1,10 +1,9 @@
 <script lang="ts">
-	import type { Project, Website, Icon } from '$lib/types';
+	import type { Project, Icon } from '$lib/types';
 
 	import github_icon from '$lib/assets/icons/github.png';
 	import globe_icon from '$lib/assets/icons/globe.png';
 
-	// export let websites: Website[] = [];
 	export let projects: Project[] = [];
 	export let icons: Icon[] = [];
 
@@ -16,28 +15,6 @@
 
 <div id="portfolio" class="mx-8 my-24 grid grid-cols-3 gap-4">
 	<h3 class="col-span-3 text-4xl uppercase text-main">Portfolio</h3>
-	<!-- <div class="col-span-3">
-		<h4 class="my-4 text-3xl text-darkGray">Business websites</h4>
-		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
-			{#each websites as website (website.id)}
-				<div class="card bg-base-100 shadow-xl">
-					<figure>
-						<img class="h-52 w-full object-cover md:h-72" src={website.img} alt="Shoes" />
-					</figure>
-					<div class="card-body">
-						<h2 class="card-title my-2 text-2xl">{website.name}</h2>
-						<p class="my-2 text-lg">{website.description}</p>
-						<div class="card-actions my-4 flex w-full justify-end">
-							<a class="my-button" href={website.src} target="_blank">
-								<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
-								Visit Website
-							</a>
-						</div>
-					</div>
-				</div>
-			{/each}
-		</div>
-	</div> -->
 	<div class="col-span-3">
 		<h4 class=" my-4 text-3xl text-darkGray">Fullstack projects</h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">

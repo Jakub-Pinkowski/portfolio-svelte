@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Project, Icon } from '$lib/types';
-	export let project;
 	export let getIconSrc;
 </script>
 

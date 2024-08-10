@@ -16,7 +16,7 @@
 
 <div id="portfolio" class="mx-8 my-24 grid grid-cols-3 gap-4">
 	<h3 class="col-span-3 text-4xl uppercase text-main">Portfolio</h3>
-    <FlagshipProject project={projects[0]} getIconSrc={getIconSrc} />
+    <FlagshipProject getIconSrc={getIconSrc} />
 	<div class="col-span-3">
 		<h4 class=" my-4 text-3xl text-darkGray">Fullstack projects</h4>
 		<div class="grid grid-cols-1 gap-12 md:grid-cols-3">

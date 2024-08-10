@@ -64,7 +64,7 @@ export const load = (async () => {
 				src: 'https://commerce-website-psi.vercel.app',
 				img: jules_art,
 				description:
-					'Fully functional e-commerce website where you can view, search filter and sort all products, add them to your cart or wishlist. This website is constanly being updated with new features.',
+					'Fully functional e-commerce website where you can view, search, filter and sort all products, add them to your cart or wishlist.',
 				technologiesDescription: 'Built with Svelte, SvelteKit, TS, HTML, CSS and PostgreSQL.',
 				technologies: ['svelte', 'sveltekit', 'ts', 'html', 'css', 'postgresql'],
 				// TODO: Add github later on

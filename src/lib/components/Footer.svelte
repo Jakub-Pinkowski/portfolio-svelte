@@ -2,7 +2,7 @@
 </script>
 
 <footer class="footer items-center bg-neutral p-4 text-neutral-content">
-	<aside class="flex items-center justify-between w-full">
+	<aside class="flex w-full items-center justify-between">
 		<p class="mr-2">Copyright © 2024 - All right reserved</p>
 		<a href="https://github.com/Jakub-Pinkowski">
 			<svg width="24" height="24" viewBox="0 0 16 16">

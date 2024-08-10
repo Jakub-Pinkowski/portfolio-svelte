@@ -11,5 +11,5 @@
 
 <Banner />
 <AboutMe />
-<Portfolio projects={data.projects} websites={data.websites} icons={data.icons} />
+<Portfolio projects={data.projects} icons={data.icons} />
 <Contact />

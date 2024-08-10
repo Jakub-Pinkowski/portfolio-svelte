@@ -64,6 +64,3 @@
 		/>
 	</div>
 {/if}
-
-<style>
-</style>

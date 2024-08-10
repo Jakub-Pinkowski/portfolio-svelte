@@ -4,13 +4,13 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				main: '#950740',
-				dark: '#6f2232',
-				light: '#e0aeb5',
-                superLight:'#fdd8e6',
-				gray: '#4e4e50',
-                lightGray: '#f5f5f5',
-				darkGray: '#282829'
+				main: '#950740', // Dark red
+				dark: '#6f2232', // Darker red
+				light: '#e0aeb5', // Light pink
+                superLight:'#fdd8e6', // Super light pink
+				gray: '#4e4e50', // Gray
+                lightGray: '#f5f5f5', // Light gray
+				darkGray: '#282829' // Dark gray
 			},
 			fontFamily: {
 				custom: ['Montserrat', 'Work Sans', 'Open Sans', 'sans-serif']
@@ -24,9 +24,9 @@ export default {
 			{
 				light: {
 					...require('daisyui/src/theming/themes')['light'],
-					main: '#950740',
-					gray: '#4e4e50',
-					dark: '#6f2232'
+					main: '#950740', // Dark red
+					gray: '#4e4e50', // Gray
+					dark: '#6f2232' // Darker red
 				}
 			}
 		]

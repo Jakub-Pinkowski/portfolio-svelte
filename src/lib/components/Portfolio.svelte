@@ -27,30 +27,58 @@
 							<img class="h-52 w-full object-cover md:h-72" src={project.img} alt="Shoes" />
 						</a>
 					</figure>
-					<div class="card-body">
-						<h2 class="card-title my-2 text-2xl">{project.name}</h2>
-						<p class="my-2 text-lg">{project.description}</p>
-						<p class="my-2 text-lg">{project.technologiesDescription}</p>
-						<p class="flex">
-							{#each project.technologies as technology (technology)}
-								<img
-									class="mx-2 hidden h-8 w-8 md:block"
-									src={getIconSrc(technology)}
-									alt={technology}
-								/>
-							{/each}
-						</p>
-						<div class="card-actions my-4 w-full justify-end md:justify-between">
-							<a class="my-button" href={project.github} target="_blank">
-								<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
-								View Code
-							</a>
-							<a class="my-button" href={project.src} target="_blank">
-								<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
-								Visit Website
-							</a>
+					{#if project.name === 'E-commerwe website'}
+                    <!-- TODO: Change up this card a bit to stand out -->
+						<div class="card-body">
+							<h2 class="card-title my-2 text-2xl">{project.name}</h2>
+							<p class="my-2 text-lg">{project.description}</p>
+							<p class="my-2 text-lg">{project.technologiesDescription}</p>
+							<p class="flex">
+								{#each project.technologies as technology (technology)}
+									<img
+										class="mx-2 hidden h-8 w-8 md:block"
+										src={getIconSrc(technology)}
+										alt={technology}
+									/>
+								{/each}
+							</p>
+							<div class="card-actions my-4 w-full justify-end md:justify-between">
+								<a class="my-button" href={project.github} target="_blank">
+									<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
+									View Code
+								</a>
+								<a class="my-button" href={project.src} target="_blank">
+									<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
+									Visit Website
+								</a>
+							</div>
 						</div>
-					</div>
+					{:else}
+						<div class="card-body">
+							<h2 class="card-title my-2 text-2xl">{project.name}</h2>
+							<p class="my-2 text-lg">{project.description}</p>
+							<p class="my-2 text-lg">{project.technologiesDescription}</p>
+							<p class="flex">
+								{#each project.technologies as technology (technology)}
+									<img
+										class="mx-2 hidden h-8 w-8 md:block"
+										src={getIconSrc(technology)}
+										alt={technology}
+									/>
+								{/each}
+							</p>
+							<div class="card-actions my-4 w-full justify-end md:justify-between">
+								<a class="my-button" href={project.github} target="_blank">
+									<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
+									View Code
+								</a>
+								<a class="my-button" href={project.src} target="_blank">
+									<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
+									Visit Website
+								</a>
+							</div>
+						</div>
+					{/if}
 				</div>
 			{/each}
 		</div>

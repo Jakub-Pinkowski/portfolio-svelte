@@ -40,7 +40,7 @@ import type { Website, Project, Icon } from '$lib/types';
 export const load = (async () => {
 	return {
 		websites: [
-            {
+			{
 				id: 1,
 				name: 'Insurance Agency',
 				img: insurance_agency,
@@ -55,11 +55,23 @@ export const load = (async () => {
 				description:
 					'Auto repair shop website designed to showcase the services offered by the company.',
 				src: 'https://biznes2.xce.pl/'
-			},
+			}
 		] as Website[],
 		projects: [
 			{
 				id: 1,
+				name: 'E-commerwe website',
+				src: 'https://commerce-website-psi.vercel.app',
+				img: jules_art,
+				description:
+					'Fully functional e-commerce website where you can view, search filter and sort all products, add them to your cart or wishlist. This website is constanly being updated with new features.',
+				technologiesDescription: 'Built with Svelte, SvelteKit, TS, HTML, CSS and PostgreSQL.',
+				technologies: ['svelte', 'sveltekit', 'ts', 'html', 'css', 'postgresql'],
+				// TODO: Add github later on
+				github: 'https://github.com/Jakub-Pinkowski'
+			},
+			{
+				id: 2,
 				name: 'Jules-Art',
 				src: 'https://jules-art.com',
 				img: jules_art,
@@ -70,7 +82,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Jules-Art'
 			},
 			{
-				id: 2,
+				id: 3,
 				name: 'Blogging Platform',
 				src: 'https://blogging-platform-steel.vercel.app',
 				img: blogging_platform,
@@ -81,7 +93,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Blogging-Platform'
 			},
 			{
-				id: 3,
+				id: 4,
 				name: 'Links Page',
 				src: 'https://links-page-rosy.vercel.app',
 				img: links_page,
@@ -102,7 +114,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/links-page'
 			},
 			{
-				id: 4,
+				id: 5,
 				name: 'Habit Tracker',
 				src: 'http://pinkowskijakub.eu.pythonanywhere.com',
 				img: habit_tracker,
@@ -114,7 +126,7 @@ export const load = (async () => {
 			},
 
 			{
-				id: 5,
+				id: 6,
 				name: 'Meals App',
 				src: 'https://react-counter-64e25.web.app',
 				img: meals,
@@ -124,7 +136,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/react-meals'
 			},
 			{
-				id: 6,
+				id: 7,
 				name: 'Weather App',
 				src: 'https://weather-app-11d00.web.app',
 				img: weather,
@@ -135,7 +147,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Weather-App'
 			},
 			{
-				id: 7,
+				id: 8,
 				name: 'Travel Blog',
 				src: 'https://travel-blog-9cc00.web.app',
 				img: travel_blog,
@@ -145,7 +157,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Travel-Blog'
 			},
 			{
-				id: 8,
+				id: 9,
 				name: 'TODO App',
 				src: 'https://todo-app-5ce36.web.app',
 				img: todo,
@@ -155,7 +167,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Todo-App'
 			},
 			{
-				id: 9,
+				id: 10,
 				name: 'Coaching Platform',
 				src: 'https://vue-udemy-section16.web.app',
 				img: coach,
@@ -166,7 +178,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
 			},
 			{
-				id: 10,
+				id: 11,
 				name: 'Investment Calculator',
 				src: 'https://investment-calculator-28479.web.app',
 				img: investment_calculator,

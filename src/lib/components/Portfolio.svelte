@@ -31,7 +31,7 @@
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title my-2 text-2xl">{project.name}</h2>
-					<p class="my-2 text-lg">{project.description}</p>
+					<p class="my-2 text-justify text-lg">{project.description}</p>
 					<p class="my-2 text-lg">{project.technologiesDescription}</p>
 					<div class="flex">
 						{#each project.technologies as technology (technology)}

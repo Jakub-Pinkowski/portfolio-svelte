@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { Project, Icon } from '$lib/types';
 	import e_commerce from '$lib/assets/images/e-commerce.jpg';
 	import github_icon from '$lib/assets/icons/github.png';
 	import globe_icon from '$lib/assets/icons/globe.png';
@@ -10,12 +9,13 @@
 		name: 'E-commerce website',
 		src: 'https://commerce-website-psi.vercel.app',
 		img: e_commerce,
-		description: '',
+		description:
+			'A fullstack e-commerce website with a wide range of features, such as product filtering, sorting, adding to cart and wishlist, viewing product details and site-wide search functionality.',
+		subdescription: 'New feautres added regularly!',
 		features: [
 			'View, filter and sort all products',
 			'Add products to cart and wishlist',
 			"View all products' details on dedicated product page",
-			"Contact the website's owner via contact form",
 			'Site-wide search functionality'
 		],
 		technologiesDescription:
@@ -37,12 +37,17 @@
 	</div>
 	<figure>
 		<a href={project.src} target="_blank" class="w-full">
-			<img class="h-52 w-full rounded-[16px] object-cover md:h-72" src={project.img} alt="Shoes" />
+			<img
+				class="h-52 w-full rounded-t-[16px] object-cover md:h-72"
+				src={project.img}
+				alt="Shoes"
+			/>
 		</a>
 	</figure>
 	<div class="card-body">
 		<h2 class="card-title my-2 text-2xl">{project.name}</h2>
-		<p class="my-2 text-lg">{project.description}</p>
+		<p class="my-2 text-justify text-lg">{project.description}</p>
+		<p class="text-justify text-lg font-bold text-dark">{project.subdescription}</p>
 		<p class="my-2 text-lg">{project.technologiesDescription}</p>
 		<div class="flex">
 			{#each project.technologies as technology (technology)}

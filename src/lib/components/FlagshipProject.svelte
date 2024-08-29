@@ -27,8 +27,12 @@
 
 <div
 	class="card relative transform animate-pulse border-2 border-yellow-500 bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+	style="border-color: #e9c46a;"
 >
-	<div class="absolute left-0 top-0 rounded-tl-[8px] bg-yellow-500 px-4 py-2 font-bold text-black">
+	<div
+		class="absolute left-0 top-0 rounded-tl-[8px] bg-yellow-500 px-4 py-2 font-bold text-black"
+		style="background-color: #e9c46a;"
+	>
 		Flagship Project
 	</div>
 	<figure>

@@ -21,7 +21,6 @@
   - Social media links
 - Responsive Design
   - Mobile and desktop support
-- New features coming soon!
 
 ## Technologies Used
 

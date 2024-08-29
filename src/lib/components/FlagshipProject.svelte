@@ -25,40 +25,56 @@
 	};
 </script>
 
-<div>
-	<h4 class=" my-4 text-3xl text-darkGray">Flagship project</h4>
-	<h5 class=" my-4 text-2xl text-main">{project.name}</h5>
-	<div
-		class="card transform bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"
-	>
-		<figure>
-			<a href={project.src} target="_blank" class="w-full">
-				<img class="h-52 w-full object-cover md:h-72" src={project.img} alt="Shoes" />
+<div
+	class="card relative transform animate-pulse border-2 border-yellow-500 bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+>
+	<div class="absolute left-0 top-0 rounded-tl-[8px] bg-yellow-500 px-4 py-2 font-bold text-black">
+		Flagship Project
+	</div>
+	<figure>
+		<a href={project.src} target="_blank" class="w-full">
+			<img class="h-52 w-full rounded-[16px] object-cover md:h-72" src={project.img} alt="Shoes" />
+		</a>
+	</figure>
+	<div class="card-body">
+		<h2 class="card-title my-2 text-2xl">{project.name}</h2>
+		<p class="my-2 text-lg">{project.description}</p>
+		<p class="my-2 text-lg">{project.technologiesDescription}</p>
+		<div class="flex">
+			{#each project.technologies as technology (technology)}
+				<img
+					class="mx-2 hidden h-8 w-8 first:ml-0 md:block"
+					src={getIconSrc(technology)}
+					alt={technology}
+				/>
+			{/each}
+		</div>
+		<div class="card-actions my-4 w-full justify-end md:justify-between">
+			<a class="my-button" href={project.github} target="_blank">
+				<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
+				View Code
 			</a>
-		</figure>
-		<div class="card-body">
-			<h2 class="card-title my-2 text-2xl">{project.name}</h2>
-			<p class="my-2 text-lg">{project.description}</p>
-			<p class="my-2 text-lg">{project.technologiesDescription}</p>
-			<div class="flex">
-				{#each project.technologies as technology (technology)}
-					<img
-						class="mx-2 hidden h-8 w-8 first:ml-0 md:block"
-						src={getIconSrc(technology)}
-						alt={technology}
-					/>
-				{/each}
-			</div>
-			<div class="card-actions my-4 w-full justify-end md:justify-between">
-				<a class="my-button" href={project.github} target="_blank">
-					<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
-					View Code
-				</a>
-				<a class="my-button" href={project.src} target="_blank">
-					<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
-					Visit Website
-				</a>
-			</div>
+			<a class="my-button" href={project.src} target="_blank">
+				<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
+				Visit Website
+			</a>
 		</div>
 	</div>
 </div>
+
+<style scoped>
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.02);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	.animate-pulse {
+		animation: pulse 3s infinite;
+	}
+</style>

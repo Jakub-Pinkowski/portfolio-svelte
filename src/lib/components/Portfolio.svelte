@@ -16,9 +16,10 @@
 
 <div id="portfolio" class="mx-8 my-24">
 	<h3 class="text-4xl uppercase text-main">Portfolio</h3>
-	<FlagshipProject {getIconSrc} />
+
 	<h4 class=" my-4 text-3xl text-darkGray">Fullstack projects</h4>
 	<div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+		<FlagshipProject {getIconSrc} />
 		{#each projects as project (project.id)}
 			<div
 				class="card transform bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"

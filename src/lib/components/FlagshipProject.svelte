@@ -21,8 +21,7 @@
 		technologiesDescription:
 			'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, SQL and Vercel.',
 		technologies: ['svelte', 'sveltekit', 'ts', 'html', 'css', 'tailwind', 'postgresql', 'vercel'],
-		// TODO: Add real github link later
-		github: 'https://github.com/Jakub-Pinkowski'
+		github: 'https://github.com/Jakub-Pinkowski/commerce-website'
 	};
 </script>
 

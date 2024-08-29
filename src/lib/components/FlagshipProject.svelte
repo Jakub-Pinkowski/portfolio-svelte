@@ -20,7 +20,9 @@
 		],
 		technologiesDescription:
 			'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, SQL and Vercel.',
-		technologies: ['svelte', 'sveltekit', 'ts', 'html', 'css', 'tailwind', 'postgresql', 'vercel']
+		technologies: ['svelte', 'sveltekit', 'ts', 'html', 'css', 'tailwind', 'postgresql', 'vercel'],
+		// TODO: Add real github link later
+		github: 'https://github.com/Jakub-Pinkowski'
 	};
 </script>
 
@@ -49,6 +51,10 @@
 				{/each}
 			</div>
 			<div class="card-actions my-4 w-full justify-end md:justify-between">
+				<a class="my-button" href={project.github} target="_blank">
+					<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
+					View Code
+				</a>
 				<a class="my-button" href={project.src} target="_blank">
 					<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
 					Visit Website

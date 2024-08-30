@@ -22,11 +22,27 @@
 		<FlagshipProject {getIconSrc} />
 		{#each projects as project (project.id)}
 			<div
-				class="card transform bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+				class="card bg-base-100 shadow-xl transition duration-500 ease-in-out hover:scale-105 hover:opacity-90 {project.name ===
+				'Jules-Art'
+					? 'relative border-2'
+					: ''}"
+				style={project.name === 'Jules-Art' ? 'border-color: #8ecae6;' : ''}
 			>
+				{#if project.name === 'Jules-Art'}
+					<div
+						class="absolute left-0 top-0 rounded-tl-[8px] px-4 py-2 font-bold text-black"
+						style="background-color: #8ecae6;"
+					>
+						Freelance Project
+					</div>
+				{/if}
 				<figure>
 					<a href={project.src} target="_blank" class="w-full">
-						<img class="h-52 w-full object-cover md:h-72" src={project.img} alt="Shoes" />
+						<img
+							class="h-52 w-full rounded-t-[16px] object-cover md:h-72"
+							src={project.img}
+							alt="Shoes"
+						/>
 					</a>
 				</figure>
 				<div class="card-body">

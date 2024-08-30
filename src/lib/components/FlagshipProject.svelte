@@ -11,7 +11,7 @@
 		img: e_commerce,
 		description:
 			'A fullstack e-commerce website with a wide range of features, such as product filtering, sorting, adding to cart and wishlist, viewing product details and site-wide search functionality.',
-		subdescription: 'New feautres added regularly!',
+		subdescription: 'This website is constanly evolving. New feautres added regularly!',
 		features: [
 			'View, filter and sort all products',
 			'Add products to cart and wishlist',

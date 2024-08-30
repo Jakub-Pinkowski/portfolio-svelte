@@ -64,7 +64,7 @@ export const load = (async () => {
 				src: 'https://jules-art.com',
 				img: jules_art,
 				description:
-					"Artist's portfolio website designed to showcase her creative work and provide a means for visitors to get in touch with her.",
+					"Artist's portfolio website designed to showcase her creative work and provide a means for visitors to get in touch with her. This project was built for a client to meet her specific requirements and aesthetic preferences. The website features a clean and modern design, intuitive navigation, and responsive layout to provide an optimal viewing experience across all devices.",
 				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
 				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Jules-Art'

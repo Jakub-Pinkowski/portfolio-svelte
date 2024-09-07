@@ -4,11 +4,6 @@
 
 	export let projects: Project[] = [];
 	export let icons: Icon[] = [];
-
-	const getIconSrc = (technology: string) => {
-		const icon = icons.find((icon) => icon.name === technology);
-		return icon ? icon.src : '';
-	};
 </script>
 
 <div id="portfolio" class="mx-8 my-24">

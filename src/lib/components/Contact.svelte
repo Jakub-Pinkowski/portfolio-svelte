@@ -2,7 +2,6 @@
 	import axios from 'axios';
 	import { fade } from 'svelte/transition';
 
-	import Button from '$lib/components/UI/Button.svelte';
 	import contact from '$lib/assets/images/contact.jpg';
 
 	import linkedin from '$lib/assets/icons/linkedin.png';
@@ -127,7 +126,7 @@
 					placeholder="Message"
 					required
 				></textarea>
-				<Button>Send</Button>
+				<button class="my-button !px-4 !py-2 text-xl">Send</button>
 			</form>
 		</div>
 	</div>

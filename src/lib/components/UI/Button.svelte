@@ -3,16 +3,16 @@
 </button>
 
 <style>
+	/* TODO: Real styling in over at app.css */
 	.my-button {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 		cursor: pointer;
-		width: 13rem;
+		width: calc(50% - 0.25rem);
 		position: relative;
-		padding: 10px 20px;
+		padding: 5px;
 		background: #e0aeb5;
-		font-size: 20px;
 		border-top-right-radius: 10px;
 		border-bottom-left-radius: 10px;
 		transition: all 1s;
@@ -46,5 +46,13 @@
 	.my-button:hover:after {
 		width: 100%;
 		height: 100%;
+	}
+
+	@media (min-width: 1024px) {
+		.my-button {
+			width: 13rem;
+			font-size: 20px;
+			padding: 10px 20px;
+		}
 	}
 </style>

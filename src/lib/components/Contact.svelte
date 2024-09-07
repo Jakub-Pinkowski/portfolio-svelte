@@ -80,14 +80,14 @@
 		<div class="my-8 w-full md:w-3/5">
 			<img src={contact} class="rounded-3xl" alt="" />
 		</div>
-		<div class="w-full text-justify md:m-8 md:w-2/5 md:px-8">
+		<div class="flex w-full flex-col gap-4 text-justify md:m-8 md:w-2/5 md:px-8 2xl:gap-6">
 			<h4 class="text-2xl">Send me a message!</h4>
-			<p class="my-8 text-xl">
+			<p class="text-xl">
 				Feel free to reach out to me via the form or social media.
 				<br />
 				Looking forward to hearing from you!
 			</p>
-			<div class="md:my-6">
+			<div class="">
 				<a href="https://www.linkedin.com/in/jakub-pinkowski-b44405134/">
 					<img src={linkedin} class="mr-4 inline-block w-12" alt="linkedin" />
 				</a>
@@ -95,10 +95,10 @@
 					<img src={github} class="mr-4 inline-block w-12" alt="github" />
 				</a>
 			</div>
-			<form on:submit={handleSubmit} class="mb-8 flex flex-col">
+			<form on:submit={handleSubmit} class="flex flex-col gap-4 2xl:gap-6">
 				<input
 					bind:value={name}
-					class="input input-bordered my-4 w-full max-w-xl"
+					class="text-md input input-bordered w-full max-w-xl"
 					type="text"
 					name="name"
 					id="name"
@@ -108,7 +108,7 @@
 				/>
 				<input
 					bind:value={email}
-					class="input input-bordered my-4 w-full max-w-xl"
+					class="text-md input input-bordered w-full max-w-xl"
 					type="text"
 					name="email"
 					id="email"
@@ -118,9 +118,9 @@
 				/>
 				<textarea
 					bind:value={message}
-					class="textarea textarea-bordered my-4 w-full max-w-xl"
+					class="text-md textarea textarea-bordered w-full max-w-xl"
 					cols="30"
-					rows="5"
+					rows="4"
 					name="message"
 					id="message"
 					placeholder="Message"

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Project, Icon } from '$lib/types';
-	import FlagshipProject from './FlagshipProject.svelte';
 	import ProjectCard from '$lib/components/UI/ProjectCard.svelte';
 
 	export let projects: Project[] = [];

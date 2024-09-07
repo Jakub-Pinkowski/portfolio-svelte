@@ -3,7 +3,6 @@
 	import { fade } from 'svelte/transition';
 
 	import contact from '$lib/assets/images/contact.jpg';
-
 	import linkedin from '$lib/assets/icons/linkedin.png';
 	import github from '$lib/assets/icons/github.png';
 

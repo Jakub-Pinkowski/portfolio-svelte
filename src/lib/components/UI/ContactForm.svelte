@@ -9,6 +9,10 @@
 	let toastError: boolean = false;
 	let toastMessage: string;
 
+	let nameError: string = '';
+	let emailError: string = '';
+	let messageError: string = '';
+
 	const handleSubmit = async (event: Event) => {
 		event.preventDefault();
 		const url = 'https://formspree.io/f/xpzgwgre';
@@ -19,7 +23,32 @@
 			message
 		};
 
-		if (!name || !email || !message || !isValidEmail(email)) {
+		// Reset error messages
+		nameError = '';
+		emailError = '';
+		messageError = '';
+
+		let hasError = false;
+
+		if (!name) {
+			nameError = 'Name is required.';
+			hasError = true;
+		}
+
+		if (!email) {
+			emailError = 'Email is required.';
+			hasError = true;
+		} else if (!isValidEmail(email)) {
+			emailError = 'Please enter a valid email address.';
+			hasError = true;
+		}
+
+		if (!message) {
+			messageError = 'Message is required.';
+			hasError = true;
+		}
+
+		if (hasError) {
 			toastMessage = 'Please fill out all fields correctly.';
 			toastError = true;
 
@@ -70,36 +99,51 @@
 </script>
 
 <form on:submit={handleSubmit} class="flex flex-col gap-4 2xl:gap-6">
-	<input
-		bind:value={name}
-		class="text-md input input-bordered w-full max-w-xl"
-		type="text"
-		name="name"
-		id="name"
-		placeholder="Name"
-		required
-		autocomplete="name"
-	/>
-	<input
-		bind:value={email}
-		class="text-md input input-bordered w-full max-w-xl"
-		type="text"
-		name="email"
-		id="email"
-		placeholder="E-mail"
-		required
-		autocomplete="email"
-	/>
-	<textarea
-		bind:value={message}
-		class="text-md textarea textarea-bordered w-full max-w-xl"
-		cols="30"
-		rows="4"
-		name="message"
-		id="message"
-		placeholder="Message"
-		required
-	></textarea>
+	<div>
+		<input
+			bind:value={name}
+			class="text-md input input-bordered w-full max-w-xl"
+			type="text"
+			name="name"
+			id="name"
+			placeholder="Name"
+			required
+			autocomplete="name"
+		/>
+		{#if nameError}
+			<p class="mt-2 text-sm text-red-500">{nameError}</p>
+		{/if}
+	</div>
+	<div>
+		<input
+			bind:value={email}
+			class="text-md input input-bordered w-full max-w-xl"
+			type="text"
+			name="email"
+			id="email"
+			placeholder="E-mail"
+			required
+			autocomplete="email"
+		/>
+		{#if emailError}
+			<p class=" mt-2 text-sm text-red-500">{emailError}</p>
+		{/if}
+	</div>
+	<div>
+		<textarea
+			bind:value={message}
+			class="text-md textarea textarea-bordered w-full max-w-xl"
+			cols="30"
+			rows="4"
+			name="message"
+			id="message"
+			placeholder="Message"
+			required
+		></textarea>
+		{#if messageError}
+			<p class=" mt-2text-sm text-red-500">{messageError}</p>
+		{/if}
+	</div>
 	<button class="my-button !px-4 !py-2 text-xl">Send</button>
 
 	{#if toastSuccess}

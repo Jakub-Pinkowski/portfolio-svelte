@@ -75,8 +75,9 @@ export const load = (async () => {
 				src: 'https://blogging-platform-steel.vercel.app',
 				img: blogging_platform,
 				description:
-					"Blogging platform where you can view and like all users' posts, create your own account, and manage your own posts.",
-				technologiesDescription: 'Built with React, Next, JS, HTML, CSS, Firebase and Vercel.',
+					'A comprehensive blogging platform that allows users to view and like posts from all users, create their own accounts, and manage their own posts. Additionally, it includes robust account management features, allowing users to edit and delete their posts as needed.',
+				technologiesDescription:
+					'Built with React, Next.js, HTML, CSS, Firebase, and deployed on Vercel.',
 				technologies: ['react', 'next', 'js', 'html', 'css', 'firebase', 'vercel'],
 				github: 'https://github.com/Jakub-Pinkowski/Blogging-Platform'
 			},

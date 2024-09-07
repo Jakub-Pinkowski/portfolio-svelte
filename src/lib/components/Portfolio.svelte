@@ -51,16 +51,16 @@
 					<h2 class="card-title text-2xl">{project.name}</h2>
 					<p class=" text-justify text-lg">{project.description}</p>
 					<p class="text-lg">{project.technologiesDescription}</p>
-					<div class="flex">
+					<div class="hidden md:flex">
 						{#each project.technologies as technology (technology)}
 							<img
-								class="mx-2 hidden h-8 w-8 first:ml-0 md:block"
+								class="mx-2 block h-8 w-8 first:ml-0"
 								src={getIconSrc(technology)}
 								alt={technology}
 							/>
 						{/each}
 					</div>
-					<div class="card-actions w-full justify-end md:justify-between">
+					<div class="card-actions mt-2 w-full justify-end gap-4 md:justify-between">
 						<!-- TODO: Put those elements into a separate component -->
 						<a class="my-button" href={project.github} target="_blank">
 							<img class="mx-2 h-4 w-4 lg:h-8 lg:w-8" src={github_icon} alt="github" />

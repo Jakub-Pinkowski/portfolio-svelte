@@ -1,5 +1,6 @@
 import type { PageLoad } from './$types';
 
+import e_commerce from '$lib/assets/images/e-commerce.jpg';
 import jules_art from '$lib/assets/images/jules-art.jpg';
 import blogging_platform from '$lib/assets/images/blogging-platform.jpg';
 import links_page from '$lib/assets/images/links-page.jpg';
@@ -58,6 +59,25 @@ export const load = (async () => {
 			}
 		] as Website[],
 		projects: [
+            {
+                id: 0,
+                name: 'E-commerce website',
+                src: 'https://commerce-website-psi.vercel.app',
+                img: e_commerce,
+                description:
+                    'A fullstack e-commerce website with a wide range of features, such as product filtering, sorting, adding to cart and wishlist, viewing product details and site-wide search functionality.',
+                subdescription: 'This website is constanly evolving. New feautres added regularly!',
+                features: [
+                    'View, filter and sort all products',
+                    'Add products to cart and wishlist',
+                    "View all products' details on dedicated product page",
+                    'Site-wide search functionality'
+                ],
+                technologiesDescription:
+                    'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, SQL and Vercel.',
+                technologies: ['svelte', 'sveltekit', 'ts', 'html', 'css', 'tailwind', 'postgresql', 'vercel'],
+                github: 'https://github.com/Jakub-Pinkowski/commerce-website'
+            },
 			{
 				id: 1,
 				name: 'Jules-Art',

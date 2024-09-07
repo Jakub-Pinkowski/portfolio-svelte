@@ -39,6 +39,9 @@
 	<div class="card-body gap-4 p-4 lg:p-8">
 		<h2 class="card-title text-2xl">{project.name}</h2>
 		<p class="text-justify text-lg">{project.description}</p>
+		{#if project.subdescription}
+			<p class="text-justify text-lg font-bold text-dark">{project.subdescription}</p>
+		{/if}
 		<p class="text-lg">{project.technologiesDescription}</p>
 		<div class="hidden md:flex">
 			{#each project.technologies as technology (technology)}

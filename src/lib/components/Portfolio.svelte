@@ -17,7 +17,6 @@
 
 	<h4 class=" my-4 text-3xl text-darkGray">Fullstack projects</h4>
 	<div class="grid grid-cols-1 gap-6 md:grid-cols-3 2xl:gap-12">
-		<FlagshipProject {getIconSrc} />
 		{#each projects as project (project.id)}
 			<ProjectCard {project} {icons} />
 		{/each}

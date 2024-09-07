@@ -44,27 +44,23 @@
 			/>
 		</a>
 	</figure>
-	<div class="card-body">
-		<h2 class="card-title my-2 text-2xl">{project.name}</h2>
-		<p class="my-2 text-justify text-lg">{project.description}</p>
+	<div class="card-body gap-4 p-4 lg:p-8">
+		<h2 class="card-title text-2xl">{project.name}</h2>
+		<p class="text-justify text-lg">{project.description}</p>
 		<p class="text-justify text-lg font-bold text-dark">{project.subdescription}</p>
-		<p class="my-2 text-lg">{project.technologiesDescription}</p>
-		<div class="flex">
+		<p class="text-lg">{project.technologiesDescription}</p>
+		<div class="hidden md:flex">
 			{#each project.technologies as technology (technology)}
-				<img
-					class="mx-2 hidden h-8 w-8 first:ml-0 md:block"
-					src={getIconSrc(technology)}
-					alt={technology}
-				/>
+				<img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology} />
 			{/each}
 		</div>
 		<div class="card-actions my-4 w-full justify-end md:justify-between">
 			<a class="my-button" href={project.github} target="_blank">
-				<img class="mx-2 h-8 w-8" src={github_icon} alt="github" />
+				<img class="mx-2 h-4 w-4 lg:h-8 lg:w-8" src={github_icon} alt="github" />
 				View Code
 			</a>
 			<a class="my-button" href={project.src} target="_blank">
-				<img class="mx-2 h-8 w-8" src={globe_icon} alt="globe" />
+				<img class="mx-2 h-4 w-4 lg:h-8 lg:w-8" src={globe_icon} alt="globe" />
 				Visit Website
 			</a>
 		</div>

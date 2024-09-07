@@ -13,26 +13,28 @@
 </script>
 
 <div
-	class="card bg-base-100 shadow-xl transition duration-500 ease-in-out lg:hover:scale-105 lg:hover:opacity-90 {project.name ===
-	'Jules-Art'
-		? 'relative border-2'
-		: ''}"
-	style={project.name === 'Jules-Art' ? 'border-color: #8ecae6;' : ''}
+	class="card bg-base-100 shadow-xl transition duration-500 ease-in-out lg:hover:scale-105 lg:hover:opacity-90"
+	class:border-2={project.name === 'Jules-Art' || project.name === 'E-commerce website'}
+	class:relative={project.name === 'Jules-Art' || project.name === 'E-commerce website'}
+	class:animate-pulse={project.name === 'E-commerce website'}
+	style:border-color={project.name === 'Jules-Art'
+		? '#8ecae6'
+		: project.name === 'E-commerce website'
+			? '#e9c46a'
+			: ''}
 >
 	{#if project.name === 'Jules-Art'}
-		<div
-			class="absolute left-0 top-0 rounded-tl-[8px] px-4 py-2 font-bold text-black"
-			style="background-color: #8ecae6;"
-		>
-			Freelance Project
-		</div>
+		<div class="project-label" style="background-color: #8ecae6;">Freelance Project</div>
+	{/if}
+	{#if project.name === 'E-commerce website'}
+		<div class="project-label" style="background-color: #e9c46a;">Flagship Project</div>
 	{/if}
 	<figure>
 		<a href={project.src} target="_blank" class="w-full">
 			<img
 				class="h-52 w-full rounded-t-[16px] object-cover md:h-72"
 				src={project.img}
-				alt="Shoes"
+				alt={project.name}
 			/>
 		</a>
 	</figure>
@@ -60,3 +62,29 @@
 		</div>
 	</div>
 </div>
+
+<style scoped>
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.02);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	.animate-pulse {
+		animation: pulse 3s infinite;
+	}
+	.project-label {
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-radius: 8px 0 0 0;
+		padding: 0.5rem 1rem;
+		font-weight: bold;
+		color: black;
+	}
+</style>

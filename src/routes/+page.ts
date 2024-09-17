@@ -35,6 +35,7 @@ import prismaIcon from '$lib/assets/icons/prisma.png';
 import postgresqlIcon from '$lib/assets/icons/postgresql.png';
 import svelteIcon from '$lib/assets/icons/svelte.png';
 import sveltekitIcon from '$lib/assets/icons/sveltekit.png';
+import drizzleIcon from '$lib/assets/icons/drizzle.png';
 
 import type { Website, Project, Icon } from '$lib/types';
 
@@ -59,25 +60,34 @@ export const load = (async () => {
 			}
 		] as Website[],
 		projects: [
-            {
-                id: 0,
-                name: 'E-commerce website',
-                src: 'https://commerce-website-psi.vercel.app',
-                img: e_commerce,
-                description:
-                    'A fullstack e-commerce website with a wide range of features, such as product filtering, sorting, adding to cart and wishlist, viewing product details and site-wide search functionality.',
-                subdescription: 'This website is constanly evolving. New feautres added regularly!',
-                features: [
-                    'View, filter and sort all products',
-                    'Add products to cart and wishlist',
-                    "View all products' details on dedicated product page",
-                    'Site-wide search functionality'
-                ],
-                technologiesDescription:
-                    'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, SQL and Vercel.',
-                technologies: ['svelte', 'sveltekit', 'ts', 'html', 'css', 'tailwind', 'postgresql', 'vercel'],
-                github: 'https://github.com/Jakub-Pinkowski/commerce-website'
-            },
+			{
+				id: 0,
+				name: 'E-commerce website',
+				src: 'https://commerce-website-psi.vercel.app',
+				img: e_commerce,
+				description:
+					'A fullstack e-commerce website with a wide range of features, such as product filtering, sorting, adding to cart and wishlist, viewing product details and site-wide search functionality.',
+				subdescription: 'This website is constanly evolving. New feautres added regularly!',
+				features: [
+					'View, filter and sort all products',
+					'Add products to cart and wishlist',
+					"View all products' details on dedicated product page",
+					'Site-wide search functionality'
+				],
+				technologiesDescription:
+					'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, SQL, Drizzle and Vercel.',
+				technologies: [
+					'sveltekit',
+					'ts',
+					'html',
+					'css',
+					'tailwind',
+					'postgresql',
+					'drizzle',
+					'vercel'
+				],
+				github: 'https://github.com/Jakub-Pinkowski/commerce-website'
+			},
 			{
 				id: 1,
 				name: 'Jules-Art',
@@ -277,6 +287,10 @@ export const load = (async () => {
 			{
 				name: 'sveltekit',
 				src: sveltekitIcon
+			},
+			{
+				name: 'drizzle',
+				src: drizzleIcon
 			}
 		] as Icon[]
 	};

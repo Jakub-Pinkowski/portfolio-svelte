@@ -66,7 +66,7 @@ export const load = (async () => {
 				src: 'https://commerce-website-psi.vercel.app',
 				img: e_commerce,
 				description:
-					'A fullstack e-commerce website with a wide range of features, such as product filtering, sorting, adding to cart and wishlist, viewing product details and site-wide search functionality.',
+					'A fullstack e-commerce website with features like product filtering, sorting, adding to cart and wishlist, viewing product details, site-wide search, and user authentication with email and OAuth (GitHub, Google) to track user data and orders.',
 				subdescription: 'This website is constanly evolving. New feautres added regularly!',
 				features: [
 					'View, filter and sort all products',

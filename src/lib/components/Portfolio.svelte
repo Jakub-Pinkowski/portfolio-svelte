@@ -2,8 +2,7 @@
 	import type { Project, Icon } from '$lib/types';
 	import ProjectCard from '$lib/components/UI/ProjectCard.svelte';
 
-	export let projects: Project[] = [];
-	export let icons: Icon[] = [];
+	let { projects, icons }: { projects: Project[]; icons: Icon[] } = $props();
 </script>
 
 <div id="portfolio" class="mx-8 my-24">

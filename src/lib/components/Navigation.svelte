@@ -3,7 +3,7 @@
 	import { fly, scale } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
 
-	let open: boolean;
+	let open: boolean = $state(false)
 
 	const links = [
 		{ label: 'Home', path: '/' },
@@ -27,7 +27,7 @@
 			<a
 				href={links[0].path}
 				class="block cursor-pointer py-4 hover:underline md:mx-96"
-				on:click={closeMenu}
+				onclick={closeMenu}
 				in:fly={{ y: -15, delay: 50 }}
 			>
 				{links[0].label}
@@ -35,7 +35,7 @@
 			<a
 				href={links[1].path}
 				class="block cursor-pointer py-4 hover:underline md:mx-96"
-				on:click={closeMenu}
+				onclick={closeMenu}
 				in:fly={{ y: -15, delay: 100 }}
 			>
 				{links[1].label}
@@ -43,7 +43,7 @@
 			<a
 				href={links[2].path}
 				class="block cursor-pointer py-4 hover:underline md:mx-96"
-				on:click={closeMenu}
+				onclick={closeMenu}
 				in:fly={{ y: -15, delay: 150 }}
 			>
 				{links[2].label}
@@ -51,7 +51,7 @@
 			<a
 				href={links[3].path}
 				class="block cursor-pointer py-4 hover:underline md:mx-96"
-				on:click={closeMenu}
+				onclick={closeMenu}
 				in:fly={{ y: -15, delay: 200 }}
 			>
 				{links[3].label}

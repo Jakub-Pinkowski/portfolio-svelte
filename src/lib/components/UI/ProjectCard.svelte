@@ -1,10 +1,10 @@
 <script lang="ts">
-	import type { Project, Icon } from '$lib/types';
 	import github_icon from '$lib/assets/icons/github.png';
 	import globe_icon from '$lib/assets/icons/globe.png';
 
-	export let project: Project;
-	export let icons: Icon[] = [];
+	import type { Project, Icon } from '$lib/types';
+
+	let { project, icons }: { project: Project; icons: Icon[] } = $props();
 
 	const getIconSrc = (technology: string) => {
 		const icon = icons.find((icon) => icon.name === technology);

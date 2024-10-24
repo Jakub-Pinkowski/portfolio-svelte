@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { Project, Icon } from '$lib/types';
 	import ProjectCard from '$lib/components/UI/ProjectCard.svelte';
+
+	import type { Project, Icon } from '$lib/types';
 
 	let { projects, icons }: { projects: Project[]; icons: Icon[] } = $props();
 </script>

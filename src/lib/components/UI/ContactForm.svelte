@@ -2,16 +2,16 @@
 	import axios from 'axios';
 	import { fade } from 'svelte/transition';
 
-	let name: string;
-	let email: string;
-	let message: string;
-	let toastSuccess: boolean = false;
-	let toastError: boolean = false;
-	let toastMessage: string;
+	let name: string = $state('');
+	let email: string = $state('');
+	let message: string = $state('');
+	let toastSuccess: boolean = $state(false);
+	let toastError: boolean = $state(false);
+	let toastMessage: string = $state('');
 
-	let nameError: string = '';
-	let emailError: string = '';
-	let messageError: string = '';
+	let nameError: string = $state('');
+	let emailError: string = $state('');
+	let messageError: string = $state('');
 
 	const handleSubmit = async (event: Event) => {
 		event.preventDefault();
@@ -23,10 +23,7 @@
 			message
 		};
 
-		// Reset error messages
-		nameError = '';
-		emailError = '';
-		messageError = '';
+		resetErrors();
 
 		let hasError = false;
 
@@ -92,13 +89,19 @@
 		message = '';
 	};
 
+	const resetErrors = () => {
+		nameError = '';
+		emailError = '';
+		messageError = '';
+	};
+
 	const isValidEmail = (value: string): boolean => {
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		return emailRegex.test(value);
 	};
 </script>
 
-<form on:submit={handleSubmit} class="flex flex-col gap-4 2xl:gap-6">
+<form onsubmit={handleSubmit} class="flex flex-col gap-4 2xl:gap-6">
 	<div>
 		<input
 			bind:value={name}

@@ -60,7 +60,7 @@ export const load = (async () => {
 				src: 'https://biznes2.xce.pl/'
 			}
 		] as Website[],
-		projects: [
+		mainProjects: [
 			{
 				id: 0,
 				name: 'E-commerce website',
@@ -68,7 +68,7 @@ export const load = (async () => {
 				img: e_commerce,
 				description:
 					'A fullstack e-commerce website with features like product filtering, sorting, adding to cart and wishlist, viewing product details, site-wide search, and user authentication with email and OAuth (GitHub, Google) to track user data and orders.',
-				subdescription: 'This website is constantly evolving. New features added regularly!',
+				subDescription: 'This website is constantly evolving. New features added regularly!',
 				features: [
 					'View, filter and sort all products',
 					'Add products to cart and wishlist',
@@ -154,7 +154,42 @@ export const load = (async () => {
 				technologiesDescription: 'Built with Python, SQLite, JS, HTML and CSS.',
 				technologies: ['python', 'sqlite', 'js', 'html', 'css'],
 				github: 'https://github.com/Jakub-Pinkowski/cs50_final_project'
+			}
+		] as Project[],
+		studiesProjects: [
+			{
+				id: 9,
+				name: 'STUDIES #1',
+				src: 'https://todo-app-5ce36.web.app',
+				img: todo,
+				description: 'Simple TODO app that allows you to add, edit and delete your tasks.',
+				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
+				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
+				github: 'https://github.com/Jakub-Pinkowski/Todo-App'
 			},
+			{
+				id: 10,
+				name: 'STUDIES #2',
+				src: 'https://vue-udemy-section16.web.app',
+				img: coach,
+				description:
+					'Find a coach website that allows you to and register as a coach or find a coach and contact them.',
+				technologiesDescription: 'Built with Vue.js, JS, HTML, CSS and Firebase.',
+				technologies: ['vue', 'js', 'html', 'css', 'firebase'],
+				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
+			},
+			{
+				id: 11,
+				name: 'STUDIES #3',
+				src: 'https://investment-calculator-28479.web.app',
+				img: investment_calculator,
+				description: 'Investment calculator that allows you to calculate your investment income.',
+				technologiesDescription: 'Built with React, JS, HTML, CSS and Firebase.',
+				technologies: ['react', 'js', 'html', 'css', 'firebase'],
+				github: 'https://github.com/Jakub-Pinkowski/investment-calculator'
+			}
+		] as Project[],
+		simpleProjects: [
 			{
 				id: 6,
 				name: 'Meals App',

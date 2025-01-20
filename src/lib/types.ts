@@ -9,7 +9,7 @@ export type Website = {
 export type Project = {
 	id: number;
 	name: string;
-	src: string;
+	src?: string;
 	img: string;
 	description: string;
     subDescription?: string;

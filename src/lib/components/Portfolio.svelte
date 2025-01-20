@@ -14,8 +14,6 @@
         simpleProjects: Project[];
         icons: Icon[];
     } = $props();
-
-    console.log("mainProjects: ", mainProjects, " studiesProjects: ", studiesProjects, " simpleProjects: ", simpleProjects, " icons: ", icons, "")
 </script>
 
 <div id="portfolio" class="mx-8 my-24">

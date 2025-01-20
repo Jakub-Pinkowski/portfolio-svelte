@@ -1,20 +1,25 @@
 import type { PageLoad } from './$types';
 
-import e_commerce from '$lib/assets/images/e-commerce.jpg';
-import jules_art from '$lib/assets/images/jules-art.jpg';
-import crypto_bot from '$lib/assets/images/crypto_bot.jpg';
-import blogging_platform from '$lib/assets/images/blogging-platform.jpg';
-import links_page from '$lib/assets/images/links-page.jpg';
-import habit_tracker from '$lib/assets/images/habit-tracker.jpg';
-import meals from '$lib/assets/images/meals.jpg';
-import weather from '$lib/assets/images/weather.jpg';
-import travel_blog from '$lib/assets/images/travel-blog.jpg';
-import todo from '$lib/assets/images/todo.jpg';
-import coach from '$lib/assets/images/coach.jpg';
-import investment_calculator from '$lib/assets/images/investment-calculator.jpg';
+import e_commerce from '$lib/assets/images/main_projects/e-commerce.jpg';
+import jules_art from '$lib/assets/images/main_projects/jules-art.jpg';
+import crypto_bot from '$lib/assets/images/main_projects/crypto_bot.jpg';
+import blogging_platform from '$lib/assets/images/main_projects/blogging-platform.jpg';
+import links_page from '$lib/assets/images/main_projects/links-page.jpg';
+import habit_tracker from '$lib/assets/images/main_projects/habit-tracker.jpg';
 
-import auto_repair from '$lib/assets/images/auto-repair.jpg';
-import insurance_agency from '$lib/assets/images/insurance-agency.jpg';
+import mobile from '$lib/assets/images/studies_projects/mobile.jpg';
+import internet from '$lib/assets/images/studies_projects/internet.jpg';
+import desktop from '$lib/assets/images/studies_projects/desktop.jpg';
+
+import meals from '$lib/assets/images/simple_projects/meals.jpg';
+import weather from '$lib/assets/images/simple_projects/weather.jpg';
+import travel_blog from '$lib/assets/images/simple_projects/travel-blog.jpg';
+import todo from '$lib/assets/images/simple_projects/todo.jpg';
+import coach from '$lib/assets/images/simple_projects/coach.jpg';
+import investment_calculator from '$lib/assets/images/simple_projects/investment-calculator.jpg';
+
+import auto_repair from '$lib/assets/images/websites/auto-repair.jpg';
+import insurance_agency from '$lib/assets/images/websites/insurance-agency.jpg';
 
 import vueIcon from '$lib/assets/icons/vue.png';
 import htmlIcon from '$lib/assets/icons/html.png';
@@ -156,32 +161,29 @@ export const load = (async () => {
 		] as Project[],
 		studiesProjects: [
 			{
-				name: 'STUDIES #1',
-				src: 'https://todo-app-5ce36.web.app',
-				img: todo,
-				description: 'Simple TODO app that allows you to add, edit and delete your tasks.',
-				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
-				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
-				github: 'https://github.com/Jakub-Pinkowski/Todo-App'
+				name: 'Mobile Business Application',
+				img: mobile,
+				description: '',
+				technologiesDescription: 'Built with React Native, TS, .NET, C# and SQLite',
+				technologies: ['react-native', 'ts', '.net', 'c#', 'sqlite'],
+				github: 'https://github.com/Jakub-Pinkowski/mobile-business-application'
 			},
 			{
-				name: 'STUDIES #2',
-				src: 'https://vue-udemy-section16.web.app',
-				img: coach,
-				description:
-					'Find a coach website that allows you to and register as a coach or find a coach and contact them.',
-				technologiesDescription: 'Built with Vue.js, JS, HTML, CSS and Firebase.',
-				technologies: ['vue', 'js', 'html', 'css', 'firebase'],
-				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
+				name: 'Internet Business Application',
+				img: internet,
+				description: '',
+				technologiesDescription: 'Built with Blazor, C# and SQLite',
+				technologies: ['blazor', 'c#', 'sqlite'],
+				github: 'https://github.com/Jakub-Pinkowski/internet-business-application'
 			},
+
 			{
-				name: 'STUDIES #3',
-				src: 'https://investment-calculator-28479.web.app',
-				img: investment_calculator,
-				description: 'Investment calculator that allows you to calculate your investment income.',
-				technologiesDescription: 'Built with React, JS, HTML, CSS and Firebase.',
-				technologies: ['react', 'js', 'html', 'css', 'firebase'],
-				github: 'https://github.com/Jakub-Pinkowski/investment-calculator'
+				name: 'Desktop Business Application',
+				img: desktop,
+				description: '',
+				technologiesDescription: 'Built with .NET, MAUI, C# and SQLite',
+				technologies: ['.net', 'maui', 'c#', 'sqlite'],
+				github: 'https://github.com/Jakub-Pinkowski/desktop-business-application'
 			}
 		] as Project[],
 		simpleProjects: [

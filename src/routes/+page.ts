@@ -62,7 +62,6 @@ export const load = (async () => {
 		] as Website[],
 		mainProjects: [
 			{
-				id: 0,
 				name: 'E-commerce website',
 				src: 'https://commerce-website-psi.vercel.app',
 				img: e_commerce,
@@ -90,7 +89,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/commerce-website'
 			},
 			{
-				id: 1,
 				name: 'Jules-Art',
 				src: 'https://jules-art.com',
 				img: jules_art,
@@ -158,7 +156,6 @@ export const load = (async () => {
 		] as Project[],
 		studiesProjects: [
 			{
-				id: 9,
 				name: 'STUDIES #1',
 				src: 'https://todo-app-5ce36.web.app',
 				img: todo,
@@ -168,7 +165,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Todo-App'
 			},
 			{
-				id: 10,
 				name: 'STUDIES #2',
 				src: 'https://vue-udemy-section16.web.app',
 				img: coach,
@@ -179,7 +175,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
 			},
 			{
-				id: 11,
 				name: 'STUDIES #3',
 				src: 'https://investment-calculator-28479.web.app',
 				img: investment_calculator,
@@ -191,7 +186,6 @@ export const load = (async () => {
 		] as Project[],
 		simpleProjects: [
 			{
-				id: 6,
 				name: 'Meals App',
 				src: 'https://react-counter-64e25.web.app',
 				img: meals,
@@ -201,7 +195,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/react-meals'
 			},
 			{
-				id: 7,
 				name: 'Weather App',
 				src: 'https://weather-app-11d00.web.app',
 				img: weather,
@@ -212,7 +205,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Weather-App'
 			},
 			{
-				id: 8,
 				name: 'Travel Blog',
 				src: 'https://travel-blog-9cc00.web.app',
 				img: travel_blog,
@@ -222,7 +214,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Travel-Blog'
 			},
 			{
-				id: 9,
 				name: 'TODO App',
 				src: 'https://todo-app-5ce36.web.app',
 				img: todo,
@@ -232,7 +223,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Todo-App'
 			},
 			{
-				id: 10,
 				name: 'Coaching Platform',
 				src: 'https://vue-udemy-section16.web.app',
 				img: coach,
@@ -243,7 +233,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
 			},
 			{
-				id: 11,
 				name: 'Investment Calculator',
 				src: 'https://investment-calculator-28479.web.app',
 				img: investment_calculator,

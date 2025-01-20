@@ -23,19 +23,19 @@
 
     <h4 class=" my-4 text-3xl text-darkGray">Fullstack projects</h4>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 2xl:gap-12">
-        {#each mainProjects as project (project.id)}
+        {#each mainProjects as project (project.name)}
             <ProjectCard {project} {icons}/>
         {/each}
     </div>
     <h4 class=" my-4 text-3xl text-darkGray">Studies projects</h4>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 2xl:gap-12">
-        {#each studiesProjects as project (project.id)}
+        {#each studiesProjects as project (project.name)}
             <ProjectCard {project} {icons}/>
         {/each}
     </div>
     <h4 class=" my-4 text-3xl text-darkGray">Simple websites</h4>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3 2xl:gap-12">
-        {#each simpleProjects as project (project.id)}
+        {#each simpleProjects as project (project.name)}
             <ProjectCard {project} {icons}/>
         {/each}
     </div>

@@ -42,6 +42,10 @@ import postgresqlIcon from '$lib/assets/icons/postgresql.png';
 import svelteIcon from '$lib/assets/icons/svelte.png';
 import sveltekitIcon from '$lib/assets/icons/sveltekit.png';
 import drizzleIcon from '$lib/assets/icons/drizzle.png';
+import dotNetIcon from '$lib/assets/icons/dot-net.png';
+import reactNativeIcon from '$lib/assets/icons/react-native.png';
+import cSharpIcon from  '$lib/assets/icons/csharp.png';
+import blazorIcon from '$lib/assets/icons/blazor.png';
 
 import type { Website, Project, Icon } from '$lib/types';
 
@@ -164,25 +168,24 @@ export const load = (async () => {
 				name: 'Mobile Business Application',
 				img: mobile,
 				description: '',
-				technologiesDescription: 'Built with React Native, TS, .NET, C# and SQLite',
-				technologies: ['react-native', 'ts', '.net', 'c#', 'sqlite'],
+				technologiesDescription: 'Built with React Native, TS, .NET, C# and SQLite.',
+				technologies: ['react-native', 'ts', 'dot-net', 'csharp', 'sqlite'],
 				github: 'https://github.com/Jakub-Pinkowski/mobile-business-application'
 			},
 			{
 				name: 'Internet Business Application',
 				img: internet,
 				description: '',
-				technologiesDescription: 'Built with Blazor, C# and SQLite',
-				technologies: ['blazor', 'c#', 'sqlite'],
+				technologiesDescription: 'Built with Blazor, .NET, C# and SQLite.',
+				technologies: ['blazor', 'dot-net', 'csharp', 'sqlite'],
 				github: 'https://github.com/Jakub-Pinkowski/internet-business-application'
 			},
-
 			{
 				name: 'Desktop Business Application',
 				img: desktop,
 				description: '',
-				technologiesDescription: 'Built with .NET, MAUI, C# and SQLite',
-				technologies: ['.net', 'maui', 'c#', 'sqlite'],
+				technologiesDescription: 'Built with .NET, MAUI, C# and SQLite.',
+				technologies: ['dot-net', 'csharp', 'sqlite'],
 				github: 'https://github.com/Jakub-Pinkowski/desktop-business-application'
 			}
 		] as Project[],
@@ -328,6 +331,22 @@ export const load = (async () => {
 			{
 				name: 'drizzle',
 				src: drizzleIcon
+			},
+			{
+				name: 'dot-net',
+				src: dotNetIcon
+			},
+			{
+				name: 'react-native',
+				src: reactNativeIcon
+			},
+			{
+				name: 'csharp',
+				src: cSharpIcon
+			},
+			{
+				name: 'blazor',
+				src: blazorIcon
 			}
 		] as Icon[]
 	};

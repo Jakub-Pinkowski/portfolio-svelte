@@ -110,7 +110,6 @@ export const load = (async () => {
 			{
 				id: 2,
 				name: 'Crypto Bot',
-				src: 'https://github.com/Jakub-Pinkowski/crypto-bot',
 				img: crypto_bot,
 				description:
 					'A personalized cryptocurrency trading bot that automates trading using predefined strategies. The bot analyzes market trends and price data in real time, executes trades on exchanges, and incorporates risk management techniques to optimize performance. No user interface, terminal control.',
@@ -167,7 +166,7 @@ export const load = (async () => {
 			{
 				name: 'Mobile Business Application',
 				img: mobile,
-				description: '',
+				description: 'A professional mobile CRUD application featuring a polished design and well-implemented business logic',
 				technologiesDescription: 'Built with React Native, TS, .NET, C# and SQLite.',
 				technologies: ['react-native', 'ts', 'dot-net', 'csharp', 'sqlite'],
 				github: 'https://github.com/Jakub-Pinkowski/mobile-business-application'
@@ -175,7 +174,7 @@ export const load = (async () => {
 			{
 				name: 'Internet Business Application',
 				img: internet,
-				description: '',
+				description: 'A professional internet CRUD application featuring a polished design and well-implemented business logic',
 				technologiesDescription: 'Built with Blazor, .NET, C# and SQLite.',
 				technologies: ['blazor', 'dot-net', 'csharp', 'sqlite'],
 				github: 'https://github.com/Jakub-Pinkowski/internet-business-application'
@@ -183,7 +182,7 @@ export const load = (async () => {
 			{
 				name: 'Desktop Business Application',
 				img: desktop,
-				description: '',
+				description: 'A professional desktop CRUD application featuring a polished design and well-implemented business logic',
 				technologiesDescription: 'Built with .NET, MAUI, C# and SQLite.',
 				technologies: ['dot-net', 'csharp', 'sqlite'],
 				github: 'https://github.com/Jakub-Pinkowski/desktop-business-application'

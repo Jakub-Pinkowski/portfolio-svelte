@@ -2,6 +2,7 @@ import type { PageLoad } from './$types';
 
 import e_commerce from '$lib/assets/images/e-commerce.jpg';
 import jules_art from '$lib/assets/images/jules-art.jpg';
+import crypto_bot from '$lib/assets/images/crypto_bot.jpg';
 import blogging_platform from '$lib/assets/images/blogging-platform.jpg';
 import links_page from '$lib/assets/images/links-page.jpg';
 import habit_tracker from '$lib/assets/images/habit-tracker.jpg';
@@ -67,7 +68,7 @@ export const load = (async () => {
 				img: e_commerce,
 				description:
 					'A fullstack e-commerce website with features like product filtering, sorting, adding to cart and wishlist, viewing product details, site-wide search, and user authentication with email and OAuth (GitHub, Google) to track user data and orders.',
-				subdescription: 'This website is constanly evolving. New feautres added regularly!',
+				subdescription: 'This website is constantly evolving. New features added regularly!',
 				features: [
 					'View, filter and sort all products',
 					'Add products to cart and wishlist',
@@ -101,18 +102,29 @@ export const load = (async () => {
 			},
 			{
 				id: 2,
+				name: 'Crypto Bot',
+				src: 'https://github.com/Jakub-Pinkowski/crypto-bot',
+				img: crypto_bot,
+				description:
+					'A personalized cryptocurrency trading bot that automates trading using predefined strategies. The bot analyzes market trends and price data in real time, executes trades on exchanges, and incorporates risk management techniques to optimize performance. No user interface, terminal control.',
+				technologiesDescription: 'Built with Python.',
+				technologies: ['python'],
+				github: 'https://github.com/Jakub-Pinkowski/crypto-bot'
+			},
+			{
+				id: 3,
 				name: 'Blogging Platform',
 				src: 'https://blogging-platform-steel.vercel.app',
 				img: blogging_platform,
 				description:
-					'A comprehensive blogging platform that allows users to view and like posts from all users, create their own accounts, and manage their own posts. Additionally, it includes robust account management features, allowing users to edit and delete their posts as needed.',
+					'A platform for users to create accounts, manage posts, and interact with others through likes.',
 				technologiesDescription:
 					'Built with React, Next.js, HTML, CSS, Firebase, and deployed on Vercel.',
 				technologies: ['react', 'next', 'js', 'html', 'css', 'firebase', 'vercel'],
 				github: 'https://github.com/Jakub-Pinkowski/Blogging-Platform'
 			},
 			{
-				id: 3,
+				id: 4,
 				name: 'Links Page',
 				src: 'https://links-page-rosy.vercel.app',
 				img: links_page,
@@ -133,19 +145,18 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/links-page'
 			},
 			{
-				id: 4,
+				id: 5,
 				name: 'Habit Tracker',
 				src: 'http://pinkowskijakub.eu.pythonanywhere.com',
 				img: habit_tracker,
 				description:
 					'Habit Tracker website that allows you to track your habits. You can add, edit and delete your entries.',
-				technologiesDescription: 'Built with Python, SQlite, JS, HTML and CSS.',
+				technologiesDescription: 'Built with Python, SQLite, JS, HTML and CSS.',
 				technologies: ['python', 'sqlite', 'js', 'html', 'css'],
 				github: 'https://github.com/Jakub-Pinkowski/cs50_final_project'
 			},
-
 			{
-				id: 5,
+				id: 6,
 				name: 'Meals App',
 				src: 'https://react-counter-64e25.web.app',
 				img: meals,
@@ -155,7 +166,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/react-meals'
 			},
 			{
-				id: 6,
+				id: 7,
 				name: 'Weather App',
 				src: 'https://weather-app-11d00.web.app',
 				img: weather,
@@ -166,7 +177,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Weather-App'
 			},
 			{
-				id: 7,
+				id: 8,
 				name: 'Travel Blog',
 				src: 'https://travel-blog-9cc00.web.app',
 				img: travel_blog,
@@ -176,7 +187,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Travel-Blog'
 			},
 			{
-				id: 8,
+				id: 9,
 				name: 'TODO App',
 				src: 'https://todo-app-5ce36.web.app',
 				img: todo,
@@ -186,7 +197,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Todo-App'
 			},
 			{
-				id: 9,
+				id: 10,
 				name: 'Coaching Platform',
 				src: 'https://vue-udemy-section16.web.app',
 				img: coach,
@@ -197,7 +208,7 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
 			},
 			{
-				id: 10,
+				id: 11,
 				name: 'Investment Calculator',
 				src: 'https://investment-calculator-28479.web.app',
 				img: investment_calculator,

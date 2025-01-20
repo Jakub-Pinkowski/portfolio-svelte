@@ -63,7 +63,7 @@
 	</div>
 </div>
 
-<style scoped>
+<style>
 	@keyframes pulse {
 		0% {
 			transform: scale(1);

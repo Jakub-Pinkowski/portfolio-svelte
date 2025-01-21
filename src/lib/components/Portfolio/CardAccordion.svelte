@@ -2,7 +2,6 @@
     import type {Project} from "$lib/types";
 
     let {project}: { project: Project; } = $props();
-
 </script>
 
 <p class="text-justify text-lg flex-grow-0">{project.summary}</p>

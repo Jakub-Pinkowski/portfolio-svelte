@@ -4,7 +4,6 @@
     import type {Project} from "$lib/types";
 
     let {project}: { project: Project;} = $props();
-
 </script>
 
 <div class="card-actions flex-col mt-2 w-full justify-end gap-4 md:flex-row md:justify-between">

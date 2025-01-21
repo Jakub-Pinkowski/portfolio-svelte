@@ -2,7 +2,6 @@
     import type {Project} from "$lib/types";
 
     let {project}: { project: Project; } = $props();
-
 </script>
 
 <figure>

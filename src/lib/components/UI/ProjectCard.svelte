@@ -12,8 +12,6 @@
     };
 </script>
 
-<!--TODO: Fix the cursor issue for the whole website-->
-
 <div
         class="card bg-base-100 shadow-xl"
         class:relative={project.label}

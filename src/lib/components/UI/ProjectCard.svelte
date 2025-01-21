@@ -38,17 +38,27 @@
             />
         </a>
     </figure>
-    <div class="card-body gap-4 p-4 lg:p-8">
+    <div class="cad-body gap-4 p-4 lg:p-8">
         <h2 class="card-title text-2xl">{project.name}</h2>
-        <p class="text-justify text-lg">{project.description}</p>
-        {#if project.subDescription}
-            <p class="text-justify text-lg font-bold text-dark">{project.subDescription}</p>
-        {/if}
-        <p class="text-lg">{project.technologiesDescription}</p>
-        <div class="hidden md:flex">
-            {#each project.technologies as technology (technology)}
-                <img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology}/>
-            {/each}
+        <p class="text-justify text-lg">Short description goes here</p>
+        <div tabindex="-1" class="collapse collapse-arrow rounded-box">
+            <input type="checkbox"/>
+            <div class="collapse-title px-0 text-xl">
+                View more
+            </div>
+            <div class="collapse-content px-0">
+                <p class="text-justify text-lg">{project.description}</p>
+                {#if project.subDescription}
+                    <p class="text-justify text-lg font-bold text-dark">{project.subDescription}</p>
+                {/if}
+                <p class="text-lg">{project.technologiesDescription}</p>
+                <!-- Technologies Icons -->
+                <div class="mt-4 md:flex">
+                    {#each project.technologies as technology (technology)}
+                        <img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology}/>
+                    {/each}
+                </div>
+            </div>
         </div>
         <div class="card-actions mt-2 w-full justify-end gap-4 md:justify-between">
             <a class="my-button" href={project.github} target="_blank">

@@ -2,7 +2,7 @@
     import contact from '$lib/assets/images/contact.jpg';
     import linkedin from '$lib/assets/icons/linkedin.png';
     import github from '$lib/assets/icons/github.png';
-    import ContactForm from '$lib/components/UI/ContactForm.svelte';
+    import ContactForm from '$lib/components/Contact/ContactForm.svelte';
 </script>
 
 <div id="contact" class="mx-8 my-24">

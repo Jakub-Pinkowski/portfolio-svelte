@@ -1,5 +1,5 @@
 <script lang="ts">
-    import ProjectCard from '$lib/components/UI/ProjectCard.svelte';
+    import ProjectCard from '$lib/components/Portfolio/ProjectCard.svelte';
 
     import type {Project, Icon} from '$lib/types';
 

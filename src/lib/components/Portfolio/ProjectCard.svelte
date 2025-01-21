@@ -3,6 +3,7 @@
     import globe_icon from '$lib/assets/icons/globe.png';
 
     import type {Project, Icon} from '$lib/types';
+    import CardActions from "$lib/components/Portfolio/CardActions.svelte";
 
     let {project, icons}: { project: Project; icons: Icon[] } = $props();
 
@@ -43,7 +44,7 @@
                 <div class="collapse-title text-lg text-darkGray font-semibold px-4 py-3">
                     More info
                 </div>
-                <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4" >
+                <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4">
                     <h3 class="text-lg font-semibold pt-2 border-t-2 border-lightGray">Description:</h3>
                     <p class="text-justify text-base">{project.description}</p>
                     {#if project.subDescription}
@@ -74,18 +75,7 @@
                 {/each}
             </div>
         {/if}
-        <div class="card-actions flex-col mt-2 w-full justify-end gap-4 md:flex-row md:justify-between">
-            <a class="my-button" href={project.github} target="_blank">
-                <img class="mx-2 h-8 w-8" src={github_icon} alt="github"/>
-                View Code
-            </a>
-            {#if project.src}
-                <a class="my-button" href={project.src} target="_blank">
-                    <img class="mx-2 h-8 w-8" src={globe_icon} alt="globe"/>
-                    Visit Website
-                </a>
-            {/if}
-        </div>
+        <CardActions project={project}/>
     </div>
 </div>
 

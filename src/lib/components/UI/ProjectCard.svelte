@@ -13,19 +13,19 @@
 </script>
 
 <div
-    class="card bg-base-100 shadow-xl transition duration-500 ease-in-out lg:hover:scale-105 lg:hover:opacity-90"
-    class:border-2={project.label}
-    class:relative={project.label}
-    class:animate-pulse={project.name === 'E-commerce website'}
-    style:border-color={project.labelColor ? project.labelColor : ''}
+        class="card bg-base-100 shadow-xl transition duration-500 ease-in-out"
+        class:border-2={project.label}
+        class:relative={project.label}
+        class:animate-pulse={project.name === 'E-commerce website'}
+        style:border-color={project.labelColor ? project.labelColor : ''}
 >
     {#if project.label}
-        <div class="project-label" style="background-color: {project.labelColor}" >
+        <div class="project-label" style="background-color: {project.labelColor}">
             {project.label}
         </div>
     {/if}
     <figure>
-        <a href={project.src} target="_blank" class="w-full">
+        <a href={project.src ? project.src : project.github} target="_blank" class="w-full">
             <img
                     class="h-52 w-full rounded-t-[16px] object-cover md:h-72"
                     src={project.img}

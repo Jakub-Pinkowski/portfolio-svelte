@@ -23,14 +23,16 @@
 </script>
 
 <div id="portfolio" class="mx-8 my-24">
-    <h3 class="text-4xl uppercase text-main">Portfolio</h3>
+    <h3 class="text-4xl uppercase text-main mb-8">Portfolio</h3>
 
     {#each categories as { title, projects } (title)}
-        <h4 class="my-10 text-3xl text-darkGray">{title}</h4>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-3 2xl:gap-12">
-            {#each projects as project (project.name)}
-                <ProjectCard {project} {icons} />
-            {/each}
-        </div>
+        <section class="md:my-16 md:p-8 md:rounded-lg md:shadow-md md:bg-gradient-to-br md:from-lightGray md:to-gray">
+            <h4 class="text-3xl text-darkGray mb-8">{title}</h4>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3 2xl:gap-12">
+                {#each projects as project (project.name)}
+                    <ProjectCard {project} {icons} />
+                {/each}
+            </div>
+        </section>
     {/each}
 </div>

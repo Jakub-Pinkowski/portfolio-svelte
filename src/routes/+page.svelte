@@ -11,5 +11,9 @@
 
 <Banner/>
 <AboutMe/>
-<Portfolio mainProjects={data.mainProjects} studiesProjects={data.studiesProjects} simpleProjects={data.simpleProjects} icons={data.icons}/>
+<Portfolio
+    mainProjects={data.mainProjects}
+    studiesProjects={data.studiesProjects}
+    simpleProjects={data.simpleProjects}
+    icons={data.icons}/>
 <Contact/>

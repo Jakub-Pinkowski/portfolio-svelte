@@ -43,7 +43,7 @@
                  class="collapse collapse-arrow border-l-4 border-t-4 border-light shadow-md bg-white rounded-lg transition-all duration-300">
                 <input type="checkbox"/>
                 <div class="collapse-title text-lg font-semibold px-4 py-3">
-                    More technical info
+                    Technical info
                 </div>
                 <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4">
                     <h3 class="text-lg font-semibold">Description:</h3>
@@ -65,11 +65,6 @@
                             <li>{technology}</li>
                         {/each}
                     </ul>
-                    <div class="hidden md:flex">
-                        {#each project.technologies as technology (technology)}
-                            <img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology}/>
-                        {/each}
-                    </div>
                 </div>
             </div>
         {:else}

@@ -38,7 +38,7 @@
         {#if project.summary}
             <p class="text-justify text-lg flex-grow-0">{project.summary}</p>
             <div tabindex="-1"
-                 class="collapse collapse-arrow border-l-4 border-t-4 border-light shadow-md bg-white rounded-lg transition-all duration-300">
+                 class="collapse collapse-arrow border-l-4 border-t-4 border-light shadow-md bg-white rounded-lg transition-all duration-300 md:hover:shadow-xl">
                 <input type="checkbox"/>
                 <div class="collapse-title text-lg text-darkGray font-semibold px-4 py-3">
                     More info

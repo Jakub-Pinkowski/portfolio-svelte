@@ -14,14 +14,10 @@
 
 <div
     class="card bg-base-100 shadow-xl transition duration-500 ease-in-out lg:hover:scale-105 lg:hover:opacity-90"
-    class:border-2={project.name === 'Jules-Art' || project.name === 'E-commerce website'}
-    class:relative={project.name === 'Jules-Art' || project.name === 'E-commerce website'}
+    class:border-2={project.label}
+    class:relative={project.label}
     class:animate-pulse={project.name === 'E-commerce website'}
-    style:border-color={project.name === 'Jules-Art'
-    ? '#8ecae6'
-    : project.name === 'E-commerce website'
-        ? '#e9c46a'
-        : ''}
+    style:border-color={project.labelColor ? project.labelColor : ''}
 >
     {#if project.label}
         <div class="project-label" style="background-color: {project.labelColor}" >

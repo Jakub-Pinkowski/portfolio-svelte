@@ -43,8 +43,8 @@
                 <div class="collapse-title text-lg text-darkGray font-semibold px-4 py-3">
                     More info
                 </div>
-                <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4">
-                    <h3 class="text-lg font-semibold">Description:</h3>
+                <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4" >
+                    <h3 class="text-lg font-semibold pt-2 border-t-2 border-lightGray">Description:</h3>
                     <p class="text-justify text-base">{project.description}</p>
                     {#if project.subDescription}
                         <p class="text-justify text-base font-bold text-gray-700">{project.subDescription}</p>

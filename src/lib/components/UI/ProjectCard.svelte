@@ -13,21 +13,20 @@
 </script>
 
 <div
-        class="card bg-base-100 shadow-xl transition duration-500 ease-in-out lg:hover:scale-105 lg:hover:opacity-90"
-        class:border-2={project.name === 'Jules-Art' || project.name === 'E-commerce website'}
-        class:relative={project.name === 'Jules-Art' || project.name === 'E-commerce website'}
-        class:animate-pulse={project.name === 'E-commerce website'}
-        style:border-color={project.name === 'Jules-Art'
-		? '#8ecae6'
-		: project.name === 'E-commerce website'
-			? '#e9c46a'
-			: ''}
+    class="card bg-base-100 shadow-xl transition duration-500 ease-in-out lg:hover:scale-105 lg:hover:opacity-90"
+    class:border-2={project.name === 'Jules-Art' || project.name === 'E-commerce website'}
+    class:relative={project.name === 'Jules-Art' || project.name === 'E-commerce website'}
+    class:animate-pulse={project.name === 'E-commerce website'}
+    style:border-color={project.name === 'Jules-Art'
+    ? '#8ecae6'
+    : project.name === 'E-commerce website'
+        ? '#e9c46a'
+        : ''}
 >
-    {#if project.name === 'Jules-Art'}
-        <div class="project-label" style="background-color: #8ecae6;">Freelance Project</div>
-    {/if}
-    {#if project.name === 'E-commerce website'}
-        <div class="project-label" style="background-color: #e9c46a;">Flagship Project</div>
+    {#if project.label}
+        <div class="project-label" style="background-color: {project.labelColor}" >
+            {project.label}
+        </div>
     {/if}
     <figure>
         <a href={project.src} target="_blank" class="w-full">

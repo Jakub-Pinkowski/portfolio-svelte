@@ -44,7 +44,7 @@ import sveltekitIcon from '$lib/assets/icons/sveltekit.png';
 import drizzleIcon from '$lib/assets/icons/drizzle.png';
 import dotNetIcon from '$lib/assets/icons/dot-net.png';
 import reactNativeIcon from '$lib/assets/icons/react-native.png';
-import cSharpIcon from  '$lib/assets/icons/csharp.png';
+import cSharpIcon from '$lib/assets/icons/csharp.png';
 import blazorIcon from '$lib/assets/icons/blazor.png';
 
 import type { Website, Project, Icon } from '$lib/types';
@@ -53,7 +53,6 @@ export const load = (async () => {
 	return {
 		websites: [
 			{
-				id: 1,
 				name: 'Insurance Agency',
 				img: insurance_agency,
 				description:
@@ -61,7 +60,6 @@ export const load = (async () => {
 				src: 'https://biznes1.xce.pl/'
 			},
 			{
-				id: 2,
 				name: 'Auto Repair Shop',
 				img: auto_repair,
 				description:
@@ -73,6 +71,8 @@ export const load = (async () => {
 			{
 				name: 'E-commerce website',
 				src: 'https://commerce-website-psi.vercel.app',
+				label: 'Flagship Project',
+				labelColor: '#e9c46a',
 				img: e_commerce,
 				description:
 					'A fullstack e-commerce website with features like product filtering, sorting, adding to cart and wishlist, viewing product details, site-wide search, and user authentication with email and OAuth (GitHub, Google) to track user data and orders.',
@@ -100,6 +100,8 @@ export const load = (async () => {
 			{
 				name: 'Jules-Art',
 				src: 'https://jules-art.com',
+				label: 'Freelance Project',
+				labelColor: '#8ecae6',
 				img: jules_art,
 				description:
 					"Artist's portfolio website designed to showcase her creative work and provide a means for visitors to get in touch with her. This project was built for a client to meet her specific requirements and aesthetic preferences. The website features a clean and modern design, intuitive navigation, and responsive layout to provide an optimal viewing experience across all devices.",
@@ -108,7 +110,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Jules-Art'
 			},
 			{
-				id: 2,
 				name: 'Crypto Bot',
 				img: crypto_bot,
 				description:
@@ -118,7 +119,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/crypto-bot'
 			},
 			{
-				id: 3,
 				name: 'Blogging Platform',
 				src: 'https://blogging-platform-steel.vercel.app',
 				img: blogging_platform,
@@ -130,7 +130,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/Blogging-Platform'
 			},
 			{
-				id: 4,
 				name: 'Links Page',
 				src: 'https://links-page-rosy.vercel.app',
 				img: links_page,
@@ -151,7 +150,6 @@ export const load = (async () => {
 				github: 'https://github.com/Jakub-Pinkowski/links-page'
 			},
 			{
-				id: 5,
 				name: 'Habit Tracker',
 				src: 'http://pinkowskijakub.eu.pythonanywhere.com',
 				img: habit_tracker,
@@ -166,7 +164,8 @@ export const load = (async () => {
 			{
 				name: 'Mobile Business Application',
 				img: mobile,
-				description: 'A professional mobile CRUD application featuring a polished design and well-implemented business logic',
+				description:
+					'A professional mobile CRUD application featuring a polished design and well-implemented business logic',
 				technologiesDescription: 'Built with React Native, TS, .NET, C# and SQLite.',
 				technologies: ['react-native', 'ts', 'dot-net', 'csharp', 'sqlite'],
 				github: 'https://github.com/Jakub-Pinkowski/mobile-business-application'
@@ -174,7 +173,8 @@ export const load = (async () => {
 			{
 				name: 'Internet Business Application',
 				img: internet,
-				description: 'A professional internet CRUD application featuring a polished design and well-implemented business logic',
+				description:
+					'A professional internet CRUD application featuring a polished design and well-implemented business logic',
 				technologiesDescription: 'Built with Blazor, .NET, C# and SQLite.',
 				technologies: ['blazor', 'dot-net', 'csharp', 'sqlite'],
 				github: 'https://github.com/Jakub-Pinkowski/internet-business-application'
@@ -182,7 +182,8 @@ export const load = (async () => {
 			{
 				name: 'Desktop Business Application',
 				img: desktop,
-				description: 'A professional desktop CRUD application featuring a polished design and well-implemented business logic',
+				description:
+					'A professional desktop CRUD application featuring a polished design and well-implemented business logic',
 				technologiesDescription: 'Built with .NET, MAUI, C# and SQLite.',
 				technologies: ['dot-net', 'csharp', 'sqlite'],
 				github: 'https://github.com/Jakub-Pinkowski/desktop-business-application'

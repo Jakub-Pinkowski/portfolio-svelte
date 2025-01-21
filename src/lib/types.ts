@@ -1,5 +1,4 @@
 export type Website = {
-	id: number;
 	name: string;
 	img: string;
 	description: string;
@@ -7,12 +6,15 @@ export type Website = {
 };
 
 export type Project = {
-	id: number;
 	name: string;
-	src: string;
+	src?: string;
+	label?: string;
+	labelColor?: string;
 	img: string;
+	summary?: string;
 	description: string;
-    subdescription?: string;
+    subDescription?: string;
+	features?: string[];
 	technologiesDescription: string;
 	technologies: string[];
 	github: string;

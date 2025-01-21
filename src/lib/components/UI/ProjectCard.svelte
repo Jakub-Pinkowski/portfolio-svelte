@@ -59,7 +59,7 @@
                             {/each}
                         </ul>
                     {/if}
-                    <h3 class="text-lg font-semibold">Technology:</h3>
+                    <h3 class="text-lg font-semibold">Tech Stack:</h3>
                     <ul class="list-disc ps-8">
                         {#each project.technologies as technology (technology)}
                             <li>{technology}</li>

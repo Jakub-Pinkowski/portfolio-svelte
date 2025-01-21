@@ -78,7 +78,6 @@ export const load = (async () => {
 					'Fullstack e-commerce website for product browsing, filtering, cart management and user authentication.',
 				description:
 					'A fullstack e-commerce website with features like product filtering, sorting, adding to cart and wishlist, viewing product details, site-wide search, and user authentication with email and OAuth (GitHub, Google) to track user data and orders.',
-				subDescription: 'This website is constantly evolving. New features added regularly!',
 				features: [
 					'View, filter and sort all products',
 					'Add products to cart and wishlist',

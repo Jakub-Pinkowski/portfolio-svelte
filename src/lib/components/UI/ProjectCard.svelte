@@ -46,18 +46,26 @@
                     More technical info
                 </div>
                 <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4">
+                    <h3 class="text-lg font-semibold">Description:</h3>
                     <p class="text-justify text-base">{project.description}</p>
                     {#if project.subDescription}
                         <p class="text-justify text-base font-bold text-gray-700">{project.subDescription}</p>
                     {/if}
                     {#if project.features}
-                        <ul>
+                        <h3 class="text-lg font-semibold">Features:</h3>
+                        <ul class="list-disc ps-8">
                             {#each project.features as feature (feature)}
                                 <li>{feature}</li>
                             {/each}
                         </ul>
                     {/if}
-                    <p class="text-base">{project.technologiesDescription}</p>
+                    <h3 class="text-lg font-semibold">Technology:</h3>
+                    <ul class="list-disc ps-8">
+                        <li>Svelte</li>
+                        <li>SvelteKit</li>
+                        <li>Typescript</li>
+                        <li>HTML/CSS</li>
+                    </ul>
                     <div class="hidden md:flex">
                         {#each project.technologies as technology (technology)}
                             <img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology}/>

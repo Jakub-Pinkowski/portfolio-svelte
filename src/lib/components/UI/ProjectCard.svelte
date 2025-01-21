@@ -36,30 +36,41 @@
             {/if}
         </a>
     </figure>
-    <div class="cad-body gap-4 p-4 lg:p-8">
+    <div class="card-body gap-4 p-4 lg:p-6">
         <h2 class="card-title text-2xl">{project.name}</h2>
         {#if project.summary}
-            <p class="text-justify text-lg my-2">{project.summary}</p>
-        {/if}
-        <div tabindex="-1" class="collapse collapse-arrow rounded-box">
-            <input type="checkbox"/>
-            <div class="collapse-title px-0 text-xl">
-                View more
-            </div>
-            <div class="collapse-content px-0">
-                <p class="text-justify text-lg">{project.description}</p>
-                {#if project.subDescription}
-                    <p class="text-justify text-lg font-bold text-dark">{project.subDescription}</p>
-                {/if}
-                <p class="text-lg">{project.technologiesDescription}</p>
-                <!-- Technologies Icons -->
-                <div class="mt-4 md:flex">
-                    {#each project.technologies as technology (technology)}
-                        <img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology}/>
-                    {/each}
+            <p class="text-justify text-lg flex-grow-0">{project.summary}</p>
+            <div tabindex="-1" class="collapse collapse-arrow border-l-4 border-t-4 border-light shadow-md bg-white rounded-lg transition-all duration-300">
+                <input type="checkbox"/>
+                <div class="collapse-title text-lg font-semibold px-4 py-3">
+                    More info
+                </div>
+                <div class="collapse-content px-4 bg-gray-50">
+                    <p class="text-justify text-base">{project.description}</p>
+                    {#if project.subDescription}
+                        <p class="text-justify text-base font-bold text-gray-700 mt-2">{project.subDescription}</p>
+                    {/if}
+                    <p class="text-base mt-2">{project.technologiesDescription}</p>
+                    <div class="mt-4 flex flex-wrap items-center gap-3">
+                        {#each project.technologies as technology (technology)}
+                            <img
+                                    class="h-8 w-8 rounded-full border border-gray-200 hover:shadow-lg transition-transform duration-300 hover:scale-105"
+                                    src={getIconSrc(technology)}
+                                    alt={technology}
+                            />
+                        {/each}
+                    </div>
                 </div>
             </div>
-        </div>
+        {:else}
+            <p class="text-justify text-lg">{project.description}</p>
+            <p class="text-lg">{project.technologiesDescription}</p>
+            <div class="hidden md:flex">
+                {#each project.technologies as technology (technology)}
+                    <img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology}/>
+                {/each}
+            </div>
+        {/if}
         <div class="card-actions mt-2 w-full justify-end gap-4 md:justify-between">
             <a class="my-button" href={project.github} target="_blank">
                 <img class="mx-2 h-4 w-4 lg:h-8 lg:w-8" src={github_icon} alt="github"/>

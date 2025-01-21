@@ -117,7 +117,7 @@ export const load = (async () => {
 				name: 'Crypto Bot',
 				img: crypto_bot,
 				summary:
-					'Python-based cryptocurrency trading bot with automated strategies and risk management.\n',
+					'Python-based cryptocurrency trading bot with fully automated strategies and risk management.',
 				description:
 					'Personalized cryptocurrency trading bot that automates trading using predefined strategies. The bot analyzes market trends and price data in real time, executes trades on exchanges, and incorporates risk management techniques to optimize performance. No user interface, terminal control.',
 				technologiesDescription: 'Built with Python.',
@@ -210,7 +210,7 @@ export const load = (async () => {
 				src: 'https://weather-app-11d00.web.app',
 				img: weather,
 				description:
-					'Weather app that allows you to check the weather in your city and add it to your favourites.',
+					'Weather app that allows you to check the weather in your city',
 				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS (Tailwind) and Firebase.',
 				technologies: ['vue', 'ts', 'html', 'css', 'tailwind', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Weather-App'
@@ -238,7 +238,7 @@ export const load = (async () => {
 				src: 'https://vue-udemy-section16.web.app',
 				img: coach,
 				description:
-					'Find a coach website that allows you to and register as a coach or find a coach and contact them.',
+					'Find a coach website that allows you to and register as a coach or find one.',
 				technologiesDescription: 'Built with Vue.js, JS, HTML, CSS and Firebase.',
 				technologies: ['vue', 'js', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'

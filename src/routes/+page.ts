@@ -109,6 +109,7 @@ export const load = (async () => {
 				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Jules-Art'
 			},
+			// TODO: Change bot's image
 			{
 				name: 'Crypto Bot',
 				img: crypto_bot,

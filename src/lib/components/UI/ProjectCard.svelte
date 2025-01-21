@@ -12,25 +12,28 @@
     };
 </script>
 
+<!--TODO: Fix the cursor issue for the whole website-->
+
 <div
-        class="card bg-base-100 shadow-xl transition duration-500 ease-in-out"
+        class="card bg-base-100 shadow-xl"
         class:border-2={project.label}
         class:relative={project.label}
-        class:animate-pulse={project.name === 'E-commerce website'}
         style:border-color={project.labelColor ? project.labelColor : ''}
 >
-    {#if project.label}
-        <div class="project-label" style="background-color: {project.labelColor}">
-            {project.label}
-        </div>
-    {/if}
+
     <figure>
-        <a href={project.src ? project.src : project.github} target="_blank" class="w-full">
+        <a href={project.src ? project.src : project.github} target="_blank"
+           class="w-full">
             <img
-                    class="h-52 w-full rounded-t-[16px] object-cover md:h-72"
+                    class="h-52 w-full rounded-t-[16px] object-cover md:h-72 lg:duration-500 lg:ease-in-out lg:transition-transform lg:hover:opacity-80 lg:hover:-rotate-3 lg:hover:scale-110"
                     src={project.img}
                     alt={project.name}
             />
+            {#if project.label}
+                <div class="project-label" style="background-color: {project.labelColor}">
+                    {project.label}
+                </div>
+            {/if}
         </a>
     </figure>
     <div class="cad-body gap-4 p-4 lg:p-8">
@@ -71,22 +74,6 @@
 </div>
 
 <style>
-    @keyframes pulse {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.02);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    .animate-pulse {
-        animation: pulse 3s infinite;
-    }
-
     .project-label {
         position: absolute;
         left: 0;

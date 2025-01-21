@@ -16,7 +16,6 @@
 
 <div
         class="card bg-base-100 shadow-xl"
-        class:border-2={project.label}
         class:relative={project.label}
         style:border-color={project.labelColor ? project.labelColor : ''}
 >
@@ -40,24 +39,21 @@
         <h2 class="card-title text-2xl">{project.name}</h2>
         {#if project.summary}
             <p class="text-justify text-lg flex-grow-0">{project.summary}</p>
-            <div tabindex="-1" class="collapse collapse-arrow border-l-4 border-t-4 border-light shadow-md bg-white rounded-lg transition-all duration-300">
+            <div tabindex="-1"
+                 class="collapse collapse-arrow border-l-4 border-t-4 border-light shadow-md bg-white rounded-lg transition-all duration-300">
                 <input type="checkbox"/>
                 <div class="collapse-title text-lg font-semibold px-4 py-3">
                     More info
                 </div>
-                <div class="collapse-content px-4 bg-gray-50">
+                <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4">
                     <p class="text-justify text-base">{project.description}</p>
                     {#if project.subDescription}
-                        <p class="text-justify text-base font-bold text-gray-700 mt-2">{project.subDescription}</p>
+                        <p class="text-justify text-base font-bold text-gray-700">{project.subDescription}</p>
                     {/if}
-                    <p class="text-base mt-2">{project.technologiesDescription}</p>
-                    <div class="mt-4 flex flex-wrap items-center gap-3">
+                    <p class="text-base">{project.technologiesDescription}</p>
+                    <div class="hidden md:flex">
                         {#each project.technologies as technology (technology)}
-                            <img
-                                    class="h-8 w-8 rounded-full border border-gray-200 hover:shadow-lg transition-transform duration-300 hover:scale-105"
-                                    src={getIconSrc(technology)}
-                                    alt={technology}
-                            />
+                            <img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology} />
                         {/each}
                     </div>
                 </div>

@@ -105,7 +105,7 @@
 	<div>
 		<input
 			bind:value={name}
-			class="text-md input input-bordered w-full max-w-xl"
+			class="input input-bordered w-full max-w-xl text-lg"
 			type="text"
 			name="name"
 			id="name"
@@ -120,7 +120,7 @@
 	<div>
 		<input
 			bind:value={email}
-			class="text-md input input-bordered w-full max-w-xl"
+			class="input input-bordered w-full max-w-xl text-lg "
 			type="text"
 			name="email"
 			id="email"
@@ -135,7 +135,7 @@
 	<div>
 		<textarea
 			bind:value={message}
-			class="text-md textarea textarea-bordered w-full max-w-xl"
+			class="textarea textarea-bordered w-full max-w-xl text-lg"
 			cols="30"
 			rows="4"
 			name="message"

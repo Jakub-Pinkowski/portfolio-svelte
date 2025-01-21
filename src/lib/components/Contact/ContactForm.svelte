@@ -2,6 +2,9 @@
     import axios from 'axios';
     import {fade} from 'svelte/transition';
 
+    // TODO: Combine toast logic into just one toast, add a function showToast
+    // TODO: Maybe streamline errors as well
+
     let name: string = $state('');
     let email: string = $state('');
     let message: string = $state('');

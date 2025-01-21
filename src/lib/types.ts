@@ -11,6 +11,7 @@ export type Project = {
 	label?: string;
 	labelColor?: string;
 	img: string;
+	summary?: string;
 	description: string;
     subDescription?: string;
 	technologiesDescription: string;

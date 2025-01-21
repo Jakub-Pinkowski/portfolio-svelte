@@ -38,7 +38,9 @@
     </figure>
     <div class="cad-body gap-4 p-4 lg:p-8">
         <h2 class="card-title text-2xl">{project.name}</h2>
-        <p class="text-justify text-lg">Short description goes here</p>
+        {#if project.summary}
+            <p class="text-justify text-lg my-2">{project.summary}</p>
+        {/if}
         <div tabindex="-1" class="collapse collapse-arrow rounded-box">
             <input type="checkbox"/>
             <div class="collapse-title px-0 text-xl">

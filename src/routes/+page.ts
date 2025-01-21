@@ -74,6 +74,8 @@ export const load = (async () => {
 				label: 'Flagship Project',
 				labelColor: '#e9c46a',
 				img: e_commerce,
+				summary:
+					'Fullstack e-commerce website for product browsing, filtering, cart management and user authentication.',
 				description:
 					'A fullstack e-commerce website with features like product filtering, sorting, adding to cart and wishlist, viewing product details, site-wide search, and user authentication with email and OAuth (GitHub, Google) to track user data and orders.',
 				subDescription: 'This website is constantly evolving. New features added regularly!',
@@ -103,6 +105,7 @@ export const load = (async () => {
 				label: 'Freelance Project',
 				labelColor: '#8ecae6',
 				img: jules_art,
+				summary: 'Portfolio site for an artist, featuring a clean, responsive design with media such as images, videos, and audio.',
 				description:
 					"Artist's portfolio website designed to showcase her creative work and provide a means for visitors to get in touch with her. This project was built for a client to meet her specific requirements and aesthetic preferences. The website features a clean and modern design, intuitive navigation, and responsive layout to provide an optimal viewing experience across all devices.",
 				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
@@ -113,8 +116,10 @@ export const load = (async () => {
 			{
 				name: 'Crypto Bot',
 				img: crypto_bot,
+				summary:
+					'Python-based cryptocurrency trading bot with automated strategies and risk management.\n',
 				description:
-					'A personalized cryptocurrency trading bot that automates trading using predefined strategies. The bot analyzes market trends and price data in real time, executes trades on exchanges, and incorporates risk management techniques to optimize performance. No user interface, terminal control.',
+					'Personalized cryptocurrency trading bot that automates trading using predefined strategies. The bot analyzes market trends and price data in real time, executes trades on exchanges, and incorporates risk management techniques to optimize performance. No user interface, terminal control.',
 				technologiesDescription: 'Built with Python.',
 				technologies: ['python'],
 				github: 'https://github.com/Jakub-Pinkowski/crypto-bot'

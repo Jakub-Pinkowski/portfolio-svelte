@@ -83,19 +83,17 @@ export const load = (async () => {
 					'Add products to cart and wishlist',
 					"View all products' details on dedicated product page",
 					'Site-wide search functionality',
-					'User authentication with email and OAuth (GitHub, Google)',
+					'User authentication with email and OAuth (GitHub, Google)'
 				],
-				technologiesDescription:
-					'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, SQL, Drizzle and Vercel.',
 				technologies: [
-					'sveltekit',
-					'ts',
-					'html',
-					'css',
-					'tailwind',
-					'postgresql',
-					'drizzle',
-					'vercel'
+					'SvelteKit',
+					'TypeScript',
+					'HTML',
+					'CSS',
+					'Tailwind',
+					'PostgreSQL',
+					'Drizzle',
+					'Vercel'
 				],
 				github: 'https://github.com/Jakub-Pinkowski/commerce-website'
 			},
@@ -105,14 +103,14 @@ export const load = (async () => {
 				label: 'Freelance Project',
 				labelColor: '#8ecae6',
 				img: jules_art,
-				summary: 'Portfolio site for an artist, featuring a clean, responsive design with media such as images, videos, and audio.',
+				summary:
+					'Portfolio site for an artist, featuring a clean, responsive design with media such as images, videos, and audio.',
 				description:
 					"Artist's portfolio website designed to showcase her creative work and provide a means for visitors to get in touch with her. This project was built for a client to meet her specific requirements and aesthetic preferences. The website features a clean and modern design, intuitive navigation, and responsive layout to provide an optimal viewing experience across all devices.",
-				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
-				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
+				technologiesDescription: 'Built with Vue.js, TypeScript, HTML, CSS and Firebase.',
+				technologies: ['Vue.js', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Jules-Art'
 			},
-			// TODO: Change bot's image
 			{
 				name: 'Crypto Bot',
 				img: crypto_bot,
@@ -121,7 +119,7 @@ export const load = (async () => {
 				description:
 					'Personalized cryptocurrency trading bot that automates trading using predefined strategies. The bot analyzes market trends and price data in real time, executes trades on exchanges, and incorporates risk management techniques to optimize performance. No user interface, terminal control.',
 				technologiesDescription: 'Built with Python.',
-				technologies: ['python'],
+				technologies: ['Python'],
 				github: 'https://github.com/Jakub-Pinkowski/crypto-bot'
 			},
 			{
@@ -132,7 +130,7 @@ export const load = (async () => {
 					'A platform for users to create accounts, manage posts, and interact with others through likes.',
 				technologiesDescription:
 					'Built with React, Next.js, HTML, CSS, Firebase, and deployed on Vercel.',
-				technologies: ['react', 'next', 'js', 'html', 'css', 'firebase', 'vercel'],
+				technologies: ['React', 'Next.js', 'JavaScript', 'HTML', 'CSS', 'Firebase', 'Vercel'],
 				github: 'https://github.com/Jakub-Pinkowski/Blogging-Platform'
 			},
 			{
@@ -142,16 +140,16 @@ export const load = (async () => {
 				description:
 					'Links page that allows you to create an account, add your links to social media and share them with others. Inspired by Linktree.',
 				technologiesDescription:
-					'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, Firebase and Vercel.',
+					'Built with Svelte, SvelteKit, TypeScript, HTML, CSS, Tailwind, Firebase and Vercel.',
 				technologies: [
-					'svelte',
-					'sveltekit',
-					'ts',
-					'html',
-					'css',
-					'tailwind',
-					'firebase',
-					'vercel'
+					'Svelte',
+					'SvelteKit',
+					'TypeScript',
+					'HTML',
+					'CSS',
+					'Tailwind',
+					'Firebase',
+					'Vercel'
 				],
 				github: 'https://github.com/Jakub-Pinkowski/links-page'
 			},
@@ -161,8 +159,8 @@ export const load = (async () => {
 				img: habit_tracker,
 				description:
 					'Habit Tracker website that allows you to track your habits. You can add, edit and delete your entries.',
-				technologiesDescription: 'Built with Python, SQLite, JS, HTML and CSS.',
-				technologies: ['python', 'sqlite', 'js', 'html', 'css'],
+				technologiesDescription: 'Built with Python, SQLite, JavaScript, HTML and CSS.',
+				technologies: ['Python', 'SQLite', 'JavaScript', 'HTML', 'CSS'],
 				github: 'https://github.com/Jakub-Pinkowski/cs50_final_project'
 			}
 		] as Project[],
@@ -172,8 +170,8 @@ export const load = (async () => {
 				img: mobile,
 				description:
 					'A professional mobile CRUD application featuring a polished design and well-implemented business logic',
-				technologiesDescription: 'Built with React Native, TS, .NET, C# and SQLite.',
-				technologies: ['react-native', 'ts', 'dot-net', 'csharp', 'sqlite'],
+				technologiesDescription: 'Built with React Native, TypeScript, .NET, C# and SQLite.',
+				technologies: ['React Native', 'TypeScript', '.NET', 'C#', 'SQLite'],
 				github: 'https://github.com/Jakub-Pinkowski/mobile-business-application'
 			},
 			{
@@ -182,7 +180,7 @@ export const load = (async () => {
 				description:
 					'A professional internet CRUD application featuring a polished design and well-implemented business logic',
 				technologiesDescription: 'Built with Blazor, .NET, C# and SQLite.',
-				technologies: ['blazor', 'dot-net', 'csharp', 'sqlite'],
+				technologies: ['Blazor', '.NET', 'C#', 'SQLite'],
 				github: 'https://github.com/Jakub-Pinkowski/internet-business-application'
 			},
 			{
@@ -191,7 +189,7 @@ export const load = (async () => {
 				description:
 					'A professional desktop CRUD application featuring a polished design and well-implemented business logic',
 				technologiesDescription: 'Built with .NET, MAUI, C# and SQLite.',
-				technologies: ['dot-net', 'csharp', 'sqlite'],
+				technologies: ['.NET', 'MAUI', 'C#', 'SQLite'],
 				github: 'https://github.com/Jakub-Pinkowski/desktop-business-application'
 			}
 		] as Project[],
@@ -201,18 +199,18 @@ export const load = (async () => {
 				src: 'https://react-counter-64e25.web.app',
 				img: meals,
 				description: 'Meals app that allows you to add meals to your cart and order them.',
-				technologiesDescription: 'Built with React, JS, HTML, CSS and Firebase.',
-				technologies: ['react', 'js', 'html', 'css', 'firebase'],
+				technologiesDescription: 'Built with React, JavaScript, HTML, CSS and Firebase.',
+				technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'Firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/react-meals'
 			},
 			{
 				name: 'Weather App',
 				src: 'https://weather-app-11d00.web.app',
 				img: weather,
-				description:
-					'Weather app that allows you to check the weather in your city',
-				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS (Tailwind) and Firebase.',
-				technologies: ['vue', 'ts', 'html', 'css', 'tailwind', 'firebase'],
+				description: 'Weather app that allows you to check the weather in your city',
+				technologiesDescription:
+					'Built with Vue.js, TypeScript, HTML, CSS (Tailwind) and Firebase.',
+				technologies: ['Vue.js', 'TypeScript', 'HTML', 'CSS (Tailwind)', 'Firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Weather-App'
 			},
 			{
@@ -220,8 +218,8 @@ export const load = (async () => {
 				src: 'https://travel-blog-9cc00.web.app',
 				img: travel_blog,
 				description: 'Travel blog website. The admin can add posts and images.',
-				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
-				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
+				technologiesDescription: 'Built with Vue.js, TypeScript, HTML, CSS and Firebase.',
+				technologies: ['Vue.js', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Travel-Blog'
 			},
 			{
@@ -229,18 +227,17 @@ export const load = (async () => {
 				src: 'https://todo-app-5ce36.web.app',
 				img: todo,
 				description: 'Simple TODO app that allows you to add, edit and delete your tasks.',
-				technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
-				technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
+				technologiesDescription: 'Built with Vue.js, TypeScript, HTML, CSS and Firebase.',
+				technologies: ['Vue.js', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Todo-App'
 			},
 			{
 				name: 'Coaching Platform',
 				src: 'https://vue-udemy-section16.web.app',
 				img: coach,
-				description:
-					'Find a coach website that allows you to and register as a coach or find one.',
-				technologiesDescription: 'Built with Vue.js, JS, HTML, CSS and Firebase.',
-				technologies: ['vue', 'js', 'html', 'css', 'firebase'],
+				description: 'Find a coach website that allows you to and register as a coach or find one.',
+				technologiesDescription: 'Built with Vue.js, JavaScript, HTML, CSS and Firebase.',
+				technologies: ['Vue.js', 'JavaScript', 'HTML', 'CSS', 'Firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
 			},
 			{
@@ -248,110 +245,110 @@ export const load = (async () => {
 				src: 'https://investment-calculator-28479.web.app',
 				img: investment_calculator,
 				description: 'Investment calculator that allows you to calculate your investment income.',
-				technologiesDescription: 'Built with React, JS, HTML, CSS and Firebase.',
-				technologies: ['react', 'js', 'html', 'css', 'firebase'],
+				technologiesDescription: 'Built with React, JavaScript, HTML, CSS and Firebase.',
+				technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'Firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/investment-calculator'
 			}
 		] as Project[],
 		icons: [
 			{
-				name: 'vue',
+				name: 'Vue.js',
 				src: vueIcon
 			},
 			{
-				name: 'html',
+				name: 'HTML',
 				src: htmlIcon
 			},
 			{
-				name: 'css',
+				name: 'CSS',
 				src: cssIcon
 			},
 			{
-				name: 'js',
+				name: 'JavaScript',
 				src: jsIcon
 			},
 			{
-				name: 'ts',
+				name: 'TypeScript',
 				src: tsIcon
 			},
 			{
-				name: 'python',
+				name: 'Python',
 				src: pythonIcon
 			},
 			{
-				name: 'firebase',
+				name: 'Firebase',
 				src: firebaseIcon
 			},
 			{
-				name: 'sqlite',
+				name: 'SQLite',
 				src: sqliteIcon
 			},
 			{
-				name: 'git',
+				name: 'Git',
 				src: gitIcon
 			},
 			{
-				name: 'github',
+				name: 'GitHub',
 				src: githubIcon
 			},
 			{
-				name: 'globe',
+				name: 'Globe',
 				src: globeIcon
 			},
 			{
-				name: 'tailwind',
+				name: 'Tailwind',
 				src: tailwindIcon
 			},
 			{
-				name: 'sass',
+				name: 'Sass',
 				src: sassIcon
 			},
 			{
-				name: 'react',
+				name: 'React',
 				src: reactIcon
 			},
 			{
-				name: 'next',
+				name: 'Next.js',
 				src: nextIcon
 			},
 			{
-				name: 'vercel',
+				name: 'Vercel',
 				src: vercelIcon
 			},
 			{
-				name: 'prisma',
+				name: 'Prisma',
 				src: prismaIcon
 			},
 			{
-				name: 'postgresql',
+				name: 'PostgreSQL',
 				src: postgresqlIcon
 			},
 			{
-				name: 'svelte',
+				name: 'Svelte',
 				src: svelteIcon
 			},
 			{
-				name: 'sveltekit',
+				name: 'SvelteKit',
 				src: sveltekitIcon
 			},
 			{
-				name: 'drizzle',
+				name: 'Drizzle',
 				src: drizzleIcon
 			},
 			{
-				name: 'dot-net',
+				name: '.NET',
 				src: dotNetIcon
 			},
 			{
-				name: 'react-native',
+				name: 'React Native',
 				src: reactNativeIcon
 			},
 			{
-				name: 'csharp',
+				name: 'C#',
 				src: cSharpIcon
 			},
 			{
-				name: 'blazor',
+				name: 'Blazor',
 				src: blazorIcon
 			}
 		] as Icon[]

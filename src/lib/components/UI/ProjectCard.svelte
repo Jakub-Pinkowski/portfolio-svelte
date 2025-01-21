@@ -61,10 +61,9 @@
                     {/if}
                     <h3 class="text-lg font-semibold">Technology:</h3>
                     <ul class="list-disc ps-8">
-                        <li>Svelte</li>
-                        <li>SvelteKit</li>
-                        <li>Typescript</li>
-                        <li>HTML/CSS</li>
+                        {#each project.technologies as technology (technology)}
+                            <li>{technology}</li>
+                        {/each}
                     </ul>
                     <div class="hidden md:flex">
                         {#each project.technologies as technology (technology)}

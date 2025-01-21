@@ -26,6 +26,7 @@
 	<Hamburger bind:open --color="#950740" />
 </nav>
 
+<!--NOTE: For some unexplained reason if I use #each the flying animation doesn't work-->
 {#if open}
 	<div class="fixed inset-x-0 top-0 z-10 bg-darkGray text-light">
 		<div class="text-center text-3xl tracking-wide">

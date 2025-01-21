@@ -14,6 +14,7 @@ export type Project = {
 	summary?: string;
 	description: string;
     subDescription?: string;
+	features?: string[];
 	technologiesDescription: string;
 	technologies: string[];
 	github: string;

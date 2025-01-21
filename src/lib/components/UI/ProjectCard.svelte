@@ -43,17 +43,24 @@
                  class="collapse collapse-arrow border-l-4 border-t-4 border-light shadow-md bg-white rounded-lg transition-all duration-300">
                 <input type="checkbox"/>
                 <div class="collapse-title text-lg font-semibold px-4 py-3">
-                    More info
+                    More technical info
                 </div>
                 <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4">
                     <p class="text-justify text-base">{project.description}</p>
                     {#if project.subDescription}
                         <p class="text-justify text-base font-bold text-gray-700">{project.subDescription}</p>
                     {/if}
+                    {#if project.features}
+                        <ul>
+                            {#each project.features as feature (feature)}
+                                <li>{feature}</li>
+                            {/each}
+                        </ul>
+                    {/if}
                     <p class="text-base">{project.technologiesDescription}</p>
                     <div class="hidden md:flex">
                         {#each project.technologies as technology (technology)}
-                            <img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology} />
+                            <img class="mx-2 block h-8 w-8 first:ml-0" src={getIconSrc(technology)} alt={technology}/>
                         {/each}
                     </div>
                 </div>
@@ -67,14 +74,14 @@
                 {/each}
             </div>
         {/if}
-        <div class="card-actions mt-2 w-full justify-end gap-4 md:justify-between">
+        <div class="card-actions flex-col mt-2 w-full justify-end gap-4 md:flex-row md:justify-between">
             <a class="my-button" href={project.github} target="_blank">
-                <img class="mx-2 h-4 w-4 lg:h-8 lg:w-8" src={github_icon} alt="github"/>
+                <img class="mx-2 h-8 w-8" src={github_icon} alt="github"/>
                 View Code
             </a>
             {#if project.src}
                 <a class="my-button" href={project.src} target="_blank">
-                    <img class="mx-2 h-4 w-4 lg:h-8 lg:w-8" src={globe_icon} alt="globe"/>
+                    <img class="mx-2 h-8 w-8" src={globe_icon} alt="globe"/>
                     Visit Website
                 </a>
             {/if}

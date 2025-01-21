@@ -83,7 +83,8 @@ export const load = (async () => {
 					'View, filter and sort all products',
 					'Add products to cart and wishlist',
 					"View all products' details on dedicated product page",
-					'Site-wide search functionality'
+					'Site-wide search functionality',
+					'User authentication with email and OAuth (GitHub, Google)',
 				],
 				technologiesDescription:
 					'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, SQL, Drizzle and Vercel.',

@@ -65,6 +65,12 @@ h2 {
 	height: 100%;
 }
 
+@media (max-width: 768px) {
+	.my-button {
+		width: 100%;
+	}
+}
+
 @media (min-width: 1536px) {
 	.my-button {
 		width: 13rem;

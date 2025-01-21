@@ -15,7 +15,12 @@
         icons: Icon[];
     } = $props();
 
-    const categories = [
+    interface Category {
+        title: string;
+        projects: Project[];
+    }
+
+    const categories: Category[] = [
         {title: "Fullstack projects", projects: mainProjects},
         {title: "Studies projects", projects: studiesProjects},
         {title: "Simple websites", projects: simpleProjects}

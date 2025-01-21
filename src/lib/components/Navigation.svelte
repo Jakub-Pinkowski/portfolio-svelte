@@ -5,7 +5,12 @@
 
 	let open: boolean = $state(false)
 
-	const links = [
+	interface Link {
+		label: string;
+		path: string;
+	}
+
+	const links: Link[] = [
 		{ label: 'Home', path: '/' },
 		{ label: 'About Me', path: '#about-me' },
 		{ label: 'Portfolio', path: '#portfolio' },

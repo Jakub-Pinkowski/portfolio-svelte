@@ -43,7 +43,7 @@
                  class="collapse collapse-arrow border-l-4 border-t-4 border-light shadow-md bg-white rounded-lg transition-all duration-300">
                 <input type="checkbox"/>
                 <div class="collapse-title text-lg text-darkGray font-semibold px-4 py-3">
-                    Technical info
+                    More info
                 </div>
                 <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4">
                     <h3 class="text-lg font-semibold">Description:</h3>

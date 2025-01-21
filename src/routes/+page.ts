@@ -1,5 +1,6 @@
 import type { PageLoad } from './$types';
 
+// Main projects
 import e_commerce from '$lib/assets/images/main_projects/e-commerce.jpg';
 import jules_art from '$lib/assets/images/main_projects/jules-art.jpg';
 import crypto_bot from '$lib/assets/images/main_projects/crypto_bot.jpg';
@@ -7,10 +8,12 @@ import blogging_platform from '$lib/assets/images/main_projects/blogging-platfor
 import links_page from '$lib/assets/images/main_projects/links-page.jpg';
 import habit_tracker from '$lib/assets/images/main_projects/habit-tracker.jpg';
 
+// Studies
 import mobile from '$lib/assets/images/studies_projects/mobile.jpg';
 import internet from '$lib/assets/images/studies_projects/internet.jpg';
 import desktop from '$lib/assets/images/studies_projects/desktop.jpg';
 
+// Simple projects
 import meals from '$lib/assets/images/simple_projects/meals.jpg';
 import weather from '$lib/assets/images/simple_projects/weather.jpg';
 import travel_blog from '$lib/assets/images/simple_projects/travel-blog.jpg';
@@ -18,33 +21,45 @@ import todo from '$lib/assets/images/simple_projects/todo.jpg';
 import coach from '$lib/assets/images/simple_projects/coach.jpg';
 import investment_calculator from '$lib/assets/images/simple_projects/investment-calculator.jpg';
 
+// Websites
 import auto_repair from '$lib/assets/images/websites/auto-repair.jpg';
 import insurance_agency from '$lib/assets/images/websites/insurance-agency.jpg';
 
-import vueIcon from '$lib/assets/icons/vue.png';
+// Core Languages
+import tsIcon from '$lib/assets/icons/ts.png';
+import jsIcon from '$lib/assets/icons/js.png';
 import htmlIcon from '$lib/assets/icons/html.png';
 import cssIcon from '$lib/assets/icons/css.png';
-import jsIcon from '$lib/assets/icons/js.png';
-import tsIcon from '$lib/assets/icons/ts.png';
-import pythonIcon from '$lib/assets/icons/python.png';
-import firebaseIcon from '$lib/assets/icons/firebase.png';
-import sqliteIcon from '$lib/assets/icons/sql.png';
-import gitIcon from '$lib/assets/icons/git.png';
-import githubIcon from '$lib/assets/icons/github.png';
-import tailwindIcon from '$lib/assets/icons/tailwind.png';
-import sassIcon from '$lib/assets/icons/sass.png';
+
+// Frontend Frameworks and Libraries
 import reactIcon from '$lib/assets/icons/react.png';
 import nextIcon from '$lib/assets/icons/next.png';
-import vercelIcon from '$lib/assets/icons/vercel.png';
-import prismaIcon from '$lib/assets/icons/prisma.png';
-import postgresqlIcon from '$lib/assets/icons/postgresql.png';
+import vueIcon from '$lib/assets/icons/vue.png';
 import svelteIcon from '$lib/assets/icons/svelte.png';
 import sveltekitIcon from '$lib/assets/icons/sveltekit.png';
-import drizzleIcon from '$lib/assets/icons/drizzle.png';
+
+// Styling Frameworks and Libraries
+import tailwindIcon from '$lib/assets/icons/tailwind.png';
+import sassIcon from '$lib/assets/icons/sass.png';
+
+// Backend Frameworks and Databases
 import dotNetIcon from '$lib/assets/icons/dot-net.png';
+import blazorIcon from '$lib/assets/icons/blazor.png';
+import prismaIcon from '$lib/assets/icons/prisma.png';
+import drizzleIcon from '$lib/assets/icons/drizzle.png';
+import postgresqlIcon from '$lib/assets/icons/postgresql.png';
+import sqliteIcon from '$lib/assets/icons/sql.png';
+
+// Deployment and Hosting
+import vercelIcon from '$lib/assets/icons/vercel.png';
+import firebaseIcon from '$lib/assets/icons/firebase.png';
+
+// Supporting Tools
+import gitIcon from '$lib/assets/icons/git.png';
+import githubIcon from '$lib/assets/icons/github.png';
+import pythonIcon from '$lib/assets/icons/python.png';
 import reactNativeIcon from '$lib/assets/icons/react-native.png';
 import cSharpIcon from '$lib/assets/icons/csharp.png';
-import blazorIcon from '$lib/assets/icons/blazor.png';
 
 import type { Website, Project, Icon } from '$lib/types';
 

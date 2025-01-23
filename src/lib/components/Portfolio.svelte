@@ -27,11 +27,11 @@
     ];
 </script>
 
-<div id="portfolio" class="mx-8 my-24">
+<div id="portfolio" class="mx-8 my-14 lg:my-24">
     <h3 class="text-4xl uppercase text-main mb-8">Portfolio</h3>
 
     {#each categories as {title, projects} (title)}
-        <section class="my-16 md:p-8 md:rounded-lg md:shadow-md md:bg-light-gray">
+        <section class="my-8 md:p-8 md:rounded-lg md:shadow-md md:bg-light-gray md:my-16">
             <h4 class="text-3xl text-dark-gray mb-8">{title}</h4>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3 2xl:gap-12">
                 {#each projects as project (project.name)}

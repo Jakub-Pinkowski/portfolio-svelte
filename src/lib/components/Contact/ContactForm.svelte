@@ -155,7 +155,7 @@
             <p class=" mt-2text-sm text-red-500">{messageError}</p>
         {/if}
     </div>
-    <button class="my-button !px-4 !py-2 text-xl">Send</button>
+    <button class="my-button px-4! py-2! text-xl">Send</button>
 
     {#if toastSuccess}
         <div class="toast toast-center toast-top" transition:fade>

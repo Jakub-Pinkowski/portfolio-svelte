@@ -4,7 +4,7 @@
     let {project}: { project: Project; } = $props();
 </script>
 
-<p class="text-justify text-lg flex-grow-0">{project.summary}</p>
+<p class="text-justify text-lg grow-0">{project.summary}</p>
 <div tabindex="-1"
      class="collapse collapse-arrow border-l-4 border-t-4 border-light shadow-md bg-white rounded-lg transition-all duration-300 md:hover:shadow-xl">
     <input type="checkbox"/>

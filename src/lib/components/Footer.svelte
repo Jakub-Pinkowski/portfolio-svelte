@@ -1,9 +1,9 @@
 <script lang="ts">
 </script>
 
-<footer class="footer items-center bg-darkGray p-4 text-neutral-content">
+<footer class="footer items-center bg-dark-gray p-4 text-neutral-content">
     <aside class="flex w-full items-center justify-between">
-        <p class="mr-2">Copyright © 2024 - All right reserved</p>
+        <p class="mr-2">Copyright © 2025 - All right reserved</p>
         <a
                 href="https://github.com/Jakub-Pinkowski"
                 aria-label="GitHub"

@@ -118,7 +118,7 @@ export const load = (async () => {
 				labelColor: '#8ecae6',
 				img: jules_art,
 				summary:
-					'Portfolio site for an artist, featuring a clean, responsive design with media such as images, videos, and audio.',
+					'Portfolio site for an artist, featuring a responsive design with media such as images, videos, and audio.',
 				description:
 					"Artist's portfolio website designed to showcase her creative work and provide a means for visitors to get in touch with her. This project was built for a client to meet her specific requirements and aesthetic preferences. The website features a clean and modern design, intuitive navigation, and responsive layout to provide an optimal viewing experience across all devices.",
 				features: [

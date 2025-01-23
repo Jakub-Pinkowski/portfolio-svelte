@@ -17,18 +17,4 @@ export default {
 			}
 		}
 	},
-	plugins: [require('daisyui')],
-	daisyui: {
-        logs: false,
-		themes: [
-			{
-				light: {
-					...require('daisyui/src/theming/themes')['light'],
-					main: '#950740', // Dark red
-					gray: '#4e4e50', // Gray
-					dark: '#6f2232' // Darker red
-				}
-			}
-		]
-	}
 };

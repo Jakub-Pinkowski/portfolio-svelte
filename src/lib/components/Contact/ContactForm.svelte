@@ -2,7 +2,9 @@
     import axios from 'axios';
     import {fade} from 'svelte/transition';
 
-    //
+    let isSubmitting = $state(false);
+
+    // Form data
     let name: string = $state('');
     let email: string = $state('');
     let message: string = $state('');
@@ -23,8 +25,11 @@
 
     const handleSubmit = async (event: Event) => {
         event.preventDefault();
-        resetErrors();
 
+        if (isSubmitting) return; // Prevent multiple submissions
+        isSubmitting = true;
+
+        resetErrors();
         if (!validateForm()) {
             showToast('Please fill out all fields correctly.', 'error');
             return;
@@ -47,6 +52,8 @@
         } catch (error) {
             showToast('Something went wrong. Please try again later.', 'error');
             console.error('Unexpected error:', error);
+        } finally {
+            isSubmitting = false;
         }
 
         resetForm();
@@ -145,7 +152,9 @@
             <p class=" mt-2text-sm text-red-500">{errors.message}</p>
         {/if}
     </div>
-    <button class="my-button px-4! py-2! text-xl">Send</button>
+    <button class="my-button px-4! py-2! text-xl" disabled={isSubmitting}>
+        {isSubmitting ? 'Sending' : 'Send'}
+    </button>
 
     {#if toast.visible}
         <div class="toast toast-center toast-top" transition:fade>

@@ -2,7 +2,7 @@
     import me from '$lib/assets/images/me_cropped.jpg';
 </script>
 
-<div id="about-me" class="mx-8 my-14 lg:my-24 flex flex-col md:flex-row">
+<div id="about-me" class="mx-8 my-14  flex flex-col md:flex-row md:my-24">
     <div class="w-full text-justify md:w-1/2">
         <h3 class="text-4xl uppercase text-main">About Me</h3>
         <h5 class="my-8 text-xl text-dark-gray">Hello World!</h5>

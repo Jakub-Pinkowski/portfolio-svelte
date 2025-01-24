@@ -2,26 +2,24 @@
     import axios from 'axios';
     import {fade} from 'svelte/transition';
 
+    //
     let name: string = $state('');
     let email: string = $state('');
     let message: string = $state('');
 
-    let nameError: string = $state('');
-    let emailError: string = $state('');
-    let messageError: string = $state('');
+    // Errors
+    let errors = $state({
+        name: '',
+        email: '',
+        message: ''
+    });
 
     // Toast
     let toast = $state({
         message: '',
-        type: '', // 'success' or 'error'
+        type: '',
         visible: false
     });
-
-    const showToast = (message: string, type: 'success' | 'error') => {
-        toast = {message, type, visible: true};
-        setTimeout(() => (toast.visible = false), 2000);
-    };
-
 
     const handleSubmit = async (event: Event) => {
         event.preventDefault();
@@ -58,26 +56,39 @@
         let isValid = true;
 
         if (!name) {
-            nameError = 'Name is required.';
+            errors.name = 'Name is required.';
             isValid = false;
         }
 
         if (!email) {
-            emailError = 'Email is required.';
+            errors.email = 'Email is required.';
             isValid = false;
         } else if (!isValidEmail(email)) {
-            emailError = 'Please enter a valid email address.';
+            errors.email = 'Please enter a valid email address.';
             isValid = false;
         }
 
         if (!message) {
-            messageError = 'Message is required.';
+            errors.message = 'Message is required.';
             isValid = false;
         }
 
         return isValid;
     };
 
+    const isValidEmail = (value: string): boolean => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(value);
+    };
+
+    const resetErrors = () => {
+        errors = {name: '', email: '', message: ''};
+    };
+
+    const showToast = (message: string, type: 'success' | 'error') => {
+        toast = {message, type, visible: true};
+        setTimeout(() => (toast.visible = false), 2000);
+    };
 
     const resetForm = () => {
         name = '';
@@ -85,16 +96,7 @@
         message = '';
     };
 
-    const resetErrors = () => {
-        nameError = '';
-        emailError = '';
-        messageError = '';
-    };
 
-    const isValidEmail = (value: string): boolean => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(value);
-    };
 </script>
 
 <form onsubmit={handleSubmit} class="flex flex-col gap-4 2xl:gap-6">
@@ -109,8 +111,8 @@
                 required
                 autocomplete="name"
         />
-        {#if nameError}
-            <p class="mt-2 text-sm text-red-500">{nameError}</p>
+        {#if errors.name}
+            <p class="mt-2 text-sm text-red-500">{errors.name}</p>
         {/if}
     </div>
     <div>
@@ -124,8 +126,8 @@
                 required
                 autocomplete="email"
         />
-        {#if emailError}
-            <p class=" mt-2 text-sm text-red-500">{emailError}</p>
+        {#if errors.email}
+            <p class=" mt-2 text-sm text-red-500">{errors.email}</p>
         {/if}
     </div>
     <div>
@@ -139,8 +141,8 @@
                 placeholder="Message"
                 required
         ></textarea>
-        {#if messageError}
-            <p class=" mt-2text-sm text-red-500">{messageError}</p>
+        {#if errors.message}
+            <p class=" mt-2text-sm text-red-500">{errors.message}</p>
         {/if}
     </div>
     <button class="my-button px-4! py-2! text-xl">Send</button>

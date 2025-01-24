@@ -2,66 +2,54 @@
     import axios from 'axios';
     import {fade} from 'svelte/transition';
 
-    // TODO: Combine toast logic into just one toast, add a function showToast
-    // TODO: Maybe streamline errors as well
-
     let name: string = $state('');
     let email: string = $state('');
     let message: string = $state('');
-    let toastSuccess: boolean = $state(false);
-    let toastError: boolean = $state(false);
-    let toastMessage: string = $state('');
 
     let nameError: string = $state('');
     let emailError: string = $state('');
     let messageError: string = $state('');
+
+    // Toast
+    let toast = $state({
+        message: '',
+        type: '', // 'success' or 'error'
+        visible: false
+    });
+
+    const showToast = (message: string, type: 'success' | 'error') => {
+        toast = {message, type, visible: true};
+        setTimeout(() => (toast.visible = false), 2000);
+    };
+
 
     const handleSubmit = async (event: Event) => {
         event.preventDefault();
         resetErrors();
 
         if (!validateForm()) {
-            toastMessage = 'Please fill out all fields correctly.';
-            toastError = true;
-
-            setTimeout(() => {
-                toastSuccess = false;
-                toastError = false;
-            }, 2000);
-
+            showToast('Please fill out all fields correctly.', 'error');
             return;
         }
 
         const url = 'https://formspree.io/f/xpzgwgre';
+        const data = {name, email, message};
 
-        const data = {
-            name,
-            email,
-            message
-        };
 
         try {
             const response = await axios.post(url, data);
 
             if (response.status === 200) {
-                toastMessage = 'Message sent successfully!';
-                toastSuccess = true;
+                showToast('Message sent successfully!', 'success');
                 resetForm();
             } else {
-                toastMessage = 'Something went wrong. Please try again later.';
-                toastError = true;
+                showToast('Something went wrong. Please try again later.', 'error');
                 console.error('Unexpected response status:', response.status);
             }
         } catch (error) {
-            toastMessage = 'Something went wrong. Please try again later.';
-            toastError = true;
+            showToast('Something went wrong. Please try again later.', 'error');
             console.error('Unexpected error:', error);
         }
-
-        setTimeout(() => {
-            toastSuccess = false;
-            toastError = false;
-        }, 2000);
 
         resetForm();
     };
@@ -157,18 +145,10 @@
     </div>
     <button class="my-button px-4! py-2! text-xl">Send</button>
 
-    {#if toastSuccess}
+    {#if toast.visible}
         <div class="toast toast-center toast-top" transition:fade>
-            <div class="alert alert-success">
-                <span>{toastMessage}</span>
-            </div>
-        </div>
-    {/if}
-
-    {#if toastError}
-        <div class="toast toast-center toast-top" transition:fade>
-            <div class="alert alert-error">
-                <span>{toastMessage}</span>
+            <div class={`alert alert-${toast.type}`}>
+                <span>{toast.message}</span>
             </div>
         </div>
     {/if}

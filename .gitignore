@@ -19,3 +19,6 @@ vite.config.ts.timestamp-*
 
 # WebStorm specific folder
 .idea/
+
+# Backup images
+/backup_images

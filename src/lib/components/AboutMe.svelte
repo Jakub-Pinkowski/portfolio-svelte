@@ -1,5 +1,5 @@
 <script lang="ts">
-    import me from '$lib/assets/images/me_cropped.jpg';
+    import me from '$lib/assets/images/me_cropped.webp';
 </script>
 
 <div id="about-me" class="mx-8 my-14 flex flex-col md:flex-row md:my-24">

@@ -1,6 +1,6 @@
-import mobile from '$lib/assets/images/studies_projects/mobile.jpg';
-import internet from '$lib/assets/images/studies_projects/internet.jpg';
-import desktop from '$lib/assets/images/studies_projects/desktop.jpg';
+import mobile from '$lib/assets/images/studies_projects/mobile.webp';
+import internet from '$lib/assets/images/studies_projects/internet.webp';
+import desktop from '$lib/assets/images/studies_projects/desktop.webp';
 
 import type { Project } from '$lib/types';
 

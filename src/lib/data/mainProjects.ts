@@ -1,9 +1,9 @@
-import e_commerce from '$lib/assets/images/main_projects/e-commerce.jpg';
-import jules_art from '$lib/assets/images/main_projects/jules-art.jpg';
-import crypto_bot from '$lib/assets/images/main_projects/crypto_bot.jpg';
-import blogging_platform from '$lib/assets/images/main_projects/blogging-platform.jpg';
-import links_page from '$lib/assets/images/main_projects/links-page.jpg';
-import habit_tracker from '$lib/assets/images/main_projects/habit-tracker.jpg';
+import e_commerce from '$lib/assets/images/main_projects/e-commerce.webp';
+import jules_art from '$lib/assets/images/main_projects/jules-art.webp';
+import crypto_bot from '$lib/assets/images/main_projects/crypto_bot.webp';
+import blogging_platform from '$lib/assets/images/main_projects/blogging-platform.webp';
+import links_page from '$lib/assets/images/main_projects/links-page.webp';
+import habit_tracker from '$lib/assets/images/main_projects/habit-tracker.webp';
 
 import type { Project } from '$lib/types';
 

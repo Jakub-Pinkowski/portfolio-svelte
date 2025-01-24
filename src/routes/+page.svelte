@@ -9,7 +9,7 @@
     let {data}: { data: PageData } = $props();
 </script>
 
-<!--TODO: Go through all the pages and check if I'm using proper h tags-->
+<!--TODO: Add robots.tsx-->
 <Banner/>
 <AboutMe/>
 <Portfolio

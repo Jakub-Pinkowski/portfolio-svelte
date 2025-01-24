@@ -1,5 +1,5 @@
 <script lang="ts">
-    import contact from '$lib/assets/images/contact.jpg';
+    import contact from '$lib/assets/images/contact.webp';
     import linkedin from '$lib/assets/icons/linkedin.png';
     import github from '$lib/assets/icons/github.png';
     import ContactForm from '$lib/components/Contact/ContactForm.svelte';

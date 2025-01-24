@@ -155,8 +155,12 @@
             <p class="mt-2 text-sm text-red-500">{errors.message}</p>
         {/if}
     </div>
-    <button class="my-button px-4! py-2! text-xl" disabled={isSubmitting}>
-        {isSubmitting ? 'Sending...' : 'Send'}
+    <button class="my-button px-4! py-2! text-xl flex items-center" disabled={isSubmitting}>
+        {#if isSubmitting}
+            Sending <span class="loading loading-spinner loading-md ml-2"></span>
+        {:else}
+            Send
+        {/if}
     </button>
 
     {#if toast.visible}

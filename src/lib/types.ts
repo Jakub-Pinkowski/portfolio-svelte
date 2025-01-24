@@ -15,13 +15,12 @@ export type Project = {
 	description: string;
     subDescription?: string;
 	features?: string[];
-	technologiesDescription: string;
+	technologiesDescription?: string;
 	technologies: string[];
 	github: string;
 };
 
 export type Icon = {
-	id: number;
 	name: string;
 	src: string;
 };

@@ -13,7 +13,6 @@ export type Project = {
 	img: string;
 	summary?: string;
 	description: string;
-    subDescription?: string;
 	features?: string[];
 	technologiesDescription?: string;
 	technologies: string[];

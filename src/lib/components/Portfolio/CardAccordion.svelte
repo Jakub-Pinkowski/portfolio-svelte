@@ -14,9 +14,6 @@
     <div class="collapse-content px-4 flex flex-col gap-4">
         <h3 class="text-lg font-semibold pt-2 border-t-2 border-t-gray-300">Description:</h3>
         <p class="text-justify text-base">{project.description}</p>
-        {#if project.subDescription}
-            <p class="text-justify text-base font-bold text-gray-700">{project.subDescription}</p>
-        {/if}
         {#if project.features}
             <h3 class="text-lg font-semibold">Features:</h3>
             <ul class="list-disc ps-8">

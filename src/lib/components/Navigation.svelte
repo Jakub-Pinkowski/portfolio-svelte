@@ -26,51 +26,27 @@
     <Hamburger bind:open --color="#950740"/>
 </nav>
 
-<!--NOTE: For some unexplained reason if I use #each the flying animation doesn't work-->
 {#if open}
     <div
             class="fixed inset-x-0 top-0 z-10 bg-dark-gray text-light"
             transition:fly={{ y: -100, duration: 500, easing: quadOut }}
     >
-
         <div class="text-center text-3xl tracking-wide">
-            <a
-                    href={links[0].path}
-                    class="block cursor-pointer py-4 hover:underline md:mx-96"
-                    onclick={closeMenu}
-                    in:fly={{ y: -15, delay: 50 }}
-            >
-                {links[0].label}
-            </a>
-            <a
-                    href={links[1].path}
-                    class="block cursor-pointer py-4 hover:underline md:mx-96"
-                    onclick={closeMenu}
-                    in:fly={{ y: -15, delay: 100 }}
-            >
-                {links[1].label}
-            </a>
-            <a
-                    href={links[2].path}
-                    class="block cursor-pointer py-4 hover:underline md:mx-96"
-                    onclick={closeMenu}
-                    in:fly={{ y: -15, delay: 150 }}
-            >
-                {links[2].label}
-            </a>
-            <a
-                    href={links[3].path}
-                    class="block cursor-pointer py-4 hover:underline md:mx-96"
-                    onclick={closeMenu}
-                    in:fly={{ y: -15, delay: 200 }}
-            >
-                {links[3].label}
-            </a>
+            {#each links as {label, path}}
+                <a
+                        href={path}
+                        class="block cursor-pointer py-4 hover:underline md:mx-96"
+                        onclick={closeMenu}
+                >
+                    {label}
+                </a>
+            {/each}
         </div>
 
         <hr
-                class=" mx-auto w-full md:w-1/2"
+                class="mx-auto w-full md:w-1/3"
                 in:scale={{ duration: 500, easing: quadOut, opacity: 1 }}
+                out:scale={{ duration: 500, easing: quadOut, opacity: 0 }}
         />
     </div>
 {/if}

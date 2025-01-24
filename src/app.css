@@ -97,7 +97,6 @@ h2 {
 @media (min-width: 1536px) {
     .my-button {
         width: 13rem;
-        font-size: 20px;
         padding: 10px 20px;
     }
 }

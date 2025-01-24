@@ -241,13 +241,13 @@ export const load = (async () => {
 		] as Project[],
 		simpleProjects: [
 			{
-				name: 'Meals App',
-				src: 'https://react-counter-64e25.web.app',
-				img: meals,
-				description: 'Meals app that allows you to add meals to your cart and order them.',
+				name: 'Investment Calculator',
+				src: 'https://investment-calculator-28479.web.app',
+				img: investment_calculator,
+				description: 'Investment calculator that allows you to calculate your investment income.',
 				technologiesDescription: 'Built with JavaScript, HTML, CSS, React and Firebase.',
 				technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Firebase'],
-				github: 'https://github.com/Jakub-Pinkowski/react-meals'
+				github: 'https://github.com/Jakub-Pinkowski/investment-calculator'
 			},
 			{
 				name: 'Weather App',
@@ -258,6 +258,16 @@ export const load = (async () => {
 				technologies: ['TypeScript', 'HTML', 'CSS', 'Vue.js', 'Firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/Weather-App'
 			},
+			{
+				name: 'Meals App',
+				src: 'https://react-counter-64e25.web.app',
+				img: meals,
+				description: 'Meals app that allows you to add meals to your cart and order them.',
+				technologiesDescription: 'Built with JavaScript, HTML, CSS, React and Firebase.',
+				technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Firebase'],
+				github: 'https://github.com/Jakub-Pinkowski/react-meals'
+			},
+
 			{
 				name: 'Travel Blog',
 				src: 'https://travel-blog-9cc00.web.app',
@@ -284,15 +294,6 @@ export const load = (async () => {
 				technologiesDescription: 'Built with TypeScript, HTML, CSS, Vue.js and Firebase.',
 				technologies: ['TypeScript', 'HTML', 'CSS', 'Vue.js', 'Firebase'],
 				github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
-			},
-			{
-				name: 'Investment Calculator',
-				src: 'https://investment-calculator-28479.web.app',
-				img: investment_calculator,
-				description: 'Investment calculator that allows you to calculate your investment income.',
-				technologiesDescription: 'Built with JavaScript, HTML, CSS, React and Firebase.',
-				technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Firebase'],
-				github: 'https://github.com/Jakub-Pinkowski/investment-calculator'
 			}
 		] as Project[],
 		icons: [

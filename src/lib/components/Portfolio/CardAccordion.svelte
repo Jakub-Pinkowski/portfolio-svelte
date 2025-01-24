@@ -11,7 +11,7 @@
     <div class="collapse-title text-lg text-dark-gray font-semibold px-4 py-3">
         More info
     </div>
-    <div class="collapse-content px-4 bg-gray-50 flex flex-col gap-4">
+    <div class="collapse-content px-4 flex flex-col gap-4">
         <h3 class="text-lg font-semibold pt-2 border-t-2 border-t-gray-300">Description:</h3>
         <p class="text-justify text-base">{project.description}</p>
         {#if project.subDescription}

@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <footer class="footer items-center bg-dark-gray p-4 text-neutral-content">
     <aside class="flex w-full items-center justify-between">
         <p class="mr-2">Copyright © 2025 - All right reserved</p>

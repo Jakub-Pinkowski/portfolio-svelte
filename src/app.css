@@ -4,7 +4,6 @@
 
 @import '$lib/styles/buttons.css';
 @import '$lib/styles/toasts.css';
-
 @import 'tailwindcss';
 
 @plugin "daisyui" {

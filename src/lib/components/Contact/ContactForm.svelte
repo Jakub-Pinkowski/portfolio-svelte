@@ -110,7 +110,9 @@
 </script>
 
 <form onsubmit={handleSubmit} class="flex flex-col gap-4 2xl:gap-6">
+    <!-- Name Field -->
     <div>
+        <label for="name" class="sr-only">Name</label>
         <input
                 bind:value={formData.name}
                 class="input input-bordered w-full max-w-xl text-lg"
@@ -125,23 +127,29 @@
             <p class="mt-2 text-sm text-red-500">{errors.name}</p>
         {/if}
     </div>
+
+    <!-- Email Field -->
     <div>
+        <label for="email" class="sr-only">Email</label>
         <input
                 bind:value={formData.email}
-                class="input input-bordered w-full max-w-xl text-lg "
-                type="text"
+                class="input input-bordered w-full max-w-xl text-lg"
+                type="email"
                 name="email"
                 id="email"
-                placeholder="E-mail"
+                placeholder="Email"
                 required
                 autocomplete="email"
         />
         {#if errors.email}
-            <p class=" mt-2 text-sm text-red-500">{errors.email}</p>
+            <p class="mt-2 text-sm text-red-500">{errors.email}</p>
         {/if}
     </div>
+
+    <!-- Message Field -->
     <div>
-		<textarea
+        <label for="message" class="sr-only">Message</label>
+        <textarea
                 bind:value={formData.message}
                 class="textarea textarea-bordered w-full max-w-xl text-lg"
                 cols="30"
@@ -155,6 +163,8 @@
             <p class="mt-2 text-sm text-red-500">{errors.message}</p>
         {/if}
     </div>
+
+    <!-- Submit Button -->
     <button class="my-button px-4! py-2! text-xl flex items-center" disabled={isSubmitting}>
         {#if isSubmitting}
             Sending <span class="loading loading-spinner loading-md ml-2"></span>
@@ -163,6 +173,7 @@
         {/if}
     </button>
 
+    <!-- Toast Notification -->
     {#if toast.visible}
         <div class="toast toast-center toast-top" transition:fade>
             <div class={`alert alert-${toast.type}`}>

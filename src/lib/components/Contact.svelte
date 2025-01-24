@@ -12,7 +12,7 @@
             <img src={contact} class="rounded-3xl" alt="" />
         </div>
         <div class="flex w-full flex-col gap-4 text-justify md:m-8 md:w-2/5 md:px-8 2xl:gap-6">
-            <h4 class="text-2xl">Send me a message!</h4>
+            <h3 class="text-2xl">Send me a message!</h3>
             <p class="text-xl">
                 Feel free to reach out to me via the form or social media.
                 <br />

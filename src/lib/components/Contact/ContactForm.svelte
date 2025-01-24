@@ -5,42 +5,43 @@
     let isSubmitting = $state(false);
 
     // Form data
-    let name: string = $state('');
-    let email: string = $state('');
-    let message: string = $state('');
+    let formData = $state({
+        name: '',
+        email: '',
+        message: '',
+    });
 
     // Errors
     let errors = $state({
         name: '',
         email: '',
-        message: ''
+        message: '',
     });
 
     // Toast
     let toast = $state({
         message: '',
         type: '',
-        visible: false
+        visible: false,
     });
 
     const handleSubmit = async (event: Event) => {
         event.preventDefault();
 
-        if (isSubmitting) return; // Prevent multiple submissions
+        if (isSubmitting) return;
         isSubmitting = true;
 
         resetErrors();
         if (!validateForm()) {
             showToast('Please fill out all fields correctly.', 'error');
+            isSubmitting = false;
             return;
         }
 
         const url = 'https://formspree.io/f/xpzgwgre';
-        const data = {name, email, message};
-
 
         try {
-            const response = await axios.post(url, data);
+            const response = await axios.post(url, formData);
 
             if (response.status === 200) {
                 showToast('Message sent successfully!', 'success');
@@ -55,27 +56,25 @@
         } finally {
             isSubmitting = false;
         }
-
-        resetForm();
     };
 
     const validateForm = () => {
         let isValid = true;
 
-        if (!name) {
+        if (!formData.name) {
             errors.name = 'Name is required.';
             isValid = false;
         }
 
-        if (!email) {
+        if (!formData.email) {
             errors.email = 'Email is required.';
             isValid = false;
-        } else if (!isValidEmail(email)) {
+        } else if (!isValidEmail(formData.email)) {
             errors.email = 'Please enter a valid email address.';
             isValid = false;
         }
 
-        if (!message) {
+        if (!formData.message) {
             errors.message = 'Message is required.';
             isValid = false;
         }
@@ -89,7 +88,11 @@
     };
 
     const resetErrors = () => {
-        errors = {name: '', email: '', message: ''};
+        errors = {
+            name: '',
+            email: '',
+            message: '',
+        };
     };
 
     const showToast = (message: string, type: 'success' | 'error') => {
@@ -98,18 +101,18 @@
     };
 
     const resetForm = () => {
-        name = '';
-        email = '';
-        message = '';
+        formData = {
+            name: '',
+            email: '',
+            message: '',
+        };
     };
-
-
 </script>
 
 <form onsubmit={handleSubmit} class="flex flex-col gap-4 2xl:gap-6">
     <div>
         <input
-                bind:value={name}
+                bind:value={formData.name}
                 class="input input-bordered w-full max-w-xl text-lg"
                 type="text"
                 name="name"
@@ -124,7 +127,7 @@
     </div>
     <div>
         <input
-                bind:value={email}
+                bind:value={formData.email}
                 class="input input-bordered w-full max-w-xl text-lg "
                 type="text"
                 name="email"
@@ -139,7 +142,7 @@
     </div>
     <div>
 		<textarea
-                bind:value={message}
+                bind:value={formData.message}
                 class="textarea textarea-bordered w-full max-w-xl text-lg"
                 cols="30"
                 rows="4"
@@ -149,11 +152,11 @@
                 required
         ></textarea>
         {#if errors.message}
-            <p class=" mt-2text-sm text-red-500">{errors.message}</p>
+            <p class="mt-2 text-sm text-red-500">{errors.message}</p>
         {/if}
     </div>
     <button class="my-button px-4! py-2! text-xl" disabled={isSubmitting}>
-        {isSubmitting ? 'Sending' : 'Send'}
+        {isSubmitting ? 'Sending...' : 'Send'}
     </button>
 
     {#if toast.visible}

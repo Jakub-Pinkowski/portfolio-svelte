@@ -4,6 +4,9 @@
     let {project}: { project: Project; } = $props();
 </script>
 
+<!--TODO: Use smaller images-->
+<!--TODO: Use different images format-->
+
 <figure>
     <a href={project.src ? project.src : project.github} target="_blank"
        class="w-full">

@@ -6,7 +6,7 @@
 </script>
 
 <div id="contact" class="mx-8 my-14 lg:my-24">
-    <h3 class="text-4xl uppercase text-main">Contact</h3>
+    <h2 class="text-4xl uppercase text-main">Contact</h2>
     <div class="flex flex-col md:flex-row">
         <div class="my-8 w-full md:w-3/5">
             <img src={contact} class="rounded-3xl" alt="" />

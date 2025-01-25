@@ -44,7 +44,7 @@
         </div>
 
         <hr
-                class="mx-auto w-full md:w-1/3"
+                class="mx-auto w-full border-t-2 md:w-1/3"
                 in:scale={{ duration: 500, easing: quadOut, opacity: 1 }}
                 out:scale={{ duration: 500, easing: quadOut, opacity: 0 }}
         />

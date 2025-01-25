@@ -62,4 +62,4 @@ export const simpleProjects: Project[] = [
 		technologies: ['TypeScript', 'HTML', 'CSS', 'Vue.js', 'Firebase'],
 		github: 'https://github.com/Jakub-Pinkowski/vue-udemy'
 	}
-]
+];

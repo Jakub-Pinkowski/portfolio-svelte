@@ -1,4 +1,4 @@
-	// Frontend Languages
+// Frontend Languages
 import tsIcon from '$lib/assets/icons/ts.png';
 import jsIcon from '$lib/assets/icons/js.png';
 import htmlIcon from '$lib/assets/icons/html.png';

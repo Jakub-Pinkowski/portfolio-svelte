@@ -1,20 +1,20 @@
 <script lang="ts">
-    import AboutMe from '$lib/components/AboutMe.svelte';
-    import Contact from '$lib/components/Contact.svelte';
-    import Portfolio from '$lib/components/Portfolio.svelte';
-    import Banner from '../lib/components/Banner.svelte';
+	import AboutMe from '$lib/components/AboutMe.svelte';
+	import Contact from '$lib/components/Contact.svelte';
+	import Portfolio from '$lib/components/Portfolio.svelte';
+	import Banner from '../lib/components/Banner.svelte';
 
-    import type {PageData} from './$types';
+	import type { PageData } from './$types';
 
-    let {data}: { data: PageData } = $props();
+	let { data }: { data: PageData } = $props();
 </script>
 
-<!--TODO: Add robots.tsx-->
-<Banner/>
-<AboutMe/>
+<Banner />
+<AboutMe />
 <Portfolio
-    mainProjects={data.mainProjects}
-    studiesProjects={data.studiesProjects}
-    simpleProjects={data.simpleProjects}
-    icons={data.icons}/>
-<Contact/>
+	mainProjects={data.mainProjects}
+	studiesProjects={data.studiesProjects}
+	simpleProjects={data.simpleProjects}
+	icons={data.icons}
+/>
+<Contact />

@@ -5,7 +5,7 @@
 	import ContactForm from '$lib/components/Contact/ContactForm.svelte';
 </script>
 
-<div id="contact" class="px-8 py-14 lg:my-24">
+<div id="contact" class="px-8 py-14">
 	<h2 class="text-main text-4xl uppercase">Contact</h2>
 	<div class="flex flex-col lg:flex-row">
 		<div class="my-8 w-full lg:w-3/5">

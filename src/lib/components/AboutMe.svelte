@@ -2,7 +2,7 @@
 	import me from '$lib/assets/images/me_cropped.webp';
 </script>
 
-<div id="about-me" class="px-8 py-14 flex flex-col lg:my-24 lg:flex-row">
+<div id="about-me" class="px-8 py-14 flex flex-col lg:flex-row">
 	<div class="w-full text-justify lg:w-1/2">
 		<h2 class="text-main text-4xl uppercase">About Me</h2>
 		<h3 class="text-dark-gray my-8 text-xl">Hello World!</h3>

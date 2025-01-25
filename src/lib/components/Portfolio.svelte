@@ -27,7 +27,7 @@
 	];
 </script>
 
-<div id="portfolio" class="bg-dark-gray px-8 py-14">
+<div id="portfolio" class="bg-dark-gray px-8 py-14 lg:py-24">
 	<h2 class="text-light mb-8 text-4xl uppercase">Portfolio</h2>
 
 	{#each categories as { title, projects } (title)}

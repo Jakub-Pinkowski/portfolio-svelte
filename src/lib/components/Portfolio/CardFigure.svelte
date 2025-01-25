@@ -11,7 +11,7 @@
     <a href={project.src ? project.src : project.github} target="_blank"
        class="w-full">
         <img
-                class="h-52 w-full rounded-t-xl object-cover md:h-72 lg:duration-500 lg:ease-in-out lg:transition-transform lg:hover:opacity-80 lg:hover:-rotate-3 lg:hover:scale-110"
+                class="h-52 w-full rounded-t-xl object-cover lg:h-72 lg:duration-500 lg:ease-in-out lg:transition-transform lg:hover:opacity-80 lg:hover:-rotate-3 lg:hover:scale-110"
                 src={project.img}
                 alt={project.name}
         />

@@ -35,7 +35,7 @@
             {#each links as {label, path}}
                 <a
                         href={path}
-                        class="block cursor-pointer py-4 hover:underline md:mx-96"
+                        class="block cursor-pointer py-4 hover:underline lg:mx-96"
                         onclick={closeMenu}
                 >
                     {label}
@@ -44,7 +44,7 @@
         </div>
 
         <hr
-                class="mx-auto w-full border-t-2 md:w-1/3"
+                class="mx-auto w-full border-t-2 lg:w-1/3"
                 in:scale={{ duration: 500, easing: quadOut, opacity: 1 }}
                 out:scale={{ duration: 500, easing: quadOut, opacity: 0 }}
         />

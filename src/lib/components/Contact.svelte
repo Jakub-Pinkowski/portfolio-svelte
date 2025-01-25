@@ -7,11 +7,11 @@
 
 <div id="contact" class="mx-8 my-14 lg:my-24">
     <h2 class="text-4xl uppercase text-main">Contact</h2>
-    <div class="flex flex-col md:flex-row">
-        <div class="my-8 w-full md:w-3/5">
+    <div class="flex flex-col lg:flex-row">
+        <div class="my-8 w-full lg:w-3/5">
             <img src={contact} class="rounded-3xl" alt="" />
         </div>
-        <div class="flex w-full flex-col gap-4 text-justify md:m-8 md:w-2/5 md:px-8 2xl:gap-6">
+        <div class="flex w-full flex-col gap-4 text-justify lg:m-8 lg:w-2/5 lg:px-8 2xl:gap-6">
             <h3 class="text-2xl">Send me a message!</h3>
             <p class="text-xl">
                 Feel free to reach out to me via the form or social media.

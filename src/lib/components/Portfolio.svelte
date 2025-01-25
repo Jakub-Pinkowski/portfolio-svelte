@@ -31,9 +31,9 @@
     <h2 class="text-4xl uppercase text-light mb-8">Portfolio</h2>
 
     {#each categories as {title, projects} (title)}
-        <section class="my-16 md:rounded-lg">
+        <section class="my-16 lg:rounded-lg">
             <h3 class="text-3xl text-light-gray mb-8">{title}</h3>
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-3 2xl:gap-12">
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 2xl:gap-12">
                 {#each projects as project (project.name)}
                     <ProjectCard {project} {icons}/>
                 {/each}

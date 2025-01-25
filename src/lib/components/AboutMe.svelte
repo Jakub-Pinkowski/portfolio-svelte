@@ -2,8 +2,8 @@
     import me from '$lib/assets/images/me_cropped.webp';
 </script>
 
-<div id="about-me" class="mx-8 my-14 flex flex-col md:flex-row md:my-24">
-    <div class="w-full text-justify md:w-1/2">
+<div id="about-me" class="mx-8 my-14 flex flex-col lg:flex-row lg:my-24">
+    <div class="w-full text-justify lg:w-1/2">
         <h2 class="text-4xl uppercase text-main">About Me</h2>
         <h3 class="my-8 text-xl text-dark-gray">Hello World!</h3>
         <p class="my-8 text-xl text-dark-gray">
@@ -18,7 +18,7 @@
             high-quality software solutions.
         </p>
     </div>
-    <div class="w-full md:mx-16 md:w-1/2">
+    <div class="w-full lg:mx-16 lg:w-1/2">
         <figure>
             <img class="rounded-3xl" src={me} alt="me"/>
         </figure>

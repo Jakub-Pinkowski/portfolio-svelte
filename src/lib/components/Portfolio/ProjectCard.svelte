@@ -9,7 +9,7 @@
 </script>
 
 <div
-        class="card bg-base-100 shadow-xl"
+        class="card bg-light-gray shadow-xl rounded-t-xl"
         class:relative={project.label}
         style:border-color={project.labelColor ? project.labelColor : ''}
 >

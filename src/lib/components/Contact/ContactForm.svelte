@@ -115,7 +115,7 @@
         <label for="name" class="sr-only">Name</label>
         <input
                 bind:value={formData.name}
-                class="input validator input-bordered w-full max-w-xl text-lg"
+                class="input input-bordered w-full max-w-xl text-lg"
                 type="text"
                 name="name"
                 id="name"
@@ -133,7 +133,7 @@
         <label for="email" class="sr-only">Email</label>
         <input
                 bind:value={formData.email}
-                class="input validator input-bordered w-full max-w-xl text-lg"
+                class="input input-bordered w-full max-w-xl text-lg"
                 type="email"
                 name="email"
                 id="email"
@@ -151,7 +151,7 @@
         <label for="message" class="sr-only">Message</label>
         <textarea
                 bind:value={formData.message}
-                class="textarea validator textarea-bordered w-full max-w-xl text-lg"
+                class="textarea textarea-bordered w-full max-w-xl text-lg"
                 cols="30"
                 rows="4"
                 name="message"

@@ -1,10 +1,3 @@
-export type Website = {
-	name: string;
-	img: string;
-	description: string;
-	src: string;
-};
-
 export type Project = {
 	name: string;
 	src?: string;

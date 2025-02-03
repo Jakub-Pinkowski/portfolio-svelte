@@ -1,24 +1,15 @@
-# macOS specific system files
-.DS_Store
-
-# Dependencies folder
-node_modules
+# WebStorm specific folder
+.idea/
 
 # Build output
 /build
 /.svelte-kit
-/package
 
-# Environment variable files
-.env
-.env.*
+# Dependencies folder
+node_modules
 
-# Temporary Vite files
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
-
-# WebStorm specific folder
-.idea/
+# macOS specific system files
+.DS_Store
 
 # Backup images
 /backup_images

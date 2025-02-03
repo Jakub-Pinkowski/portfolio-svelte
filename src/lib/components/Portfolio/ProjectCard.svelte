@@ -5,7 +5,12 @@
 	import CardDescription from '$lib/components/Portfolio/CardDescription.svelte';
 	import CardFigure from '$lib/components/Portfolio/CardFigure.svelte';
 
-	let { project, icons }: { project: Project; icons: Icon[] } = $props();
+	interface Props {
+		project: Project;
+		icons: Icon[];
+	}
+
+	let { project, icons }: Props = $props();
 </script>
 
 <div

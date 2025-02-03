@@ -3,22 +3,19 @@
 
 	import type { Project, Icon } from '$lib/types';
 
-	let {
-		mainProjects,
-		studiesProjects,
-		simpleProjects,
-		icons
-	}: {
+	interface Props {
 		mainProjects: Project[];
 		studiesProjects: Project[];
 		simpleProjects: Project[];
 		icons: Icon[];
-	} = $props();
+	}
 
 	interface Category {
 		title: string;
 		projects: Project[];
 	}
+
+	let { mainProjects, studiesProjects, simpleProjects, icons }: Props = $props();
 
 	const categories: Category[] = [
 		{ title: 'Fullstack projects', projects: mainProjects },

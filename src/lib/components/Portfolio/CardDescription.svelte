@@ -1,7 +1,12 @@
 <script lang="ts">
 	import type { Project, Icon } from '$lib/types';
 
-	let { project, icons }: { project: Project; icons: Icon[] } = $props();
+	interface Props {
+		project: Project;
+		icons: Icon[];
+	}
+
+	let { project, icons }: Props = $props();
 
 	const getIconSrc = (technology: string) => {
 		const icon = icons.find((icon) => icon.name === technology);

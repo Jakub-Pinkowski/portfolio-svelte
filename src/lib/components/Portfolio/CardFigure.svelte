@@ -22,11 +22,11 @@
 <style>
 	.project-label {
 		position: absolute;
-		left: 0;
 		top: 0;
+		left: 0;
 		border-radius: 8px 0 0 0;
 		padding: 0.5rem 1rem;
 		font-weight: bold;
-		color: black;
+		color: var(--color-dark-gray);
 	}
 </style>

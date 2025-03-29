@@ -6,11 +6,9 @@
 
 <p class="grow-0 text-justify text-lg">{project.summary}</p>
 <div
-	tabindex="-1"
 	class="collapse-arrow border-light collapse rounded-lg border-t-4 border-l-4 shadow-md transition-all duration-300 lg:hover:shadow-xl"
 >
-	<label class="sr-only" for="collapse-{project.name}"></label>
-	<input type="checkbox" id="collapse-{project.name}" />
+	<input type="checkbox" name="collapse-{project.name}" />
 	<div class="collapse-title text-dark-gray px-4 py-3 text-lg font-semibold">More info</div>
 	<div class="collapse-content flex flex-col gap-4 px-4">
 		<h3 class="border-t-2 border-t-gray-300 pt-2 text-lg font-semibold">Description:</h3>

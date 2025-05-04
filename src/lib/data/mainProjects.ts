@@ -1,9 +1,9 @@
 import e_commerce from '$lib/assets/images/main_projects/e-commerce.webp';
 import jules_art from '$lib/assets/images/main_projects/jules-art.webp';
 import crypto_bot from '$lib/assets/images/main_projects/crypto_bot.webp';
+import trading_bot from '$lib/assets/images/main_projects/trading-bot.webp';
 import blogging_platform from '$lib/assets/images/main_projects/blogging-platform.webp';
 import links_page from '$lib/assets/images/main_projects/links-page.webp';
-import habit_tracker from '$lib/assets/images/main_projects/habit-tracker.webp';
 
 import type { Project } from '$lib/types';
 
@@ -57,6 +57,24 @@ export const mainProjects: Project[] = [
 
 		technologies: ['TypeScript', 'HTML', 'CSS', 'Vue.js', 'Firebase'],
 		github: 'https://github.com/Jakub-Pinkowski/Jules-Art'
+	},
+	{
+		name: 'Trading Bot',
+		img: trading_bot,
+		summary:
+			'Automated trading and analytics app designed to work with Interactive Brokers (IBKR) API and TradingView alerts',
+		description:
+			'This project is an automated trading and analytics app designed for working with financial data and the Interactive Brokers (IBKR) API. It focuses on streamlining the processes of trading, data fetching, analysis, and performance evaluation.',
+		features: [
+			'Automated trading based on external alerts',
+			'Continuous analysis of trade and alert performance',
+			'Fetching and preparing financial datasets for further analysis',
+			'Logging trading activities and analysis operations for audit or debugging',
+			'Unit tests for all modules',
+			'Modular Architecture'
+		],
+		technologies: ['Python'],
+		github: 'https://github.com/Jakub-Pinkowski/trading-bot'
 	},
 	{
 		name: 'Crypto Bot',
@@ -120,22 +138,5 @@ export const mainProjects: Project[] = [
 			'Vercel'
 		],
 		github: 'https://github.com/Jakub-Pinkowski/links-page'
-	},
-	{
-		name: 'Habit Tracker',
-		src: 'http://pinkowskijakub.eu.pythonanywhere.com',
-		img: habit_tracker,
-		summary: 'Tool to monitor, manage, and build consistency in achieving personal habits.',
-		description:
-			'Habit Tracker is a simple and intuitive app for tracking daily habits and routines. Users can create, edit, and delete habit entries while monitoring their progress over time. The app includes a clean and responsive interface.',
-		features: [
-			'Add, edit, and delete daily habits with ease.',
-			'Track progress to stay consistent with routines.',
-			'Simple and clean interface for an organized experience.',
-			'Responsive design for tracking habits on all devices.',
-			'Data storage and retrieval using a database for easy management.'
-		],
-		technologies: ['JavaScript', 'HTML', 'CSS', 'Python', 'SQLite'],
-		github: 'https://github.com/Jakub-Pinkowski/cs50_final_project'
 	}
 ];

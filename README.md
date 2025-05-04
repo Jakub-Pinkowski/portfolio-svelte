@@ -8,19 +8,19 @@
 ## Features
 
 - Home Page
-  - Introduction and welcome message
-  - Highlighted skills and expertise
+    - Introduction and welcome message
+    - Highlighted skills and expertise
 - About Me
-  - Detailed information about the developer
-  - Personal photo and background
+    - Detailed information about the developer
+    - Personal photo and background
 - Portfolio
-  - Showcase of projects with descriptions and images
-  - Links to project repositories and live demos
+    - Showcase of projects with descriptions and images
+    - Links to project repositories and live demos
 - Contact
-  - Contact form for inquiries
-  - Social media links
+    - Contact form for inquiries
+    - Social media links
 - Responsive Design
-  - Mobile and desktop support
+    - Mobile and desktop support
 
 ## Technologies Used
 

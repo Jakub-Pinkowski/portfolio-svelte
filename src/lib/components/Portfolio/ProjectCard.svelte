@@ -13,7 +13,7 @@
     let {project, icons}: Props = $props();
 </script>
 
-<div
+<article
         class="card bg-light-gray rounded-t-xl shadow-xl"
         class:relative={project.label}
         style:border-color={project.labelColor ? project.labelColor : ''}
@@ -28,4 +28,4 @@
         {/if}
         <CardActions {project}/>
     </div>
-</div>
+</article>

@@ -5,14 +5,24 @@
 </script>
 
 <figure>
-    <a class="w-full" href={project.src ? project.src : project.github} target="_blank">
+    <a 
+        class="w-full" 
+        href={project.src ? project.src : project.github} 
+        target="_blank"
+        aria-label="{project.name} - Open {project.src ? 'website' : 'GitHub repository'} (opens in a new tab)"
+    >
         <img
-                alt={project.name}
+                alt="Screenshot of {project.name} project"
                 class="h-52 w-full rounded-t-xl object-cover lg:h-72 lg:transition-transform lg:duration-500 lg:ease-in-out lg:hover:scale-110 lg:hover:-rotate-3 lg:hover:opacity-80"
                 src={project.img}
         />
         {#if project.label}
-            <div class="project-label" style="background-color: {project.labelColor}">
+            <div 
+                class="project-label" 
+                style="background-color: {project.labelColor}"
+                role="note"
+                aria-label="Project label: {project.label}"
+            >
                 {project.label}
             </div>
         {/if}

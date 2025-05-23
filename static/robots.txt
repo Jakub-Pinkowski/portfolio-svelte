@@ -21,3 +21,6 @@ Disallow: /admin/
 
 # Suggested crawl delay (not supported by all bots)
 Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.jakub-is-coding.com/sitemap.xml

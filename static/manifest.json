@@ -1,0 +1,26 @@
+{
+  "name": "Jakub is coding",
+  "short_name": "Jakub is coding",
+  "description": "Jakub Pinkowski's portfolio website.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4a5568",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "author": "Jakub Pinkowski",
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "portrait",
+  "categories": ["portfolio", "web development", "programming"]
+}

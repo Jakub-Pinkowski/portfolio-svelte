@@ -40,17 +40,18 @@
             class="bg-dark-gray text-light fixed inset-x-0 top-0 z-10"
             transition:fly={{ y: -100, duration: 500, easing: quadOut }}
     >
-        <div class="text-center text-3xl tracking-wide">
+        <div class="flex flex-col items-center text-3xl tracking-wide">
             {#each links as {label, path}}
                 <a
                         href={path}
-                        class="block cursor-pointer py-4 hover:underline lg:mx-96"
+                        class="cursor-pointer p-4 hover:underline"
                         onclick={closeMenu}
                 >
                     {label}
                 </a>
             {/each}
         </div>
+
 
         <hr
                 class="mx-auto w-full border-t-2 lg:w-1/3"

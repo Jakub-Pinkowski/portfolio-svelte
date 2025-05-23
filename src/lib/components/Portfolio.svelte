@@ -24,17 +24,19 @@
     ];
 </script>
 
-<div class="bg-dark-gray px-8 py-14 lg:py-24" id="portfolio">
+<section class="bg-dark-gray px-8 py-14 lg:py-24" id="portfolio">
     <h2 class="text-light mb-8 text-4xl uppercase">Portfolio</h2>
 
     {#each categories as {title, projects} (title)}
-        <section class="my-16 lg:rounded-lg">
+        <div class="my-16 lg:rounded-lg" role="region">
             <h3 class="text-light-gray mb-8 text-3xl">{title}</h3>
-            <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 2xl:gap-12">
+            <ul class="grid grid-cols-1 gap-6 lg:grid-cols-3 2xl:gap-12 list-none p-0">
                 {#each projects as project (project.name)}
-                    <ProjectCard {project} {icons}/>
+                    <li>
+                        <ProjectCard {project} {icons}/>
+                    </li>
                 {/each}
-            </div>
-        </section>
+            </ul>
+        </div>
     {/each}
-</div>
+</section>

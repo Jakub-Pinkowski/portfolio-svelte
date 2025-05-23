@@ -4,6 +4,7 @@
     import {quadOut} from 'svelte/easing';
 
     let open: boolean = $state(false);
+    let menuId = "main-menu";
 
     interface Link {
         label: string;
@@ -22,12 +23,21 @@
     };
 </script>
 
-<nav class="fixed top-10 right-10 z-20">
-    <Hamburger --color="#950740" bind:open/>
+<!-- TODO: Add smooth hover underline animation-->
+<nav class="fixed top-10 right-10 z-20" aria-label="Main Navigation">
+    <Hamburger 
+        --color="#950740" 
+        bind:open 
+        aria-label="Toggle navigation menu" 
+        aria-expanded={open} 
+        aria-controls={menuId}
+    />
 </nav>
 
 {#if open}
     <div
+            id={menuId}
+            role="navigation"
             class="bg-dark-gray text-light fixed inset-x-0 top-0 z-10"
             transition:fly={{ y: -100, duration: 500, easing: quadOut }}
     >

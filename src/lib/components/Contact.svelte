@@ -5,7 +5,7 @@
     import ContactForm from '$lib/components/Contact/ContactForm.svelte';
 </script>
 
-<section class="px-8 py-14 lg:py-24" id="contact" aria-labelledby="contact-heading">
+<section class="px-8 py-14 lg:py-24" id="contact">
     <h2 id="contact-heading" class="text-main text-4xl uppercase">Contact</h2>
     <div class="flex flex-col lg:flex-row">
         <div class="my-8 w-full lg:w-3/5">

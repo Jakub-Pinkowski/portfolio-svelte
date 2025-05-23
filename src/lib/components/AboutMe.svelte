@@ -2,7 +2,7 @@
     import me from '$lib/assets/images/me_cropped.webp';
 </script>
 
-<section class="flex flex-col px-8 py-14 lg:flex-row lg:py-24" id="about-me" aria-labelledby="about-me-heading">
+<section class="flex flex-col px-8 py-14 lg:flex-row lg:py-24" id="about-me">
     <div class="w-full lg:w-1/2">
         <h2 id="about-me-heading" class="text-main text-4xl uppercase">About Me</h2>
         <h3 class="text-dark-gray my-8 text-xl">Hello World!</h3>

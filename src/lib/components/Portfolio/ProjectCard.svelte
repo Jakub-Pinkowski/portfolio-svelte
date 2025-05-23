@@ -14,7 +14,7 @@
 </script>
 
 <article
-        class="card bg-light-gray rounded-t-xl shadow-xl"
+        class="card bg-light-gray h-full rounded-t-xl shadow-xl"
         class:relative={project.label}
         style:border-color={project.labelColor ? project.labelColor : ''}
 >

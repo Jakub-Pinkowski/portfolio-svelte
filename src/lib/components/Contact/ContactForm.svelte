@@ -124,7 +124,7 @@
                 type="text"
         />
         {#if errors.name}
-            <p class="mt-2 text-sm text-red-500">{errors.name}</p>
+            <p id="name-error" class="mt-2 text-sm text-red-500" role="alert">{errors.name}</p>
         {/if}
     </div>
 
@@ -142,7 +142,7 @@
                 type="email"
         />
         {#if errors.email}
-            <p class="mt-2 text-sm text-red-500">{errors.email}</p>
+            <p id="email-error" class="mt-2 text-sm text-red-500" role="alert">{errors.email}</p>
         {/if}
     </div>
 
@@ -160,14 +160,28 @@
                 rows="4"
         ></textarea>
         {#if errors.message}
-            <p class="mt-2 text-sm text-red-500">{errors.message}</p>
+            <p id="message-error" class="mt-2 text-sm text-red-500" role="alert">{errors.message}</p>
+        {/if}
+    </div>
+
+    <!-- Form Errors Summary (hidden but available to screen readers) -->
+    <div id="form-errors" class="sr-only" aria-live="polite">
+        {#if errors.name || errors.email || errors.message}
+            Please correct the following errors:
+            {#if errors.name}Name: {errors.name}{/if}
+            {#if errors.email}Email: {errors.email}{/if}
+            {#if errors.message}Message: {errors.message}{/if}
         {/if}
     </div>
 
     <!-- Submit Button -->
-    <button class="my-button flex items-center px-4! py-2! text-xl" disabled={isSubmitting}>
+    <button 
+        class="my-button flex items-center px-4! py-2! text-xl"
+        disabled={isSubmitting}
+        aria-busy={isSubmitting}
+    >
         {#if isSubmitting}
-            Sending <span class="loading loading-spinner loading-md ml-2"></span>
+            Sending <span class="loading loading-spinner loading-md ml-2" aria-hidden="true"></span>
         {:else}
             Send
         {/if}
@@ -175,7 +189,7 @@
 
     <!-- Toast Notification -->
     {#if toast.visible}
-        <div class="toast toast-center toast-top" transition:fade>
+        <div class="toast toast-center toast-top" transition:fade role="alert" aria-live="assertive">
             <div class={`alert alert-${toast.type}`}>
                 <span>{toast.message}</span>
             </div>

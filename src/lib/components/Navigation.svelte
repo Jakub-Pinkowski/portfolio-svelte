@@ -23,7 +23,6 @@
     };
 </script>
 
-<!-- TODO: Add smooth hover underline animation-->
 <nav aria-label="Main Navigation" class="fixed top-10 right-10 z-20">
     <Hamburger
             --color="#950740"

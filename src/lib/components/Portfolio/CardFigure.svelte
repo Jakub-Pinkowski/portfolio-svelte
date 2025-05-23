@@ -5,11 +5,11 @@
 </script>
 
 <figure>
-    <a 
-        class="w-full" 
-        href={project.src ? project.src : project.github} 
-        target="_blank"
-        aria-label="{project.name} - Open {project.src ? 'website' : 'GitHub repository'} (opens in a new tab)"
+    <a
+            aria-label="{project.name} - Open {project.src ? 'website' : 'GitHub repository'} (opens in a new tab)"
+            class="w-full"
+            href={project.src ? project.src : project.github}
+            target="_blank"
     >
         <img
                 alt="Screenshot of {project.name} project"
@@ -17,11 +17,11 @@
                 src={project.img}
         />
         {#if project.label}
-            <div 
-                class="project-label" 
-                style="background-color: {project.labelColor}"
-                role="note"
-                aria-label="Project label: {project.label}"
+            <div
+                    class="project-label"
+                    style="background-color: {project.labelColor}"
+                    role="note"
+                    aria-label="Project label: {project.label}"
             >
                 {project.label}
             </div>

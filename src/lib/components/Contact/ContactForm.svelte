@@ -165,7 +165,7 @@
     </div>
 
     <!-- Form Errors Summary (hidden but available to screen readers) -->
-    <div id="form-errors" class="sr-only" aria-live="polite">
+    <div aria-live="polite" class="sr-only" id="form-errors">
         {#if errors.name || errors.email || errors.message}
             Please correct the following errors:
             {#if errors.name}Name: {errors.name}{/if}
@@ -175,10 +175,10 @@
     </div>
 
     <!-- Submit Button -->
-    <button 
-        class="my-button flex items-center px-4! py-2! text-xl"
-        disabled={isSubmitting}
-        aria-busy={isSubmitting}
+    <button
+            aria-busy={isSubmitting}
+            class="my-button flex items-center px-4! py-2! text-xl"
+            disabled={isSubmitting}
     >
         {#if isSubmitting}
             Sending <span class="loading loading-spinner loading-md ml-2" aria-hidden="true"></span>

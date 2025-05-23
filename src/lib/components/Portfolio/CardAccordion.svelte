@@ -13,22 +13,22 @@
 <div
         class="collapse-arrow border-light collapse rounded-lg border-t-4 border-l-4 shadow-md transition-all duration-300 lg:hover:shadow-xl"
 >
-    <input 
-        id="collapse-{project.name.toLowerCase().replace(/\s+/g, '-')}" 
-        name="collapse-{project.name}" 
-        type="checkbox"
-        aria-expanded="false"
-        aria-controls="content-{project.name.toLowerCase().replace(/\s+/g, '-')}"
-        onchange={handleChange}
+    <input
+            aria-controls="content-{project.name.toLowerCase().replace(/\s+/g, '-')}"
+            aria-expanded="false"
+            id="collapse-{project.name.toLowerCase().replace(/\s+/g, '-')}"
+            name="collapse-{project.name}"
+            onchange={handleChange}
+            type="checkbox"
     />
-    <label 
-        for="collapse-{project.name.toLowerCase().replace(/\s+/g, '-')}" 
-        class="collapse-title text-dark-gray px-4 py-3 text-lg font-semibold cursor-pointer"
+    <label
+            class="collapse-title text-dark-gray px-4 py-3 text-lg font-semibold cursor-pointer"
+            for="collapse-{project.name.toLowerCase().replace(/\s+/g, '-')}"
     >
         More info
     </label>
     <div
-        class="collapse-content flex flex-col gap-4 px-4"
+            class="collapse-content flex flex-col gap-4 px-4"
     >
         <h3 class="border-t-2 border-t-gray-300 pt-2 text-lg font-semibold">Description:</h3>
         <p class="text-justify text-base">{project.description}</p>

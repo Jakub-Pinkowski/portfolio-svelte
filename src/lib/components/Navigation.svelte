@@ -24,13 +24,13 @@
 </script>
 
 <!-- TODO: Add smooth hover underline animation-->
-<nav class="fixed top-10 right-10 z-20" aria-label="Main Navigation">
-    <Hamburger 
-        --color="#950740" 
-        bind:open 
-        aria-label="Toggle navigation menu" 
-        aria-expanded={open} 
-        aria-controls={menuId}
+<nav aria-label="Main Navigation" class="fixed top-10 right-10 z-20">
+    <Hamburger
+            --color="#950740"
+            aria-controls={menuId}
+            aria-expanded={open}
+            aria-label="Toggle navigation menu"
+            bind:open
     />
 </nav>
 

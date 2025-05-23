@@ -4,7 +4,7 @@
 
 <section class="flex flex-col px-8 py-14 lg:flex-row lg:py-24" id="about-me">
     <div class="w-full lg:w-1/2">
-        <h2 id="about-me-heading" class="text-main text-4xl uppercase">About Me</h2>
+        <h2 class="text-main text-4xl uppercase" id="about-me-heading">About Me</h2>
         <h3 class="text-dark-gray my-8 text-xl">Hello World!</h3>
         <p class="text-dark-gray my-8 text-xl">
             I'm Jakub, a web developer with a passion for programming. My expertise spans frontend
@@ -20,10 +20,10 @@
     </div>
     <div class="w-full lg:mx-16 lg:w-1/2">
         <figure>
-            <img 
-                alt="Portrait of Jakub Pinkowski" 
-                class="rounded-3xl" 
-                src={me}
+            <img
+                    alt="Portrait of Jakub Pinkowski"
+                    class="rounded-3xl"
+                    src={me}
             />
         </figure>
     </div>

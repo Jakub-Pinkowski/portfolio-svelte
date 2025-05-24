@@ -8,7 +8,7 @@
         <h3 class="text-dark-gray my-8 text-xl">Hello World!</h3>
         <p class="text-dark-gray my-8 text-xl">
             I'm Jakub, a web developer with a passion for programming. My expertise spans frontend
-            technologies such TypeScript, JavaScript, HTML, CSS, and jQuery, as well as advanced
+            technologies such as TypeScript, JavaScript, HTML, CSS, and jQuery, as well as advanced
             frameworks like React, Vue and Svelte. I have hands-on experience with template engines like
             Apache Velocity and API querying using GraphQL. On top of that I have a solid understanding of
             backend technologies like Node.js, Python (Flask/Django included), SQL, Firebase and AWS.

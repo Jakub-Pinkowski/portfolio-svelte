@@ -23,14 +23,14 @@
     };
 </script>
 
-<nav aria-label="Main Navigation" class="fixed top-10 right-10 z-20">
+<div class="fixed top-10 right-10 z-20">
     <Hamburger
             --color="#950740"
             ariaControls={menuId}
             ariaLabel="Toggle navigation menu"
             bind:open
     />
-</nav>
+</div>
 
 {#if open}
     <nav

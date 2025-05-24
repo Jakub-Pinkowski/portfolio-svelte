@@ -19,7 +19,7 @@
         style:border-color={project.labelColor ? project.labelColor : ''}
 >
     <CardFigure {project}/>
-    <div class="card-body gap-4 p-4 lg:p-6">
+    <section class="card-body gap-4 p-4 lg:p-6">
         <h2 class="card-title text-2xl">{project.name}</h2>
         {#if project.summary}
             <CardAccordion {project}/>
@@ -27,5 +27,5 @@
             <CardDescription {project} {icons}/>
         {/if}
         <CardActions {project}/>
-    </div>
+    </section>
 </article>

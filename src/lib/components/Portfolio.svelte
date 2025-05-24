@@ -28,7 +28,7 @@
     <h2 class="text-light mb-8 text-4xl uppercase">Portfolio</h2>
 
     {#each categories as {title, projects} (title)}
-        <div class="my-16 lg:rounded-lg" role="region">
+        <section class="my-16 lg:rounded-lg">
             <h3 class="text-light-gray mb-8 text-3xl">{title}</h3>
             <ul class="grid grid-cols-1 gap-6 lg:grid-cols-3 2xl:gap-12 list-none p-0 items-stretch">
                 {#each projects as project (project.name)}
@@ -38,6 +38,6 @@
                 {/each}
             </ul>
 
-        </div>
+        </section>
     {/each}
 </section>

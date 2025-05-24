@@ -33,9 +33,8 @@
 </nav>
 
 {#if open}
-    <div
+    <nav
             id={menuId}
-            role="navigation"
             class="bg-dark-gray text-light fixed inset-x-0 top-0 z-10"
             transition:fly={{ y: -100, duration: 500, easing: quadOut }}
     >
@@ -57,5 +56,5 @@
                 in:scale={{ duration: 500, easing: quadOut, opacity: 1 }}
                 out:scale={{ duration: 500, easing: quadOut, opacity: 0 }}
         />
-    </div>
+    </nav>
 {/if}

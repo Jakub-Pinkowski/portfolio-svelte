@@ -16,15 +16,15 @@
 
 <p class="text-justify text-lg">{project.description}</p>
 <p class="text-lg">{project.technologiesDescription}</p>
-<div class="hidden lg:flex">
+<ul class="hidden lg:flex list-none p-0">
     {#each project.technologies as technology (technology)}
-        <div class="flex items-center mr-2">
+        <li class="flex items-center mr-2">
             <img
                     class="h-8 w-8"
                     src={getIconSrc(technology)}
                     alt=""
                     aria-hidden="true"
             />
-        </div>
+        </li>
     {/each}
-</div>
+</ul>

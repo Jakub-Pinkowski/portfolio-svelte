@@ -6,7 +6,7 @@
     let {project}: { project: Project } = $props();
 </script>
 
-<div class="card-actions mt-auto w-full flex-col justify-end gap-4 lg:flex-row lg:justify-between">
+<nav class="card-actions mt-auto w-full flex-col justify-end gap-4 lg:flex-row lg:justify-between">
     <a
             aria-label="View code on GitHub (opens in a new tab)"
             class="my-button xl:text-lg"
@@ -27,4 +27,4 @@
             Visit Website
         </a>
     {/if}
-</div>
+</nav>

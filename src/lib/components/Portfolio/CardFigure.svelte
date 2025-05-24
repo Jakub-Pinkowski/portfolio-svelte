@@ -17,14 +17,13 @@
                 src={project.img}
         />
         {#if project.label}
-            <div
+            <mark
                     class="project-label"
                     style="background-color: {project.labelColor}"
-                    role="note"
                     aria-label="Project label: {project.label}"
             >
                 {project.label}
-            </div>
+            </mark>
         {/if}
     </a>
 </figure>

@@ -111,7 +111,7 @@
 
 <form class="flex flex-col gap-4 2xl:gap-6" onsubmit={handleSubmit}>
     <!-- Name Field -->
-    <div>
+    <fieldset>
         <label class="sr-only" for="name">Name</label>
         <input
                 autocomplete="name"
@@ -126,10 +126,10 @@
         {#if errors.name}
             <p id="name-error" class="mt-2 text-sm text-red-500" role="alert">{errors.name}</p>
         {/if}
-    </div>
+    </fieldset>
 
     <!-- Email Field -->
-    <div>
+    <fieldset>
         <label class="sr-only" for="email">Email</label>
         <input
                 autocomplete="email"
@@ -144,10 +144,10 @@
         {#if errors.email}
             <p id="email-error" class="mt-2 text-sm text-red-500" role="alert">{errors.email}</p>
         {/if}
-    </div>
+    </fieldset>
 
     <!-- Message Field -->
-    <div>
+    <fieldset>
         <label class="sr-only" for="message">Message</label>
         <textarea
                 bind:value={formData.message}
@@ -162,17 +162,17 @@
         {#if errors.message}
             <p id="message-error" class="mt-2 text-sm text-red-500" role="alert">{errors.message}</p>
         {/if}
-    </div>
+    </fieldset>
 
     <!-- Form Errors Summary (hidden but available to screen readers) -->
-    <div aria-live="polite" class="sr-only" id="form-errors">
+    <aside aria-live="polite" class="sr-only" id="form-errors">
         {#if errors.name || errors.email || errors.message}
             Please correct the following errors:
             {#if errors.name}Name: {errors.name}{/if}
             {#if errors.email}Email: {errors.email}{/if}
             {#if errors.message}Message: {errors.message}{/if}
         {/if}
-    </div>
+    </aside>
 
     <!-- Submit Button -->
     <button
@@ -189,10 +189,10 @@
 
     <!-- Toast Notification -->
     {#if toast.visible}
-        <div class="toast toast-center toast-top" transition:fade role="alert" aria-live="assertive">
+        <aside class="toast toast-center toast-top" transition:fade role="alert" aria-live="assertive">
             <div class={`alert alert-${toast.type}`}>
                 <span>{toast.message}</span>
             </div>
-        </div>
+        </aside>
     {/if}
 </form>

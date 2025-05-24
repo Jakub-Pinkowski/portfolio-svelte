@@ -8,22 +8,22 @@
 <section class="px-8 py-14 lg:py-24" id="contact">
     <h2 class="text-main text-4xl uppercase" id="contact-heading">Contact</h2>
     <div class="flex flex-col lg:flex-row">
-        <div class="my-8 w-full lg:w-3/5">
+        <figure class="my-8 w-full lg:w-3/5">
             <img
                     alt=""
                     aria-hidden="true"
                     class="rounded-3xl"
                     src={contact}
             />
-        </div>
-        <div class="flex w-full flex-col gap-4 text-justify lg:m-8 lg:w-2/5 lg:px-8 2xl:gap-6">
+        </figure>
+        <article class="flex w-full flex-col gap-4 text-justify lg:m-8 lg:w-2/5 lg:px-8 2xl:gap-6">
             <h3 class="text-2xl">Send me a message!</h3>
             <p class="text-xl">
                 Feel free to reach out to me via the form or social media.
                 <br/>
                 Looking forward to hearing from you!
             </p>
-            <div aria-label="Social media links">
+            <nav aria-label="Social media links">
                 <a
                         aria-label="LinkedIn profile (opens in a new tab)"
                         class="mr-4 inline-block"
@@ -40,8 +40,8 @@
                 >
                     <img alt="github" class=" inline-block w-12" src={github}/>
                 </a>
-            </div>
+            </nav>
             <ContactForm/>
-        </div>
+        </article>
     </div>
 </section>

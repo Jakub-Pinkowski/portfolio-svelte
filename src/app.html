@@ -4,21 +4,35 @@
     <meta charset="utf-8"/>
     <link href="%sveltekit.assets%/favicon.png" rel="icon"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>Jakub is coding</title>
-    <meta content="Jakub Pinkowski's portfolio website." name="description"/>
+    <title>Jakub is coding | Web Developer Portfolio</title>
+    <meta content="Jakub Pinkowski's portfolio website showcasing web development projects and skills in React, Vue, Svelte, TypeScript, and more." name="description"/>
     <meta
-            content="Jakub Pinkowski, Portfolio, Web Development, Programming, Svelte"
+            content="Jakub Pinkowski, Portfolio, Web Development, Programming, Svelte, React, Vue, TypeScript, JavaScript"
             name="keywords"
     />
     <meta content="Jakub Pinkowski" name="author"/>
-    <meta content="Jakub is coding" property="og:title"/>
-    <meta content="Jakub Pinkowski's portfolio website." property="og:description"/>
+    <!-- Open Graph / Social Media -->
+    <meta content="Jakub is coding | Web Developer Portfolio" property="og:title"/>
+    <meta content="Jakub Pinkowski's portfolio website showcasing web development projects and skills in React, Vue, Svelte, TypeScript, and more." property="og:description"/>
     <meta content="https://www.jakub-is-coding.com" property="og:url"/>
+    <meta content="website" property="og:type"/>
+    <meta content="/favicons/og-image.jpg" property="og:image"/>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Jakub is coding | Web Developer Portfolio"/>
+    <meta name="twitter:description" content="Jakub Pinkowski's portfolio website showcasing web development projects and skills."/>
+    <meta name="twitter:image" content="/favicons/og-image.jpg"/>
+    <!-- Canonical URL -->
     <link href="https://www.jakub-is-coding.com" rel="canonical"/>
+    <!-- PWA related -->
+    <meta name="theme-color" content="#4a5568"/>
     <link href="/favicons/apple-icon-precomposed.png" rel="apple-touch-icon-precomposed"/>
     <link href="/favicons/apple-icon.png" rel="apple-touch-icon"/>
     <link href="/favicons/favicon.png" rel="favicon"/>
     <link href="/manifest.json" rel="manifest"/>
+    <!-- Preload critical assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     %sveltekit.head%
 </head>
 <body data-sveltekit-preload-data="false">

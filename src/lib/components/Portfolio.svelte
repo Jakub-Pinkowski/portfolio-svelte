@@ -37,7 +37,6 @@
                     </li>
                 {/each}
             </ul>
-
         </section>
     {/each}
 </section>

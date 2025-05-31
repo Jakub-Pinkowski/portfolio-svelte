@@ -11,7 +11,7 @@ export const mainProjects: Project[] = [
 	{
 		name: 'E-commerce website',
 		src: 'https://commerce-website-psi.vercel.app',
-		label: 'Flagship Project',
+		label: 'Flagship Frontend Project',
 		labelColor: '#e9c46a',
 		img: e_commerce,
 		summary:
@@ -38,6 +38,26 @@ export const mainProjects: Project[] = [
 		github: 'https://github.com/Jakub-Pinkowski/commerce-website'
 	},
 	{
+		name: 'Trading Bot',
+		label: 'Flagship Backend Project',
+		labelColor: '#e9c46a',
+		img: trading_bot,
+		summary:
+			'Automated trading and analytics app designed to work with Interactive Brokers (IBKR) API and TradingView alerts',
+		description:
+			'This project is an automated trading and analytics app designed for working with financial data and the Interactive Brokers (IBKR) API. It focuses on streamlining the processes of trading, data fetching, analysis, and performance evaluation.',
+		features: [
+			'Automated trading based on external alerts',
+			'Continuous analysis of trade and alert performance',
+			'Fetching and preparing financial datasets for further analysis',
+			'Logging trading activities and analysis operations for audit or debugging',
+			'Unit tests for all modules',
+			'Modular Architecture'
+		],
+		technologies: ['Python'],
+		github: 'https://github.com/Jakub-Pinkowski/trading-bot'
+	},
+	{
 		name: 'Jules-Art',
 		src: 'https://jules-art.com',
 		label: 'Freelance Project',
@@ -58,24 +78,7 @@ export const mainProjects: Project[] = [
 		technologies: ['TypeScript', 'HTML', 'CSS', 'Vue.js', 'Firebase'],
 		github: 'https://github.com/Jakub-Pinkowski/Jules-Art'
 	},
-	{
-		name: 'Trading Bot',
-		img: trading_bot,
-		summary:
-			'Automated trading and analytics app designed to work with Interactive Brokers (IBKR) API and TradingView alerts',
-		description:
-			'This project is an automated trading and analytics app designed for working with financial data and the Interactive Brokers (IBKR) API. It focuses on streamlining the processes of trading, data fetching, analysis, and performance evaluation.',
-		features: [
-			'Automated trading based on external alerts',
-			'Continuous analysis of trade and alert performance',
-			'Fetching and preparing financial datasets for further analysis',
-			'Logging trading activities and analysis operations for audit or debugging',
-			'Unit tests for all modules',
-			'Modular Architecture'
-		],
-		technologies: ['Python'],
-		github: 'https://github.com/Jakub-Pinkowski/trading-bot'
-	},
+
 	{
 		name: 'Crypto Bot',
 		img: crypto_bot,

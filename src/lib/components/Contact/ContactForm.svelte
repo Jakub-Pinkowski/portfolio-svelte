@@ -1,5 +1,4 @@
 <script lang="ts">
-    import axios from 'axios';
     import {fade} from 'svelte/transition';
 
     let isSubmitting = $state(false);
@@ -41,9 +40,16 @@
         const url = 'https://formspree.io/f/xpzgwgre';
 
         try {
-            const response = await axios.post(url, formData);
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
 
-            if (response.status === 200) {
+            if (response.ok) {
                 showToast('Message sent successfully!', 'success');
                 resetForm();
             } else {
@@ -189,7 +195,7 @@
 
     <!-- Toast Notification -->
     {#if toast.visible}
-        <aside class="toast toast-center toast-top" transition:fade role="alert" aria-live="assertive">
+        <aside class="toast toast-center toast-top" transition:fade role="feed" aria-live="assertive">
             <div class={`alert alert-${toast.type}`}>
                 <span>{toast.message}</span>
             </div>

@@ -13,8 +13,8 @@
                     alt=""
                     aria-hidden="true"
                     class="rounded-3xl"
-                    src={contact}
                     loading="lazy"
+                    src={contact}
             />
         </figure>
         <article class="flex w-full flex-col gap-4 text-justify lg:m-8 lg:w-2/5 lg:px-8 2xl:gap-6">

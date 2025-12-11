@@ -17,11 +17,11 @@
 
     let {mainProjects, studiesProjects, simpleProjects, icons}: Props = $props();
 
-    const categories: Category[] = [
+    const categories: Category[] = $derived([
         {title: 'Fullstack projects', projects: mainProjects},
         {title: 'Studies projects', projects: studiesProjects},
         {title: 'Simple websites', projects: simpleProjects}
-    ];
+    ]);
 </script>
 
 <section class="bg-dark-gray px-8 py-14 lg:py-24" id="portfolio">

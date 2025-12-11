@@ -2,7 +2,7 @@
     import AboutMe from '$lib/components/AboutMe.svelte';
     import Contact from '$lib/components/Contact.svelte';
     import Portfolio from '$lib/components/Portfolio.svelte';
-    import Banner from '../lib/components/Banner.svelte';
+    import Banner from '$lib/components/Banner.svelte';
 
     import type {PageData} from './$types';
 

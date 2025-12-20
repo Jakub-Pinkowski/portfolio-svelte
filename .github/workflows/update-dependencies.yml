@@ -1,0 +1,56 @@
+name: Update Dependencies
+
+on:
+  schedule:
+    # Runs every day at 9 AM UTC (adjust timezone as needed)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Update dependencies
+        run: |
+          npm update
+          npm outdated || true
+
+      - name: Run tests to verify updates
+        run: |
+          npm run test:run
+          npm run check
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update npm dependencies'
+          title: 'chore: Daily dependency updates'
+          body: |
+            ## Automated Dependency Updates
+
+            This PR updates npm dependencies to their latest compatible versions.
+
+            ### What was updated:
+            - Dependencies updated via `npm update`
+
+            ### Tests status:
+            - ✅ All unit tests passed
+            - ✅ Type checking passed
+
+            **Please review the changes and merge if everything looks good.**
+
+            🤖 Generated automatically by GitHub Actions
+          branch: chore/update-dependencies
+          delete-branch: true
+          labels: dependencies, automated

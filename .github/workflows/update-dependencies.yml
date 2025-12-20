@@ -2,8 +2,9 @@ name: Update Dependencies
 
 on:
   schedule:
-    # Runs every day at 9 AM UTC (adjust timezone as needed)
-    - cron: '0 9 * * *'
+    # Runs every day at 10 AM Berlin time (9 AM UTC in winter, 8 AM UTC in summer)
+    # Using 8 AM UTC to account for Berlin summer time (CEST = UTC+2)
+    - cron: '0 8 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 jobs:
@@ -17,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Update dependencies

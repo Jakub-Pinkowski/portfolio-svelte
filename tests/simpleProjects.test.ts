@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { simpleProjects } from '$lib/data/simpleProjects';
 import type { Project } from '$lib/types';
 

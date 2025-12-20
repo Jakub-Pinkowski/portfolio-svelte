@@ -3,7 +3,7 @@ import { load } from './+page';
 
 describe('+page load function', () => {
 	it('should return all required data', async () => {
-		const result = await load({} as any);
+		const result = await load();
 
 		expect(result).toHaveProperty('mainProjects');
 		expect(result).toHaveProperty('studiesProjects');
@@ -12,7 +12,7 @@ describe('+page load function', () => {
 	});
 
 	it('should return arrays for all properties', async () => {
-		const result = await load({} as any);
+		const result = await load();
 
 		expect(Array.isArray(result.mainProjects)).toBe(true);
 		expect(Array.isArray(result.studiesProjects)).toBe(true);
@@ -21,7 +21,7 @@ describe('+page load function', () => {
 	});
 
 	it('should return non-empty arrays', async () => {
-		const result = await load({} as any);
+		const result = await load();
 
 		expect(result.mainProjects.length).toBeGreaterThan(0);
 		expect(result.studiesProjects.length).toBeGreaterThan(0);

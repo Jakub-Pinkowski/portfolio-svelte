@@ -4,6 +4,7 @@
 # Build output
 /build
 /.svelte-kit
+/.vercel
 
 # Dependencies folder
 node_modules

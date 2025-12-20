@@ -1,4 +1,5 @@
 {
 	"buildCommand": "npm run test:ci",
-	"framework": "sveltekit"
+	"framework": "sveltekit",
+	"nodeVersion": "24.x"
 }

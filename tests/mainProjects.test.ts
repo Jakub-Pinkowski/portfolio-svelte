@@ -1,18 +1,18 @@
 import { describe, it, expect } from 'vitest';
-import { studiesProjects } from './studiesProjects';
+import { mainProjects } from '$lib/data/mainProjects';
 import type { Project } from '$lib/types';
 
-describe('studiesProjects', () => {
+describe('mainProjects', () => {
 	it('should be an array', () => {
-		expect(Array.isArray(studiesProjects)).toBe(true);
+		expect(Array.isArray(mainProjects)).toBe(true);
 	});
 
 	it('should contain at least one project', () => {
-		expect(studiesProjects.length).toBeGreaterThan(0);
+		expect(mainProjects.length).toBeGreaterThan(0);
 	});
 
 	it('should have valid project structure', () => {
-		studiesProjects.forEach((project: Project) => {
+		mainProjects.forEach((project: Project) => {
 			expect(project).toHaveProperty('name');
 			expect(project).toHaveProperty('img');
 			expect(project).toHaveProperty('description');
@@ -28,7 +28,7 @@ describe('studiesProjects', () => {
 	});
 
 	it('should have non-empty required fields', () => {
-		studiesProjects.forEach((project: Project) => {
+		mainProjects.forEach((project: Project) => {
 			expect(project.name.length).toBeGreaterThan(0);
 			expect(project.description.length).toBeGreaterThan(0);
 			expect(project.technologies.length).toBeGreaterThan(0);
@@ -37,8 +37,16 @@ describe('studiesProjects', () => {
 	});
 
 	it('should have valid GitHub URLs', () => {
-		studiesProjects.forEach((project: Project) => {
+		mainProjects.forEach((project: Project) => {
 			expect(project.github).toMatch(/^https:\/\/github\.com\//);
+		});
+	});
+
+	it('should have valid src URLs when present', () => {
+		mainProjects.forEach((project: Project) => {
+			if (project.src) {
+				expect(project.src).toMatch(/^https?:\/\//);
+			}
 		});
 	});
 });

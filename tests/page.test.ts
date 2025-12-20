@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { load } from './+page';
+import { load } from '../src/routes/+page';
 
 describe('+page load function', () => {
 	it('should return all required data', async () => {

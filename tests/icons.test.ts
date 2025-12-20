@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { icons } from './icons';
+import { icons } from '$lib/data/icons';
 import type { Icon } from '$lib/types';
 
 describe('icons', () => {

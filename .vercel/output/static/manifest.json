@@ -1,0 +1,64 @@
+{
+  "name": "Jakub is coding",
+  "short_name": "Jakub is coding",
+  "description": "Jakub Pinkowski's portfolio website showcasing web development projects and skills.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1d",
+  "theme_color": "#950740",
+  "icons": [
+    {
+      "src": "/favicons/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicons/ms-icon-310x310.png",
+      "sizes": "310x310",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicons/android-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicons/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "author": "Jakub Pinkowski",
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "portrait",
+  "categories": ["portfolio", "web development", "programming"],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.jpg",
+      "sizes": "1280x800",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/mobile.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Portfolio",
+      "url": "/#portfolio",
+      "description": "View my portfolio projects"
+    },
+    {
+      "name": "Contact",
+      "url": "/#contact",
+      "description": "Contact me"
+    }
+  ]
+}

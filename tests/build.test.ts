@@ -1,0 +1,22 @@
+import { describe, it, expect } from 'vitest';
+import { execSync } from 'child_process';
+
+describe('Build Tests', () => {
+	it('should build successfully', () => {
+		expect(() => {
+			execSync('npm run build', {
+				stdio: 'pipe',
+				encoding: 'utf-8'
+			});
+		}).not.toThrow();
+	}, 60000); // 60 second timeout for build
+
+	it('should pass type checking', () => {
+		expect(() => {
+			execSync('npm run check', {
+				stdio: 'pipe',
+				encoding: 'utf-8'
+			});
+		}).not.toThrow();
+	}, 30000); // 30 second timeout for type checking
+});

@@ -5,6 +5,7 @@ describe('Build Tests', () => {
 	it('should build successfully', () => {
 		expect(() => {
 			execSync('npm run build', {
+				cwd: process.cwd(),
 				stdio: 'pipe',
 				encoding: 'utf-8'
 			});
@@ -14,6 +15,7 @@ describe('Build Tests', () => {
 	it('should pass type checking', () => {
 		expect(() => {
 			execSync('npm run check', {
+				cwd: process.cwd(),
 				stdio: 'pipe',
 				encoding: 'utf-8'
 			});

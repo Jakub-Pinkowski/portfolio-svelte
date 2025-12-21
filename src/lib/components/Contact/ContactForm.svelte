@@ -103,7 +103,8 @@
 
     const showToast = (message: string, type: 'success' | 'error') => {
         toast = {message, type, visible: true};
-        setTimeout(() => (toast.visible = false), 2000);
+        const duration = type === 'success' ? 4000 : 3000;
+        setTimeout(() => (toast.visible = false), duration);
     };
 
     const resetForm = () => {

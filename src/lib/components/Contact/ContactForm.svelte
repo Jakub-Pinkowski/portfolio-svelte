@@ -1,6 +1,6 @@
 <script lang="ts">
     import {fade} from 'svelte/transition';
-    import {validateContactForm, type ContactFormData, type ContactFormErrors} from '$lib/utils/validation';
+    import {type ContactFormData, type ContactFormErrors, validateContactForm} from '$lib/utils/validation';
 
     let isSubmitting = $state(false);
 

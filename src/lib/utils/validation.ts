@@ -25,7 +25,7 @@ export const isValidEmail = (value: string): boolean => {
 
 /**
  * Validates contact form data
- * Returns validation result with errors for each field
+ * Returns a validation result with errors for each field
  */
 export const validateContactForm = (formData: ContactFormData): ValidationResult => {
 	const errors: ContactFormErrors = {

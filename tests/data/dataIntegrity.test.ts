@@ -133,9 +133,7 @@ describe('Data Integrity Tests', () => {
 
 			allProjects.forEach((project: Project) => {
 				if (project.label && project.labelColor) {
-					const isValidColor = validColorFormats.some((regex) =>
-						regex.test(project.labelColor!)
-					);
+					const isValidColor = validColorFormats.some((regex) => regex.test(project.labelColor!));
 					expect(isValidColor || project.labelColor!.length > 0).toBe(true);
 				}
 			});

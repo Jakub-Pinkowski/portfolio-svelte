@@ -29,11 +29,7 @@ describe('Page Rendering Integration Tests', () => {
 
 		it('should provide projects with all required fields for rendering', async () => {
 			const data = await load();
-			const allProjects = [
-				...data.mainProjects,
-				...data.studiesProjects,
-				...data.simpleProjects
-			];
+			const allProjects = [...data.mainProjects, ...data.studiesProjects, ...data.simpleProjects];
 
 			allProjects.forEach((project) => {
 				// Required for rendering
@@ -168,11 +164,7 @@ describe('Page Rendering Integration Tests', () => {
 		});
 
 		it('should have unique category titles', async () => {
-			const categoryTitles = [
-				'Fullstack projects',
-				'Studies projects',
-				'Simple websites'
-			];
+			const categoryTitles = ['Fullstack projects', 'Studies projects', 'Simple websites'];
 
 			const uniqueTitles = new Set(categoryTitles);
 			expect(categoryTitles.length).toBe(uniqueTitles.size);
@@ -251,23 +243,17 @@ describe('Page Rendering Integration Tests', () => {
 
 	describe('External Dependencies', () => {
 		it('should have svelte-hamburgers available', async () => {
-			const exists = await import('svelte-hamburgers')
-				.then(() => true)
-				.catch(() => false);
+			const exists = await import('svelte-hamburgers').then(() => true).catch(() => false);
 			expect(exists).toBe(true);
 		});
 
 		it('should have svelte transitions available', async () => {
-			const exists = await import('svelte/transition')
-				.then(() => true)
-				.catch(() => false);
+			const exists = await import('svelte/transition').then(() => true).catch(() => false);
 			expect(exists).toBe(true);
 		});
 
 		it('should have svelte easing available', async () => {
-			const exists = await import('svelte/easing')
-				.then(() => true)
-				.catch(() => false);
+			const exists = await import('svelte/easing').then(() => true).catch(() => false);
 			expect(exists).toBe(true);
 		});
 	});

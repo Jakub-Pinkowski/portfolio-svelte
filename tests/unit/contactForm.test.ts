@@ -1,11 +1,7 @@
 import { describe, expect, it } from 'vitest';
+import { isValidEmail } from '$lib/utils/validation';
 
 describe('Contact Form Validation', () => {
-	// Test email validation regex
-	const isValidEmail = (value: string): boolean => {
-		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		return emailRegex.test(value);
-	};
 
 	describe('Email validation', () => {
 		it('should accept valid email addresses', () => {

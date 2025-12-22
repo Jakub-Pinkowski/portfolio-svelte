@@ -178,7 +178,7 @@ describe('Contact Form Integration Tests', () => {
 				message: 'Test message'
 			};
 
-			await expect(
+			expect(
 				fetch('https://formspree.io/f/xpzgwgre', {
 					method: 'POST',
 					headers: {

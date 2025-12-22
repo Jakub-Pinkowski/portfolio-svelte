@@ -220,7 +220,7 @@ describe('Data Integrity Tests', () => {
 			const allProjects = [...mainProjects, ...studiesProjects, ...simpleProjects];
 
 			allProjects.forEach((project: Project) => {
-				// Should have file extension or be a URL
+				// Should have a file extension or be a URL
 				expect(project.img).toMatch(/\.(png|jpg|jpeg|webp|svg|gif)$/i);
 			});
 		});

@@ -6,11 +6,13 @@
 @import '$lib/styles/toasts.css';
 @import 'tailwindcss';
 
+/*noinspection CssInvalidAtRule*/
 @plugin "daisyui" {
     themes: light --default;
     logs: false;
 }
 
+/*noinspection CssInvalidAtRule*/
 @theme {
     --color-main: #950740;
     --color-dark: #6f2232;

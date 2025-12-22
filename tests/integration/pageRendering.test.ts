@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { load } from '../../src/routes/+page';
+import { load } from '$routes/+page';
 
 describe('Page Rendering Integration Tests', () => {
 	describe('Page Data Loading', () => {
@@ -54,52 +54,50 @@ describe('Page Rendering Integration Tests', () => {
 
 	describe('Component Integration', () => {
 		it('should have importable Navigation component', async () => {
-			const module = await import('../../src/lib/components/Navigation.svelte');
+			const module = await import('$lib/components/Navigation.svelte');
 			expect(module.default).toBeDefined();
 		});
 
 		it('should have importable Banner component', async () => {
-			const module = await import('../../src/lib/components/Banner.svelte');
+			const module = await import('$lib/components/Banner.svelte');
 			expect(module.default).toBeDefined();
 		});
 
 		it('should have importable AboutMe component', async () => {
-			const module = await import('../../src/lib/components/AboutMe.svelte');
+			const module = await import('$lib/components/AboutMe.svelte');
 			expect(module.default).toBeDefined();
 		});
 
 		it('should have importable Portfolio component', async () => {
-			const module = await import('../../src/lib/components/Portfolio.svelte');
+			const module = await import('$lib/components/Portfolio.svelte');
 			expect(module.default).toBeDefined();
 		});
 
 		it('should have importable Contact component', async () => {
-			const module = await import('../../src/lib/components/Contact.svelte');
+			const module = await import('$lib/components/Contact.svelte');
 			expect(module.default).toBeDefined();
 		});
 
 		it('should have importable Footer component', async () => {
-			const module = await import('../../src/lib/components/Footer.svelte');
+			const module = await import('$lib/components/Footer.svelte');
 			expect(module.default).toBeDefined();
 		});
 	});
 
 	describe('Route Structure', () => {
 		it('should have main page route with loader', async () => {
-			const pageModule = await import('../../src/routes/+page');
+			const pageModule = await import('$routes/+page');
 			expect(pageModule).toHaveProperty('load');
 			expect(typeof pageModule.load).toBe('function');
 		});
 
 		it('should have main page component', async () => {
-			const pageExists = await import('../../src/routes/+page.svelte')
-				.then(() => true)
-				.catch(() => false);
+			const pageExists = await import('$routes/+page.svelte').then(() => true).catch(() => false);
 			expect(pageExists).toBe(true);
 		});
 
 		it('should have layout component', async () => {
-			const layoutExists = await import('../../src/routes/+layout.svelte')
+			const layoutExists = await import('$routes/+layout.svelte')
 				.then(() => true)
 				.catch(() => false);
 			expect(layoutExists).toBe(true);
@@ -108,25 +106,25 @@ describe('Page Rendering Integration Tests', () => {
 
 	describe('Data Sources', () => {
 		it('should import mainProjects data', async () => {
-			const module = await import('../../src/lib/data/mainProjects');
+			const module = await import('$lib/data/mainProjects');
 			expect(module.mainProjects).toBeDefined();
 			expect(Array.isArray(module.mainProjects)).toBe(true);
 		});
 
 		it('should import studiesProjects data', async () => {
-			const module = await import('../../src/lib/data/studiesProjects');
+			const module = await import('$lib/data/studiesProjects');
 			expect(module.studiesProjects).toBeDefined();
 			expect(Array.isArray(module.studiesProjects)).toBe(true);
 		});
 
 		it('should import simpleProjects data', async () => {
-			const module = await import('../../src/lib/data/simpleProjects');
+			const module = await import('$lib/data/simpleProjects');
 			expect(module.simpleProjects).toBeDefined();
 			expect(Array.isArray(module.simpleProjects)).toBe(true);
 		});
 
 		it('should import icons data', async () => {
-			const module = await import('../../src/lib/data/icons');
+			const module = await import('$lib/data/icons');
 			expect(module.icons).toBeDefined();
 			expect(Array.isArray(module.icons)).toBe(true);
 		});
@@ -134,13 +132,13 @@ describe('Page Rendering Integration Tests', () => {
 
 	describe('Type Definitions', () => {
 		it('should have Project type definition', async () => {
-			const module = await import('../../src/lib/types');
+			const module = await import('$lib/types');
 			// TypeScript types are compile-time only, but we can verify the import works
 			expect(module).toBeDefined();
 		});
 
 		it('should have Icon type definition', async () => {
-			const module = await import('../../src/lib/types');
+			const module = await import('$lib/types');
 			expect(module).toBeDefined();
 		});
 	});
@@ -201,7 +199,7 @@ describe('Page Rendering Integration Tests', () => {
 
 	describe('Form Integration', () => {
 		it('should have ContactForm component importable', async () => {
-			const exists = await import('../../src/lib/components/Contact/ContactForm.svelte')
+			const exists = await import('$lib/components/Contact/ContactForm.svelte')
 				.then(() => true)
 				.catch(() => false);
 			expect(exists).toBe(true);
@@ -215,24 +213,24 @@ describe('Page Rendering Integration Tests', () => {
 
 	describe('Asset Imports', () => {
 		it('should import contact image', async () => {
-			const exists = await import('../../src/lib/assets/images/contact.webp')
+			const exists = await import('$lib/assets/images/contact.webp')
 				.then(() => true)
 				.catch(() => false);
 			expect(exists).toBe(true);
 		});
 
 		it('should import about me image', async () => {
-			const exists = await import('../../src/lib/assets/images/me_cropped.webp')
+			const exists = await import('$lib/assets/images/me_cropped.webp')
 				.then(() => true)
 				.catch(() => false);
 			expect(exists).toBe(true);
 		});
 
 		it('should import social media icons', async () => {
-			const linkedinExists = await import('../../src/lib/assets/icons/linkedin.png')
+			const linkedinExists = await import('$lib/assets/icons/linkedin.png')
 				.then(() => true)
 				.catch(() => false);
-			const githubExists = await import('../../src/lib/assets/icons/github.png')
+			const githubExists = await import('$lib/assets/icons/github.png')
 				.then(() => true)
 				.catch(() => false);
 

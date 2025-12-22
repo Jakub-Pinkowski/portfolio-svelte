@@ -3,7 +3,7 @@
     import {fly, scale} from 'svelte/transition';
     import {quadOut} from 'svelte/easing';
 
-    let open: boolean = $state(false);
+    let { open = $bindable(false) } = $props();
     let menuId = "main-menu";
 
     interface Link {

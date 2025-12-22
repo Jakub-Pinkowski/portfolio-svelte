@@ -107,7 +107,7 @@ npm test -- --coverage
 
 **Planned:**
 
-- Portfolio sub-components (ProjectCard, CardAccordion, etc.)
+- Portfolio subcomponents (ProjectCard, CardAccordion, etc.)
 - Navigation interactions
 - Layout components (skip link, footer, etc.)
 - Validation edge cases
@@ -151,7 +151,7 @@ npm test -- --coverage
 Planned:
 
 - View portfolio projects
-- Submit contact form
+- Submit a contact form
 - Navigate entire site
 
 ---
@@ -234,7 +234,7 @@ it('should do something', () => {
 | Data        | 100%    | 100% ✓  |
 | **Overall** | **85%** | **70%** |
 
-Run `npm test -- --coverage` to see detailed coverage report (when configured).
+Run `npm test -- --coverage` to see a detailed coverage report (when configured).
 
 ---
 

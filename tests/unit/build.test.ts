@@ -10,7 +10,7 @@ describe('Build Tests', () => {
 				encoding: 'utf-8'
 			});
 		}).not.toThrow();
-	}, 60000); // 60 second timeout for build
+	}, 60000); // 60-second timeout for build
 
 	it('should pass type checking', () => {
 		expect(() => {
@@ -20,5 +20,5 @@ describe('Build Tests', () => {
 				encoding: 'utf-8'
 			});
 		}).not.toThrow();
-	}, 30000); // 30 second timeout for type checking
+	}, 30000); // 30-second timeout for type checking
 });

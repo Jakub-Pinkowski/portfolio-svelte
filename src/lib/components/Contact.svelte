@@ -2,7 +2,7 @@
     import contact from '$lib/assets/images/contact.webp';
     import linkedin from '$lib/assets/icons/linkedin.png';
     import github from '$lib/assets/icons/github.png';
-    import ContactForm from '$lib/components/Contact/ContactForm.svelte';
+    import ContactForm from '$lib/components/contact/ContactForm.svelte';
 </script>
 
 <section class="px-8 py-14 lg:py-24" id="contact">
@@ -29,6 +29,7 @@
                         aria-label="LinkedIn profile (opens in a new tab)"
                         class="mr-4 inline-block"
                         href="https://www.linkedin.com/in/jakub-pinkowski-b44405134/"
+                        rel="noopener noreferrer"
                         target="_blank"
                 >
                     <img alt="linkedin" class="inline-block w-12" src={linkedin}/>
@@ -37,6 +38,7 @@
                         aria-label="GitHub profile (opens in a new tab)"
                         class="mr-4 focus:ring-2 inline-block"
                         href="https://github.com/Jakub-Pinkowski"
+                        rel="noopener noreferrer"
                         target="_blank"
                 >
                     <img alt="github" class=" inline-block w-12" src={github}/>

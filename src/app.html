@@ -18,12 +18,14 @@
           property="og:description"/>
     <meta content="https://www.jakub-is-coding.com" property="og:url"/>
     <meta content="website" property="og:type"/>
-    <meta content="/favicons/og-image.jpg" property="og:image"/>
+    <meta content="/favicons/ms-icon-310x310.png" property="og:image"/>
+    <meta content="310" property="og:image:width"/>
+    <meta content="310" property="og:image:height"/>
     <!-- Twitter Card -->
-    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="summary" name="twitter:card"/>
     <meta content="Jakub is coding | Web Developer Portfolio" name="twitter:title"/>
     <meta content="Jakub Pinkowski's portfolio website showcasing web development projects and skills." name="twitter:description"/>
-    <meta content="/favicons/og-image.jpg" name="twitter:image"/>
+    <meta content="/favicons/ms-icon-310x310.png" name="twitter:image"/>
     <!-- Canonical URL -->
     <link href="https://www.jakub-is-coding.com" rel="canonical"/>
     <!-- PWA related -->
@@ -35,6 +37,20 @@
     <!-- Preload critical assets -->
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jakub Pinkowski",
+            "url": "https://www.jakub-is-coding.com",
+            "jobTitle": "Web Developer",
+            "sameAs": [
+                "https://github.com/Jakub-Pinkowski",
+                "https://www.linkedin.com/in/jakub-pinkowski-b44405134/"
+            ]
+        }
+    </script>
     %sveltekit.head%
 </head>
 <body data-sveltekit-preload-data="false">

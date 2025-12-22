@@ -1,7 +1,7 @@
 <footer class="footer bg-dark-gray text-neutral-content items-center p-4">
     <aside class="flex w-full items-center justify-between">
         <p class="mr-2">Copyright © 2025 - All right reserved</p>
-        <a aria-label="GitHub" href="https://github.com/Jakub-Pinkowski" target="_blank">
+        <a aria-label="GitHub" href="https://github.com/Jakub-Pinkowski" rel="noopener noreferrer" target="_blank">
             <svg height="24" role="img" viewBox="0 0 16 16" width="24">
                 <title id="github-title">GitHub Profile</title>
                 <path

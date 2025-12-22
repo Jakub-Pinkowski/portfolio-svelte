@@ -16,10 +16,10 @@ export interface ValidationResult {
 }
 
 /**
- * Validates an email address using a standard regex pattern
+ * Validates an email address using a robust regex pattern
  */
 export const isValidEmail = (value: string): boolean => {
-	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 	return emailRegex.test(value);
 };
 

@@ -5,7 +5,7 @@ on:
     # Runs every day at 10 AM Berlin time (9 AM UTC in winter, 8 AM UTC in summer)
     # Using 9 AM UTC to account for Berlin winter time (CET = UTC+1)
     - cron: '0 9 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions tab
 
 permissions:
   contents: write

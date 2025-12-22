@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap') layer(base);
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap') layer(base);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap') layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&family=Open+Sans:wght@300;400;500;600&display=swap') layer(base);
 
 @import '$lib/styles/buttons.css';
 @import '$lib/styles/toasts.css';

@@ -11,6 +11,7 @@
             aria-label={`View ${project.name} code on GitHub (opens in a new tab)`}
             class="my-button xl:text-lg"
             href={project.github}
+            rel="noopener noreferrer"
             target="_blank"
     >
         <img alt="Github logo" class="mx-2 h-8 w-8" src={github_icon}/>
@@ -20,6 +21,7 @@
         <a
                 class="my-button xl:text-lg"
                 href={project.src}
+                rel="noopener noreferrer"
                 target="_blank"
                 aria-label={`Visit ${project.name} website (opens in a new tab)`}
         >

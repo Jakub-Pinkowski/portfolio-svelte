@@ -9,6 +9,7 @@
             aria-label="{project.name} - Open {project.src ? 'website' : 'GitHub repository'} (opens in a new tab)"
             class="w-full"
             href={project.src ? project.src : project.github}
+            rel="noopener noreferrer"
             target="_blank"
     >
         <img

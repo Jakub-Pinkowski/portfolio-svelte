@@ -1,9 +1,9 @@
 <script lang="ts">
     import type {Icon, Project} from '$lib/types';
-    import CardActions from '$lib/components/Portfolio/CardActions.svelte';
-    import CardAccordion from '$lib/components/Portfolio/CardAccordion.svelte';
-    import CardDescription from '$lib/components/Portfolio/CardDescription.svelte';
-    import CardFigure from '$lib/components/Portfolio/CardFigure.svelte';
+    import CardActions from '$lib/components/portfolio/CardActions.svelte';
+    import CardAccordion from '$lib/components/portfolio/CardAccordion.svelte';
+    import CardDescription from '$lib/components/portfolio/CardDescription.svelte';
+    import CardFigure from '$lib/components/portfolio/CardFigure.svelte';
 
     interface Props {
         project: Project;

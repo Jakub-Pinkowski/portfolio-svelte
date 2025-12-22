@@ -178,7 +178,8 @@ describe('Contact Form Integration Tests', () => {
 				message: 'Test message'
 			};
 
-			expect(
+			// noinspection ES6RedundantAwait
+			await expect(
 				fetch('https://formspree.io/f/xpzgwgre', {
 					method: 'POST',
 					headers: {

@@ -2,7 +2,6 @@ import { describe, expect, it } from 'vitest';
 import { isValidEmail } from '$lib/utils/validation';
 
 describe('Contact Form Validation', () => {
-
 	describe('Email validation', () => {
 		it('should accept valid email addresses', () => {
 			expect(isValidEmail('test@example.com')).toBe(true);

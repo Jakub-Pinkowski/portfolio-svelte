@@ -82,21 +82,6 @@ npm run test:ci
 npm test -- --coverage
 ```
 
----
-
-## Test Coverage Goals
-
-| Category    | Target  | Current |
-|-------------|---------|---------|
-| Components  | 90%     | 40%     |
-| Utilities   | 100%    | 85%     |
-| Integration | 80%     | 60%     |
-| Data        | 100%    | 100% ✓  |
-| **Overall** | **85%** | **70%** |
-
-Run `npm test -- --coverage` to see a detailed coverage report (when configured).
-
----
 
 **Last Updated:** December 22, 2025
 **Test Count:** 127 tests passing

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isValidEmail } from '$lib/utils/validation';
+import { isValidEmail, validateContactForm } from '$lib/utils/validation';
 
 describe('Contact Form Validation', () => {
 	describe('Email validation', () => {
@@ -19,29 +19,42 @@ describe('Contact Form Validation', () => {
 		});
 	});
 
-	describe('Form data structure', () => {
-		it('should have correct initial form structure', () => {
-			const formData = {
-				name: '',
-				email: '',
-				message: ''
+	describe('validateContactForm', () => {
+		it('should return valid result for correct data', () => {
+			const data = {
+				name: 'John Doe',
+				email: 'john@example.com',
+				message: 'Hello'
 			};
-
-			expect(formData).toHaveProperty('name');
-			expect(formData).toHaveProperty('email');
-			expect(formData).toHaveProperty('message');
+			const result = validateContactForm(data);
+			expect(result.isValid).toBe(true);
+			expect(result.errors.name).toBe('');
+			expect(result.errors.email).toBe('');
+			expect(result.errors.message).toBe('');
 		});
 
-		it('should have correct error structure', () => {
-			const errors = {
+		it('should return errors for empty data', () => {
+			const data = {
 				name: '',
 				email: '',
 				message: ''
 			};
+			const result = validateContactForm(data);
+			expect(result.isValid).toBe(false);
+			expect(result.errors.name).toBe('Name is required.');
+			expect(result.errors.email).toBe('Email is required.');
+			expect(result.errors.message).toBe('Message is required.');
+		});
 
-			expect(errors).toHaveProperty('name');
-			expect(errors).toHaveProperty('email');
-			expect(errors).toHaveProperty('message');
+		it('should return error for invalid email', () => {
+			const data = {
+				name: 'John Doe',
+				email: 'invalid-email',
+				message: 'Hello'
+			};
+			const result = validateContactForm(data);
+			expect(result.isValid).toBe(false);
+			expect(result.errors.email).toBe('Please enter a valid email address.');
 		});
 	});
 });

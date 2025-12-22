@@ -133,9 +133,7 @@ describe('Data Integrity Tests', () => {
 
 			allProjects.forEach((project: Project) => {
 				if (project.label && project.labelColor) {
-					const isValidColor = validColorFormats.some((regex) =>
-						regex.test(project.labelColor!)
-					);
+					const isValidColor = validColorFormats.some((regex) => regex.test(project.labelColor!));
 					expect(isValidColor || project.labelColor!.length > 0).toBe(true);
 				}
 			});
@@ -222,7 +220,7 @@ describe('Data Integrity Tests', () => {
 			const allProjects = [...mainProjects, ...studiesProjects, ...simpleProjects];
 
 			allProjects.forEach((project: Project) => {
-				// Should have file extension or be a URL
+				// Should have a file extension or be a URL
 				expect(project.img).toMatch(/\.(png|jpg|jpeg|webp|svg|gif)$/i);
 			});
 		});

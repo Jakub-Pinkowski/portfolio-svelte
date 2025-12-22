@@ -1,17 +1,18 @@
 <script lang="ts">
     import {fade} from 'svelte/transition';
+    import {type ContactFormData, type ContactFormErrors, validateContactForm} from '$lib/utils/validation';
 
     let isSubmitting = $state(false);
 
     // Form data
-    let formData = $state({
+    let formData = $state<ContactFormData>({
         name: '',
         email: '',
         message: ''
     });
 
     // Errors
-    let errors = $state({
+    let errors = $state<ContactFormErrors>({
         name: '',
         email: '',
         message: ''
@@ -30,8 +31,9 @@
         if (isSubmitting) return;
         isSubmitting = true;
 
-        resetErrors();
-        if (!validateForm()) {
+        const validation = validateContactForm(formData);
+        if (!validation.isValid) {
+            errors = validation.errors;
             showToast('Please fill out all fields correctly.', 'error');
             isSubmitting = false;
             return;
@@ -64,46 +66,10 @@
         }
     };
 
-    const validateForm = () => {
-        let isValid = true;
-
-        if (!formData.name) {
-            errors.name = 'Name is required.';
-            isValid = false;
-        }
-
-        if (!formData.email) {
-            errors.email = 'Email is required.';
-            isValid = false;
-        } else if (!isValidEmail(formData.email)) {
-            errors.email = 'Please enter a valid email address.';
-            isValid = false;
-        }
-
-        if (!formData.message) {
-            errors.message = 'Message is required.';
-            isValid = false;
-        }
-
-        return isValid;
-    };
-
-    const isValidEmail = (value: string): boolean => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(value);
-    };
-
-    const resetErrors = () => {
-        errors = {
-            name: '',
-            email: '',
-            message: ''
-        };
-    };
-
     const showToast = (message: string, type: 'success' | 'error') => {
         toast = {message, type, visible: true};
-        setTimeout(() => (toast.visible = false), 2000);
+        const duration = type === 'success' ? 4000 : 3000;
+        setTimeout(() => (toast.visible = false), duration);
     };
 
     const resetForm = () => {

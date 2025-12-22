@@ -19,7 +19,9 @@ describe('CardFigure Component SSR', () => {
 		});
 
 		expect(body).toContain('href="' + mockProjectComplete.src + '"');
-		expect(body).toContain('aria-label="' + mockProjectComplete.name + ' - Open website (opens in a new tab)"');
+		expect(body).toContain(
+			'aria-label="' + mockProjectComplete.name + ' - Open website (opens in a new tab)"'
+		);
 	});
 
 	it('should link to project.github if project.src is not available', () => {
@@ -28,7 +30,9 @@ describe('CardFigure Component SSR', () => {
 		});
 
 		expect(body).toContain('href="' + mockProjectMinimal.github + '"');
-		expect(body).toContain('aria-label="' + mockProjectMinimal.name + ' - Open GitHub repository (opens in a new tab)"');
+		expect(body).toContain(
+			'aria-label="' + mockProjectMinimal.name + ' - Open GitHub repository (opens in a new tab)"'
+		);
 	});
 
 	it('should render project label and color if provided', () => {

@@ -11,7 +11,9 @@ describe('CardActions Component SSR', () => {
 
 		expect(body).toContain('href="' + mockProjectMinimal.github + '"');
 		expect(body).toContain('View Code');
-		expect(body).toContain('aria-label="View ' + mockProjectMinimal.name + ' code on GitHub (opens in a new tab)"');
+		expect(body).toContain(
+			'aria-label="View ' + mockProjectMinimal.name + ' code on GitHub (opens in a new tab)"'
+		);
 	});
 
 	it('should render website link only if project.src is provided', () => {
@@ -21,7 +23,9 @@ describe('CardActions Component SSR', () => {
 		});
 		expect(bodyWithSrc).toContain('href="' + mockProjectComplete.src + '"');
 		expect(bodyWithSrc).toContain('Visit Website');
-		expect(bodyWithSrc).toContain('aria-label="Visit ' + mockProjectComplete.name + ' website (opens in a new tab)"');
+		expect(bodyWithSrc).toContain(
+			'aria-label="Visit ' + mockProjectComplete.name + ' website (opens in a new tab)"'
+		);
 
 		// Case 2: Project without src
 		const { body: bodyWithoutSrc } = render(CardActions, {
@@ -36,7 +40,7 @@ describe('CardActions Component SSR', () => {
 		});
 
 		const links = body.match(/<a[^>]*>/g);
-		links?.forEach(link => {
+		links?.forEach((link) => {
 			expect(link).toContain('rel="noopener noreferrer"');
 			expect(link).toContain('target="_blank"');
 		});

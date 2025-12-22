@@ -11,7 +11,7 @@ describe('CardDescription Component SSR', () => {
 
 	it('should render project description and technologies description', () => {
 		const { body } = render(CardDescription, {
-			props: { 
+			props: {
 				project: mockProjectComplete,
 				icons: mockIcons
 			}
@@ -25,7 +25,7 @@ describe('CardDescription Component SSR', () => {
 
 	it('should render technology icons', () => {
 		const { body } = render(CardDescription, {
-			props: { 
+			props: {
 				project: mockProjectComplete,
 				icons: mockIcons
 			}
@@ -43,7 +43,7 @@ describe('CardDescription Component SSR', () => {
 		};
 
 		const { body } = render(CardDescription, {
-			props: { 
+			props: {
 				project: projectWithUnknownTech,
 				icons: mockIcons
 			}

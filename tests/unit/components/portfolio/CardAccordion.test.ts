@@ -20,14 +20,14 @@ describe('CardAccordion Component SSR', () => {
 
 		expect(body).toContain('Description:');
 		expect(body).toContain(mockProjectComplete.description);
-		
+
 		expect(body).toContain('Features:');
-		mockProjectComplete.features?.forEach(feature => {
+		mockProjectComplete.features?.forEach((feature) => {
 			expect(body).toContain(feature);
 		});
 
 		expect(body).toContain('Tech Stack:');
-		mockProjectComplete.technologies.forEach(tech => {
+		mockProjectComplete.technologies.forEach((tech) => {
 			expect(body).toContain(tech);
 		});
 	});

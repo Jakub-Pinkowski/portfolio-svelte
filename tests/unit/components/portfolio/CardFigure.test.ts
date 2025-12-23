@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import CardFigure from '$lib/components/portfolio/CardFigure.svelte';
 import { render } from 'svelte/server';
-import { mockProjectComplete, mockProjectMinimal } from '../../../setup/fixtures';
+import { mockProjectComplete, mockProjectMinimal } from '$tests/setup/fixtures';
 
 describe('CardFigure Component SSR', () => {
 	it('should render project image with correct attributes', () => {

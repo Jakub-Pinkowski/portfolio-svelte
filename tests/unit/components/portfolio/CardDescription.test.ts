@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import CardDescription from '$lib/components/portfolio/CardDescription.svelte';
 import { render } from 'svelte/server';
-import { mockProjectComplete } from '../../../setup/fixtures';
+import { mockProjectComplete } from '$tests/setup/fixtures';
 
 describe('CardDescription Component SSR', () => {
 	const mockIcons = [

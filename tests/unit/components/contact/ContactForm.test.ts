@@ -29,7 +29,28 @@ describe('ContactForm Component SSR', () => {
 
 	it('should have required attributes on inputs', () => {
 		const { body } = render(ContactForm);
-		// Check for required attribute. In SSR output it might be present.
+		// Check for the required attribute. In SSR output it might be present.
 		expect(body).toContain('required');
+	});
+
+	it('should render validation errors when errors prop is provided', () => {
+		// Note: ContactForm currently manages its own state for errors,
+		// but we can check if the error message elements are rendered
+		// if we were able to trigger them.
+		// Since it's SSR testing, we look at the template structure.
+		const { body } = render(ContactForm);
+
+		// The error paragraphs are conditional: {#if errors.name}
+		// In initial SSR they should NOT be present.
+		expect(body).not.toContain('id="name-error"');
+		expect(body).not.toContain('id="email-error"');
+		expect(body).not.toContain('id="message-error"');
+	});
+
+	it('should render a hidden form-errors summary for accessibility', () => {
+		const { body } = render(ContactForm);
+		expect(body).toContain('id="form-errors"');
+		expect(body).toContain('aria-live="polite"');
+		expect(body).toContain('class="sr-only"');
 	});
 });

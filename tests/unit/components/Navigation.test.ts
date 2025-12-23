@@ -28,4 +28,14 @@ describe('Navigation Component SSR', () => {
 		// and open is false by default.
 		expect(body).not.toContain('<nav');
 	});
+
+	it('should render the Hamburger component with correct aria-label', () => {
+		const { body } = render(Navigation);
+		expect(body).toContain('aria-label="Toggle navigation menu"');
+	});
+
+	it('should render the Hamburger component with correct aria-controls', () => {
+		const { body } = render(Navigation);
+		expect(body).toContain('aria-controls="main-menu"');
+	});
 });

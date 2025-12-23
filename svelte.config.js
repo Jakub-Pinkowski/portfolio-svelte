@@ -9,7 +9,9 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$routes: './src/routes',
-			'$routes/*': './src/routes/*'
+			'$routes/*': './src/routes/*',
+			$tests: './tests',
+			'$tests/*': './tests/*'
 		}
 	}
 };

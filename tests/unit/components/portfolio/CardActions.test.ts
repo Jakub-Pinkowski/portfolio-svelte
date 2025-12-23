@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import CardActions from '$lib/components/portfolio/CardActions.svelte';
 import { render } from 'svelte/server';
-import { mockProjectComplete, mockProjectMinimal } from '../../../setup/fixtures';
+import { mockProjectComplete, mockProjectMinimal } from '$tests/setup/fixtures';
 
 describe('CardActions Component SSR', () => {
 	it('should render GitHub link for all projects', () => {

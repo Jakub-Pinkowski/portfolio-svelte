@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import CardAccordion from '$lib/components/portfolio/CardAccordion.svelte';
 import { render } from 'svelte/server';
-import { mockProjectComplete, mockProjectMinimal } from '../../../setup/fixtures';
+import { mockProjectComplete, mockProjectMinimal } from '$tests/setup/fixtures';
 
 describe('CardAccordion Component SSR', () => {
 	it('should render project summary and "More info" label', () => {

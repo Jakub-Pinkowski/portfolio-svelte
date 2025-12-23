@@ -2,13 +2,13 @@
 
 ## Overview
 
-Comprehensive test suite for the SvelteKit portfolio application with **127+ tests** covering:
+Comprehensive test suite for the SvelteKit portfolio application with **182 tests** covering:
 
-- Unit tests for components and utilities
+- Unit tests for components, routes, and utilities
 - Integration tests for user flows and features
 - Data validation tests
-- Security and SEO tests (planned)
-- Performance tests (planned)
+- E2E infrastructure (Playwright recommended)
+- Security, SEO, and Performance (planned)
 
 ---
 
@@ -21,8 +21,8 @@ tests/
 │   ├── fixtures.ts     # Mock data factories
 │   └── setupTests.ts   # Global test setup
 │
-├── unit/               # Component and function unit tests
-│   ├── components/     # Component-specific tests
+├── unit/               # Component, Route, and Utility unit tests
+│   ├── components/     # Component-specific tests (mirrors src/lib/components)
 │   │   ├── contact/    # Contact sub-components
 │   │   │   └── ContactForm.test.ts
 │   │   ├── portfolio/  # Portfolio sub-components
@@ -37,9 +37,12 @@ tests/
 │   │   ├── Navigation.test.ts
 │   │   ├── Contact.test.ts
 │   │   └── Footer.test.ts
+│   ├── routes/         # Route component tests (e.g., +page.svelte)
+│   │   └── Page.test.ts
+│   ├── layout/         # Layout component tests (e.g., +layout.svelte)
+│   │   └── Layout.test.ts
 │   ├── utils/          # Utility function tests
 │   │   └── validation.test.ts
-│   ├── layout/         # Layout tests (planned)
 │   ├── accessibility.test.ts
 │   ├── build.test.ts
 │   └── components.test.ts
@@ -47,6 +50,8 @@ tests/
 ├── integration/        # Integration and feature tests
 │   ├── contactForm/    # Contact form flows
 │   │   └── contactFormIntegration.test.ts
+│   ├── navigation/     # Navigation and routing flows
+│   │   └── routing.test.ts
 │   ├── security/       # Security tests (planned)
 │   ├── seo/            # SEO & PWA tests (planned)
 │   ├── performance/    # Performance tests (planned)
@@ -93,7 +98,7 @@ npm run test:ci
 npm test -- --coverage
 ```
 
-**Last Updated:** December 22, 2025
-**Test Count:** 127 tests passing
-**Structure:** Reorganized for scalability
-**Coverage:** ~70% (estimated)
+**Last Updated:** December 23, 2025
+**Test Count:** 182 tests passing
+**Structure:** Reorganized to mirror `src` and use path aliases
+**Coverage:** ~90% (estimated)

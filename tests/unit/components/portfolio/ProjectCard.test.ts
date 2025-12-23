@@ -41,7 +41,7 @@ describe('ProjectCard Component SSR', () => {
 		expect(body).toContain(mockProjectMinimal.name);
 		expect(body).toContain(mockProjectMinimal.description);
 		expect(body).toContain('href="' + mockProjectMinimal.github + '"');
-		// Minimal project doesn't have src (Visit Website link)
+		// Minimal project doesn't have src (Visit a Website link)
 		expect(body).not.toContain('Visit Website');
 	});
 
@@ -53,7 +53,7 @@ describe('ProjectCard Component SSR', () => {
 			}
 		});
 
-		// mockProjectComplete has labelColor: '#ff0000'
+		// mockProjectComplete has the labelColor: '#ff0000'
 		expect(body).toContain('style="border-color: #ff0000;"');
 	});
 });

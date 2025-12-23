@@ -199,7 +199,7 @@ describe('Page Rendering Integration Tests', () => {
 
 	describe('Form Integration', () => {
 		it('should have ContactForm component importable', async () => {
-   const exists = await import('$lib/components/contact/ContactForm.svelte')
+			const exists = await import('$lib/components/contact/ContactForm.svelte')
 				.then(() => true)
 				.catch(() => false);
 			expect(exists).toBe(true);

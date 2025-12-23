@@ -4,7 +4,7 @@
     import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<a href="#main-content" class="skip-link">Skip to main content</a>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <Navigation/>
 <main id="main-content" tabindex="-1">
     <slot/>

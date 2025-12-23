@@ -22,10 +22,21 @@ tests/
 │   └── setupTests.ts   # Global test setup
 │
 ├── unit/               # Component and function unit tests
-│   ├── components/     # Component-specific tests (planned)
+│   ├── components/     # Component-specific tests
+│   │   ├── contact/    # Contact sub-components
+│   │   │   └── ContactForm.test.ts
 │   │   ├── portfolio/  # Portfolio sub-components
-│   │   ├── navigation/ # Navigation component
-│   │   └── contact/    # Contact form component
+│   │   │   ├── CardAccordion.test.ts
+│   │   │   ├── CardActions.test.ts
+│   │   │   ├── CardDescription.test.ts
+│   │   │   ├── CardFigure.test.ts
+│   │   │   └── ProjectCard.test.ts
+│   │   ├── Banner.test.ts
+│   │   ├── AboutMe.test.ts
+│   │   ├── Portfolio.test.ts
+│   │   ├── Navigation.test.ts
+│   │   ├── Contact.test.ts
+│   │   └── Footer.test.ts
 │   ├── utils/          # Utility function tests
 │   │   └── validation.test.ts
 │   ├── layout/         # Layout tests (planned)

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import Portfolio from '$lib/components/Portfolio.svelte';
 import { render } from 'svelte/server';
-import { createMockProjects } from '../../../setup/fixtures';
+import { createMockProjects } from '../../setup/fixtures';
 
 describe('Portfolio Component SSR', () => {
 	const mockIcons = [

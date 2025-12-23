@@ -1,5 +1,6 @@
 # WebStorm specific folder
 .idea/
+.junie/
 
 # Build output
 /build

@@ -14,7 +14,7 @@ describe('+layout.svelte Component SSR', () => {
 		// Navigation's initial state (Hamburger)
 		expect(body).toContain('aria-label="Toggle navigation menu"');
 		// Footer
-		expect(body).toContain('Copyright © 2025');
+		expect(body).toContain('Copyright © 2026');
 	});
 
 	it('should render main content container', () => {

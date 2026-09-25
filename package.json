@@ -22,7 +22,7 @@
 		"@sveltejs/vite-plugin-svelte": "^7.3.0",
 		"@tailwindcss/vite": "4.3.3",
 		"@types/node": "^26.6.2",
-		"daisyui": "^5.7.42",
+		"daisyui": "^5.7.43",
 		"postcss": "^8.5.28",
 		"prettier": "^3.9.8",
 		"prettier-plugin-svelte": "^4.1.1",

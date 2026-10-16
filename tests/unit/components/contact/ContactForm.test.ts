@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { render } from 'svelte/server';
-import ContactForm from '$lib/components/contact/ContactForm.svelte';
+import ContactForm from '#lib/components/contact/ContactForm.svelte';
 
 describe('ContactForm Component SSR', () => {
 	it('should render all form fields', () => {

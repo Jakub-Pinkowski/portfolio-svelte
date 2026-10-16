@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { render } from 'svelte/server';
-import Footer from '$lib/components/Footer.svelte';
+import Footer from '#lib/components/Footer.svelte';
 
 describe('Footer Component', () => {
 	it('should render the copyright notice', () => {

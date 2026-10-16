@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isValidEmail, validateContactForm } from '$lib/utils/validation';
+import { isValidEmail, validateContactForm } from '#lib/utils/validation.js';
 
 describe('Contact Form Validation', () => {
 	describe('Email validation', () => {

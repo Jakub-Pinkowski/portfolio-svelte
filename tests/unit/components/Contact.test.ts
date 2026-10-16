@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { render } from 'svelte/server';
-import Contact from '$lib/components/Contact.svelte';
+import Contact from '#lib/components/Contact.svelte';
 
 describe('Contact Component', () => {
 	it('should render the "Contact" heading', () => {

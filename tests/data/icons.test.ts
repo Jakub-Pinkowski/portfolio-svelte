@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { icons } from '$lib/data/icons';
-import type { Icon } from '$lib/types';
+import { icons } from '#lib/data/icons.js';
+import type { Icon } from '#lib/types.js';
 
 describe('icons', () => {
 	it('should be an array', () => {

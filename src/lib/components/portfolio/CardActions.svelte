@@ -1,32 +1,32 @@
 <script lang="ts">
-    import github_icon from '$lib/assets/icons/github.png';
-    import globe_icon from '$lib/assets/icons/globe.png';
-    import type {Project} from '$lib/types';
+	import github_icon from '#lib/assets/icons/github.png';
+	import globe_icon from '#lib/assets/icons/globe.png';
+	import type { Project } from '#lib/types.js';
 
-    let {project}: { project: Project } = $props();
+	let { project }: { project: Project } = $props();
 </script>
 
 <nav class="card-actions mt-auto w-full flex-col justify-end gap-4 lg:flex-row lg:justify-between">
-    <a
-            aria-label={`View ${project.name} code on GitHub (opens in a new tab)`}
-            class="my-button xl:text-lg"
-            href={project.github}
-            rel="noopener noreferrer"
-            target="_blank"
-    >
-        <img alt="Github logo" class="mx-2 h-8 w-8" src={github_icon}/>
-        View Code
-    </a>
-    {#if project.src}
-        <a
-                class="my-button xl:text-lg"
-                href={project.src}
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-label={`Visit ${project.name} website (opens in a new tab)`}
-        >
-            <img class="mx-2 h-8 w-8" src={globe_icon} alt="Website icon"/>
-            Visit Website
-        </a>
-    {/if}
+	<a
+		aria-label={`View ${project.name} code on GitHub (opens in a new tab)`}
+		class="my-button xl:text-lg"
+		href={project.github}
+		rel="noopener noreferrer"
+		target="_blank"
+	>
+		<img alt="Github logo" class="mx-2 h-8 w-8" src={github_icon} />
+		View Code
+	</a>
+	{#if project.src}
+		<a
+			class="my-button xl:text-lg"
+			href={project.src}
+			rel="noopener noreferrer"
+			target="_blank"
+			aria-label={`Visit ${project.name} website (opens in a new tab)`}
+		>
+			<img class="mx-2 h-8 w-8" src={globe_icon} alt="Website icon" />
+			Visit Website
+		</a>
+	{/if}
 </nav>

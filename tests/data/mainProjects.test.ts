@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { mainProjects } from '$lib/data/mainProjects';
-import type { Project } from '$lib/types';
+import { mainProjects } from '#lib/data/mainProjects.js';
+import type { Project } from '#lib/types.js';
 
 describe('mainProjects', () => {
 	it('should be an array', () => {

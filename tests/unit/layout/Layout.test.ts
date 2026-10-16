@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { render } from 'svelte/server';
-import Layout from '$routes/+layout.svelte';
+import Layout from '#routes/+layout.svelte';
 
 describe('+layout.svelte Component SSR', () => {
 	it('should render skip link', () => {

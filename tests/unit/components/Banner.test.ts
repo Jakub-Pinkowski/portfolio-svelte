@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { render } from 'svelte/server';
-import Banner from '$lib/components/Banner.svelte';
+import Banner from '#lib/components/Banner.svelte';
 
 describe('Banner Component', () => {
 	it('should render the name and title', () => {

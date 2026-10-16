@@ -2,7 +2,7 @@
  * Test fixtures and mock data factories
  */
 
-import type { Project } from '$lib/types';
+import type { Project } from '#lib/types.js';
 
 /**
  * Creates a mock project with default values that can be overridden

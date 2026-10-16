@@ -1,11 +1,11 @@
-import e_commerce from '$lib/assets/images/main_projects/e-commerce.webp';
-import jules_art from '$lib/assets/images/main_projects/jules-art.webp';
-import crypto_bot from '$lib/assets/images/main_projects/crypto_bot.webp';
-import trading_bot from '$lib/assets/images/main_projects/trading-bot.webp';
-import blogging_platform from '$lib/assets/images/main_projects/blogging-platform.webp';
-import links_page from '$lib/assets/images/main_projects/links-page.webp';
+import e_commerce from '#lib/assets/images/main_projects/e-commerce.webp';
+import jules_art from '#lib/assets/images/main_projects/jules-art.webp';
+import crypto_bot from '#lib/assets/images/main_projects/crypto_bot.webp';
+import trading_bot from '#lib/assets/images/main_projects/trading-bot.webp';
+import blogging_platform from '#lib/assets/images/main_projects/blogging-platform.webp';
+import links_page from '#lib/assets/images/main_projects/links-page.webp';
 
-import type { Project } from '$lib/types';
+import type { Project } from '#lib/types.js';
 
 export const mainProjects: Project[] = [
 	{

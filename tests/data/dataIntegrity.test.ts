@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { mainProjects } from '$lib/data/mainProjects';
-import { studiesProjects } from '$lib/data/studiesProjects';
-import { simpleProjects } from '$lib/data/simpleProjects';
-import { icons } from '$lib/data/icons';
-import type { Project } from '$lib/types';
+import { mainProjects } from '#lib/data/mainProjects.js';
+import { studiesProjects } from '#lib/data/studiesProjects.js';
+import { simpleProjects } from '#lib/data/simpleProjects.js';
+import { icons } from '#lib/data/icons.js';
+import type { Project } from '#lib/types.js';
 
 describe('Data Integrity Tests', () => {
 	describe('Technology Consistency', () => {

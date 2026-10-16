@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { render } from 'svelte/server';
-import Page from '$routes/+page.svelte';
-import { createMockProjects } from '$tests/setup/fixtures';
+import Page from '#routes/+page.svelte';
+import { createMockProjects } from '#tests/setup/fixtures';
 
 describe('+page.svelte Component SSR', () => {
 	const mockIcons = [

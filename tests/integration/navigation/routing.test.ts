@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { render } from 'svelte/server';
-import Page from '$routes/+page.svelte';
+import Page from '#routes/+page.svelte';
 
-import Layout from '$routes/+layout.svelte';
+import Layout from '#routes/+layout.svelte';
 
 describe('Navigation Integration', () => {
 	it('should have all sections targeted by navigation links on the home page', () => {

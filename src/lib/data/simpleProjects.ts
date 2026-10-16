@@ -1,11 +1,11 @@
-import meals from '$lib/assets/images/simple_projects/meals.webp';
-import weather from '$lib/assets/images/simple_projects/weather.webp';
-import travel_blog from '$lib/assets/images/simple_projects/travel-blog.webp';
-import todo from '$lib/assets/images/simple_projects/todo.webp';
-import coach from '$lib/assets/images/simple_projects/coach.webp';
-import investment_calculator from '$lib/assets/images/simple_projects/investment-calculator.webp';
+import meals from '#lib/assets/images/simple_projects/meals.webp';
+import weather from '#lib/assets/images/simple_projects/weather.webp';
+import travel_blog from '#lib/assets/images/simple_projects/travel-blog.webp';
+import todo from '#lib/assets/images/simple_projects/todo.webp';
+import coach from '#lib/assets/images/simple_projects/coach.webp';
+import investment_calculator from '#lib/assets/images/simple_projects/investment-calculator.webp';
 
-import type { Project } from '$lib/types';
+import type { Project } from '#lib/types.js';
 
 export const simpleProjects: Project[] = [
 	{

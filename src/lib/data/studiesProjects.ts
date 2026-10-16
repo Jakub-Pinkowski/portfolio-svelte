@@ -1,8 +1,8 @@
-import mobile from '$lib/assets/images/studies_projects/mobile.webp';
-import internet from '$lib/assets/images/studies_projects/internet.webp';
-import desktop from '$lib/assets/images/studies_projects/desktop.webp';
+import mobile from '#lib/assets/images/studies_projects/mobile.webp';
+import internet from '#lib/assets/images/studies_projects/internet.webp';
+import desktop from '#lib/assets/images/studies_projects/desktop.webp';
 
-import type { Project } from '$lib/types';
+import type { Project } from '#lib/types.js';
 
 export const studiesProjects: Project[] = [
 	{

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { render } from 'svelte/server';
-import AboutMe from '$lib/components/AboutMe.svelte';
+import AboutMe from '#lib/components/AboutMe.svelte';
 
 describe('AboutMe Component', () => {
 	it('should render the "About Me" heading', () => {

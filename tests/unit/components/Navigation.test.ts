@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Navigation from '$lib/components/Navigation.svelte';
+import Navigation from '#lib/components/Navigation.svelte';
 import { render } from 'svelte/server';
 
 describe('Navigation Component SSR', () => {
